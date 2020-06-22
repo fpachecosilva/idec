@@ -8,16 +8,18 @@
 	$empresa = 'Idec';
 	
 	// Local
-	$url = 'http://localhost/idec/';
+	// $url = 'http://localhost/idec/';
 	
 	// Server
-	// $url = 'http://previewbsagency.com.br/idec/';
+	$url = 'http://previewbsagency.com.br/idec/';
 
 	$images = $url.'assets/images/';
 	$Tags = '';
 		
 	// Páginas
-		
+		$Equipamentos = "equipamentos.php";
+		$Efeitos = "efeitos.php";
+		$Tarifa = "tarifa.php";
 
 	// contato
 		$email = '';
