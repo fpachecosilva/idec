@@ -17,8 +17,9 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 
 /* Variaveis: */
 	:root {
-		--principal: #6A6A6A;
+		--principal: #414141;
 		--secundaria: #004568;
+		--secundariamobile: #6A6A6A;
 		
 		--destaque1: #25C5E0;
 		--destaque2: #FA6540;
@@ -56,15 +57,17 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	h3 {}
 	h4 {}
 	i {display: inline-block;}
-	p {font-size: 1rem; line-height: 1.3rem;}
+	p {font-size: 1rem; line-height: 1.3rem;}	
 	strong {font-weight: 700;}
 	br {clear: both; display: block;}
 	a {color: var(--principal); text-decoration: none;}
 	a:hover { opacity: 0.8; }
 	img {display: block; outline: none;}
+	form { clear: both; }
 	section {position: relative;}
 	article {position: relative; width: 100%; box-sizing: border-box; z-index: 2;}
 	article:after {content: ''; display: block; clear: both;}
+	select { border: 0; height: 42px; border-radius: var(--radius); padding-left: 25px; }
 /* :Elementos */
 	
 /* Botões: */
@@ -73,9 +76,9 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Btn-Default { width: 285px; }
 	.Btn-Big { width: 568px; }
 
-	.Btn-Destaque1 { background-color: var(--destaque1)!important; }
-	.Btn-Destaque2 { background-color: var(--destaque2)!important; }
-	.Btn-Destaque3 { background-color: var(--destaque3)!important; }
+	.Btn-Destaque1 { background-color: var(--destaque1)!important; color: #fff!important; }
+	.Btn-Destaque2 { background-color: var(--destaque2)!important; color: #fff!important; }
+	.Btn-Destaque3 { background-color: var(--destaque3)!important; color: #fff!important; }
 /* :Botões */
 
 /* Backgrounds: */
@@ -122,14 +125,25 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	footer .Centro .titulo { text-transform: uppercase; font-size: 1.5rem; margin-bottom: 25px; }
 /* :Footer */
 
-/* Página Home: */
+/* Página Home: */	
 	.Home .Sessao1 .Box { display: block; border-radius: var(--radius15); text-transform: uppercase; color: #FFF; font-weight: bold; line-height: 1.375rem; padding: 0 10px; box-sizing: border-box; position: relative; overflow: hidden; }
 	.Home .Sessao1 .Box img { margin: 40px auto auto auto; }
-	.Home .Sessao1 .Box p { margin: 30px auto auto auto; }
+	.Home .Sessao1 .Box p { margin: 30px auto auto auto; color: #fff; }
 	.Home .Sessao1 .Box1 { background-color: var(--destaque1); }
 	.Home .Sessao1 .Box2 { background-color: var(--destaque2); }
 	.Home .Sessao1 .Box3 { background-color: var(--destaque3); }
 /* :Página Home */
+
+/* Pagina Equipamentos: */
+	.Equipamentos .Banner { background-image: url('../images/eqp-banner.png'); }
+	.Equipamentos h1 { max-width: 350px; }
+	.Equipamentos .Sessao1 p { max-width: 718px; line-height: 1.625rem; }
+
+	.Equipamentos .Sessao2 { background-color: var(--secundaria); }
+	.Equipamentos .Sessao2 p { color: #fff; }
+
+	.Equipamentos .Sessao3 .Boxes .Internas p { font-family: 'Montserrat' , sans-serif; }
+/* :Pagina Equipamentos */
 
 
 
@@ -141,12 +155,16 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 
 /* Elementos Desktop: */
 	h1 {font-size: 2.5rem; line-height: 3.12rem; text-align: left;}
-	h2 {font-size: 1.875rem; line-height: 2.5rem;}
+	h2 {font-size: 1.875rem; line-height: 2.5rem; text-align: center; margin-bottom: 45px; }
 	h3 {}
 	h4 {}
 	h5 {}
+	p.Destaque { text-align: center; font-size: 1.5625rem; font-weight: bold; font-family: 'Montserrat' , sans-serif; }
 	article { max-width: 1264px; margin: 0 auto;}
-/* :Elementos Desktop */
+	article.nivel2 { max-width: 1115px; margin: 0 auto;}
+	article.nivel3 { max-width: 718px; margin: 0 auto;}
+	select { display: block; border: 0; height: 42px; border-radius: var(--radius); color: var(--secundaria); }
+	/* :Elementos Desktop */
 
 /* Banners Desktop: */
 	.Banner { padding: 0 88px }
@@ -167,6 +185,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 
 /* Página Home Desktop: */
 	.Home .Banner h1 { max-width: 500px; }
+	.Home h2 { margin-bottom: initial; }
 	.Home article { padding: 0 }
 	.Home .Sessao1 { text-align: center; }
 	.Home .Sessao1 article { max-width: 665px; padding: 90px 0; }
@@ -174,6 +193,39 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Home .Sessao1 .Boxes { display: grid; grid-template-columns: auto auto auto; grid-gap: 51px }
 	.Home .Sessao1 .Box { width: 187px; height: 187px; }
 /* :Página Home Desktop */
+
+/* Pagina Equipamentos Desktop: */
+	.Equipamentos .Sessao1 { padding: 95px 0; text-align: center; }
+	
+	.Equipamentos .Sessao2 { padding-top: 65px; padding-bottom: 80px; color: #fff; }
+	.Equipamentos .Sessao2 .Boxes { display: grid; grid-template-columns: 25% 35% 40%; margin: 55px 0 75px 0  }
+	.Equipamentos .Sessao2 .Box { display: grid; grid-template-columns: auto auto; margin-right: 94px; }
+	.Equipamentos .Sessao2 .Box:last-child { margin-right: 0; }
+	.Equipamentos .Sessao2 .Box p { display: block; }
+	.Equipamentos .Sessao2 .Box p:first-of-type { line-height: initial; font-size: 3.8rem; font-weight: bold; font-family: 'Montserrat' , sans-serif; }
+	.Equipamentos .Sessao2 .Box p:last-of-type { line-height: 1.56rem; font-size: initial; padding-top: 15px; padding-left: 10px; }
+	.Equipamentos .Sessao2 form div { display: grid; grid-template-columns: auto auto; column-gap: 35px; justify-content: center; margin-top: 30px; }
+	
+	.Equipamentos .Sessao3 { padding: 95px 0 105px 0 }
+	.Equipamentos .Sessao3 .Boxes { display: grid; grid-template-columns: 50% 50%; }
+	.Equipamentos .Sessao3 .esq, .Equipamentos .Sessao3 .dir { padding: 0 25px; position: relative; }
+	.Equipamentos .Sessao3 .dir { margin-left: 90px; }
+	.Equipamentos .Sessao3 .dir img { margin-top: 25px; max-width: 320px; }
+
+	.Equipamentos .Sessao3 .Boxes p.Destaque { font-size: 1.25rem; line-height: 1.5rem; margin-bottom: 15px; text-align: left; }
+
+	.Equipamentos .Sessao3 .Internas { display: grid; grid-template-columns: 33.33% 33.33% 33.33%; padding: 40px 0 50px 0 }
+	.Equipamentos .Sessao3 .Internas div { margin-right: 40px; }
+	.Equipamentos .Sessao3 .Internas div:last-child { margin-right: 0; }
+	.Equipamentos .Sessao3 .Internas p { font-size: 0.875rem; line-height: 1.125rem; }
+	.Equipamentos .Sessao3 .Internas img { margin-bottom: 25px; }
+
+	.Equipamentos .Sessao3 .DicasBotoes { max-width: 950px; margin: auto; margin-top: 45px }
+	.Equipamentos .Sessao3 .DicasBotoes a { width: 460px; }
+	.Equipamentos .Sessao3 .DicasBotoes a:first-child { float: right }
+	.Equipamentos .Sessao3 .DicasBotoes a:last-child { float: left }
+
+/* :Pagina Equipamentos Desktop */
 
 /* Footer Desktop: */
 	footer { padding: 0 88px; }
@@ -194,13 +246,26 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 @media screen and (max-width: 1030px) { 
 		
 /* Elementos Mobile: */
-	h1 { font-size: 1.562rem; line-height: 1.875rem; }
+	h1 { font-size: 1.562rem; line-height: 1.875rem; margin-top: 40px; }
 	h2 { font-size: 1.25rem; line-height: 1.562rem; margin: 25px 0 }
 	h3 {}
 	h4 {}
 	h5 {}
+	p { color: var(--secundariamobile) }
+	p.Destaque { font-weight: bold; font-family: 'Montserrat' , sans-serif; }
 	article {padding: 0 23px;}
+	select { width: 100%; }
 /* :Elementos Mobile */
+
+/* Botões Mobile: */
+	.Btn-Small { width: 100%; }
+	.Btn-Default { width: 100%; }
+	.Btn-Big { width: 100%; }
+/* :Botões Mobile */
+
+/* Banners Mobile: */
+	.Banner img { position: absolute; left: 23px; top: 23px; }
+/* :Banners Mobile */
 
 /* Header Mobile: */
 	header { width: 65%; height: auto; min-height: 95%; position: absolute; right: 0; z-index: 5; }
@@ -224,6 +289,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 
 	.RodapeMenu { position: absolute; bottom:0; background-color: #295881; height: 80px; left: 0; right: 0; }
 	.RodapeMenu img { padding-top: 28px; padding-left: 35px; }
+	.RodapeMenu a { display: block; width: 100%; height: 100%; }
 
 	.LinkSubMenu {  color: var(--secundaria); margin-bottom: 30px; }
 	.LinkSubMenu a { display: block; width: 100%; color: var(--secundaria); font-size: 0.875rem; line-height: 1.5rem; margin: 0;}
@@ -231,21 +297,55 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 
 
 /* Página Home Mobile: */
-	.Home .Banner { max-height: 290px; background-position-x: 30%; }
-	.Home .Banner img { position: absolute; left: 23px; top: 23px; }
-	.Home h1 { max-width: 175px; margin-top: 40px; }
+	.Home .Banner { max-height: 290px; background-position-x: 30%; }	
+	.Home h1 { max-width: 175px; }
 	.Home .Sessao1 p:first-of-type { margin-bottom: 25px; }
-	.Home .Sessao1 .Box { height: 72px; display: grid; align-items: center; grid-template-columns: 30% 70%;  }
+	.Home .Sessao1 .Box { height: 72px; display: grid; align-items: center; grid-template-columns: 25% 75%; padding: 0 20px }
 	.Home .Sessao1 .Box img { margin: auto }
 	.Home .Sessao1 .Box p { margin: 0 }
 	.Home .Sessao1 .Boxes { margin-bottom: 35px; display: grid; grid-template-columns: initial; grid-template-rows: auto auto auto; grid-gap: 20px }
 /* :Página Home Mobile */
+
+
+/* Pagina Equipamentos Mobile: */
+	.Equipamentos .Banner { background-image: url('../images/eqp-banner-mobile.png'); max-height: 256px; }
+	.Equipamentos h1 { max-width: 202px; }
+	.Equipamentos .Sessao1 { padding-top: 15px; padding-bottom: 60px; }
+	.Equipamentos .Sessao1 h2 { margin-top: 35px; }
+
+	.Equipamentos .Sessao2 { padding-bottom: 40px; }
+	.Equipamentos .Sessao2 p.Destaque { padding: 30px 0; }
+	.Equipamentos .Sessao2 form article { padding: 0 }
+	.Equipamentos .Sessao2 .Box { display: block; width: 100%; }
+	.Equipamentos .Sessao2 .Box p { float: left; }
+	.Equipamentos .Sessao2 .Box p:first-of-type { font-size: 1.25rem; margin-right: 7px; }
+	.Equipamentos .Sessao2 .Box p:last-of-type { float: none; margin-bottom: 25px; padding-top: 1px; }
+	.Equipamentos .Sessao2 .Box:last-of-type p { margin-bottom: 0; }
+	.Equipamentos .Sessao2 select { margin-bottom: 14px }
+	
+	.Equipamentos .Sessao3 { margin-bottom: 55px }
+	.Equipamentos .Sessao3 h2 { margin-top: 45px; margin-right: 60px; }
+	.Equipamentos .Sessao3 img { max-width: 100%; margin: auto; }
+	.Equipamentos .Sessao3 .DicasBotoes { margin-top: 50px }
+	.Equipamentos .Sessao3 .Btn { width: 100%; height: 76px; line-height: initial; display: flex; align-items: center; justify-content: center; border-radius: var(--radius10); margin-bottom: 20px; text-transform: initial; padding: 0 40px; box-sizing: border-box; }
+	.Equipamentos .Sessao3 .Btn:last-child { margin-bottom: 0; }
+
+	.Equipamentos .Sessao3 .dir img { max-width: 245px; }
+	.Equipamentos .Sessao3 .Boxes p.Destaque { margin-bottom: 25px; }
+	.Equipamentos .Sessao3 .Boxes .Internas { margin-top: 23px; margin-bottom: 42px; text-align: center; }
+	.Equipamentos .Sessao3 .Boxes .Internas img { margin-top: 30px; }
+	.Equipamentos .Sessao3 .Boxes .Internas p { font-size: 0.75rem; line-height: 1.125rem; margin: auto; margin-top: 10px; max-width: 210px; }
+	.Equipamentos .Sessao3 .Boxes .dir { margin-top: 65px; }
+	.Equipamentos .Sessao3 .Boxes .dir img { margin-top: 40px; }
+/* :Pagina Equipamentos Mobile */
+
 
 /* Box Inscrever Mobile: */
 	.Inscrever { padding-bottom: 50px; text-align: center; }
 	.Inscrever .Box { display: block; }
 	.Inscrever .Esq p { line-height: 1.5rem; padding: 40px 0; text-align: center; max-width: 235px; display: block; margin: auto }
 	.Inscrever a { width: 100%; margin: 25px auto; color: #fff; text-decoration: underline; }
+	.Inscrever p { color: #fff; }
 	.Inscrever .LinksExtras { line-height: 1.5rem; clear: both; }
 	.Inscrever input { width: 100%; box-sizing: border-box; }
 /* :Box Inscrever Mobile */

@@ -45,7 +45,9 @@
 			</article>
 	
 			<div class="MobileItem RodapeMenu">
-				<? echo '<img src="' .$images. 'logobranco.svg" title=" '. $empresa .'" alt=" '.$empresa.'" />' ?>
+				<a href="<? echo $url ?>">
+					<? echo '<img src="' .$images. 'logobranco.svg" title=" '. $empresa .'" alt=" '.$empresa.'" />' ?>
+				</a>
 			</div>
 
 		</div>
