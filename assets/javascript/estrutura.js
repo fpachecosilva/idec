@@ -76,10 +76,7 @@ jQuery(document).ready(function() {
 	
 	// Funções executadas apenas na versão Desktop:
 		function DesktopVersion() {			
-			$('#Menu a').on('click', function(){
-				$(this).addClass('active')
-				$(this).siblings().removeClass('active');
-			})
+			
 		}
 	// :Funções executadas apenas na versão Desktop
 
@@ -89,6 +86,17 @@ jQuery(document).ready(function() {
 			$('.BackTop').on('click', function(){
 				$("html, body").animate({ scrollTop: 0 }, "slow");
 			})
+
+			$('.SaibaMais .Wrapper').slick({
+				infinite: true,
+				slidesToShow: 1,
+				fade: false,
+				arrows: false,
+				cssEase: 'linear',
+				centerMode: false,
+				adaptiveHeight: false
+			});
+
 		}
 	// :Funções executadas apenas na versão Mobile
 
@@ -116,7 +124,17 @@ jQuery(document).ready(function() {
 			FecharMenu();
 		});		
 	// :Menu
-	
+
+
+	// Accordeon
+		$(document).ready(function(){
+			$('.Accordeon-mini-box-info a').on( 'click', function() {
+				$(this).parent().next().slideToggle( 'fast' );
+				$(this).next().toggleClass( 'setacima','setabaixo' );					
+			})
+		});
+	// :Accordeon
+
 	
 	// FadeIn da página após o carregamento.
 		$('body').fadeIn('slow');

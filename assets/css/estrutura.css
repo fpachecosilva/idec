@@ -32,7 +32,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 		--radius10: 10px;
 		--radius15: 15px;
 
-		--shadow: 2px 2px 3px 0px rgba(0,0,0,0.16);
+		--shadow: 1px 1px 3px 1px rgba(0,0,0,0.16);
 		--shadowbottom: 0 4px 3px 0px rgba(0,0,0,0.16);
 		--shadowcenter: 0 0 3px 0px rgba(0,0,0,0.16);
 
@@ -41,7 +41,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 /* Variaveis: */
 
 /* Efeitos de transição: */
-	a, header, nav, form a, .MenuWrapper {-webkit-transition: all var(--tempo); -moz-transition: all var(--tempo); -ms-transition: all var(--tempo); -o-transition: all var(--tempo); transition: all var(--tempo);}
+	a, header, nav, form a, .MenuWrapper, .seta {-webkit-transition: all var(--tempo); -moz-transition: all var(--tempo); -ms-transition: all var(--tempo); -o-transition: all var(--tempo); transition: all var(--tempo);}
 /* :Efeitos de transição */
 
 /* Cores: */
@@ -57,7 +57,8 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	h3 {}
 	h4 {}
 	i {display: inline-block;}
-	p {font-size: 1rem; line-height: 1.3rem;}	
+	p {font-size: 1rem; line-height: 1.3rem;}
+	p.DestaqueInterno { line-height: 1.5rem; margin: 15px 0; text-align: center; font-weight: bold; font-family: 'Montserrat' , sans-serif; }
 	strong {font-weight: 700;}
 	br {clear: both; display: block;}
 	a {color: var(--principal); text-decoration: none;}
@@ -66,14 +67,17 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	form { clear: both; }
 	section {position: relative;}
 	article {position: relative; width: 100%; box-sizing: border-box; z-index: 2;}
-	article:after {content: ''; display: block; clear: both;}
-	select { border: 0; height: 42px; border-radius: var(--radius); padding-left: 25px; }
+	article:after {content: ''; display: block; clear: both;}	
+	select { border: 0; height: 42px; border-radius: var(--radius); color: var(--secundaria); padding-left: 25px; }
+	input::placeholder { color: var(--secundaria); }
+	label.Inline { display: inline-block!important; }	
 /* :Elementos */
 	
 /* Botões: */
 	.Btn { display: block; height: 42px; border-radius: var(--radius); font-size: 14px; font-weight: bold; font-family: 'Montserrat', sans-serif; text-transform: uppercase; text-align: center; line-height: 3; text-decoration: none!important; }
-	.Btn-Small { width: 133px; }
 	.Btn-Default { width: 285px; }
+	.Btn-Small { width: 133px; }
+	.Btn-Medium { width: 416px; }
 	.Btn-Big { width: 568px; }
 
 	.Btn-Destaque1 { background-color: var(--destaque1)!important; color: #fff!important; }
@@ -100,11 +104,11 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 /* :Box Inscrever */
 
 /* Header: */
+	.SessaoAtual { font-weight: bold; }
 	header { height: 90px; }	
 	header article { display: flex; align-items: center; }
 	header nav { display: flex; position: absolute; right: 0; }
-	header nav a { text-transform: uppercase; margin-right: 54px; font-weight: 400; }
-	header nav a.active { font-weight: 700; }
+	header nav a { text-transform: uppercase; margin-right: 54px; font-weight: 400; }	
 	header nav a:last-child { margin-right: 0; }
 	.MenuWrapper { }
 /* :Header */
@@ -143,7 +147,93 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Equipamentos .Sessao2 p { color: #fff; }
 
 	.Equipamentos .Sessao3 .Boxes .Internas p { font-family: 'Montserrat' , sans-serif; }
+
+	/* Calculadora */
+	.Calculadora .Sessao2 { background-color: #fff; }
+	.Calculadora .Sessao2 h2 { text-align: left; max-width: 630px; }
+	.Calculadora .Sessao2 p { color: var(--secundaria); }
+	.Calculadora .Sessao2 p.Destaque { font-size: 1.25rem; text-align: left; }
+	.Calculadora .Sessao2 form { float: left; }
+	.Calculadora .Sessao2 select { box-shadow: var(--shadow); }
+	.Calculadora .Boxes * { color: var(--secundaria); }
+
+	.Calculadora2 .Sessao1 select, .Calculadora2 .Sessao1 input { box-shadow: var(--shadow); border: 0; margin: auto; }
+	.Calculadora2 .Sessao1 input[type="checkbox"] { margin-right: 10px; }
+	.Calculadora2 .Sessao1 form { max-width: 310px; margin: auto; }
+	.Calculadora2 .Sessao1 form label { display: block; margin: 20px 0 }
+	.Calculadora2 .Sessao1 form label:last-child { margin-bottom: 0 }
+	.Calculadora2 .Sessao1 form label:first-child { margin-top: 0 }
+	.Calculadora2 .Sessao1 form .Grupo { margin: 40px 0 }
+	.Calculadora2 .Sessao1 form .GrupoInline > * { display: inline-block; }	
+	.Calculadora2 .Sessao1 .Btn-Destaque1 { margin: auto; }
+	.Calculadora2 .Sessao1 #uf { max-width: 85px; padding-right: 20px; }
+
+	.Calculadora3 h2 { margin-top: 50px; margin-bottom: 0; text-align: left; }
+	.Calculadora3 .Filtros select, .Calculadora3 .Filtros input { box-shadow: var(--shadow); border: 0; margin: auto; height: 42px; border-radius: var(--radius); color: var(--secundaria); box-sizing: border-box; width: 274px; }
+	.Calculadora3 .Filtros { width: 570px; float: right; }
+	.Calculadora3 .Filtros form { width: 570px; float: right; }
+	.Calculadora3 .Filtros input { padding-left: 25px; box-sizing: border-box; }
+	.Calculadora3 form { display: grid; grid-template-columns: 50% 50%; }
+
+	.Calculadora3 .PainelTopo { margin-bottom: 45px; }
+	.Calculadora3 .PainelTopo .Alterar { margin: 25px 0 45px 0; }
+	.Calculadora3 .PainelTopo .Alterar div { display: inline-block; color: var(--secundaria) }
+	.Calculadora3 .PainelTopo .Alterar a { text-decoration: underline; color: var(--secundaria); }
+	.Calculadora3 .PainelTopo .Alterar div:first-of-type { margin-right: 70px; }
+
+	.Calculadora3 .Cards { margin-bottom: 60px }
+	.Calculadora3 .WrapperCards { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr 1fr 1fr; row-gap: 29px; column-gap: 69px; }
+	.Calculadora3 .WrapperCards .Card { width: 100%; height: 270px; border-radius: var(--radius10); box-shadow: var(--shadow); margin: auto; }
+
+
 /* :Pagina Equipamentos */
+
+
+/* Componentes reutilizáveis: */
+
+	/* Breadcrumb: */
+		.Breadcrumb * { color: var(--secundaria);  }
+		.Breadcrumb a { display: block; margin-top: 40px; text-decoration: underline; }
+		.Breadcrumb a:before { display: inline-block; width: 15px; height: 15px; margin-right: 15px; margin-bottom: -2px; content: ""; background-image: url(../images/setamenu.svg); background-repeat: no-repeat; -ms-transform: rotate(180deg); /* IE 9 */ -webkit-transform: rotate(180deg); /* Safari 3-8 */ transform: rotate(180deg); }
+	/* :Breadcrumb */
+
+	/* Accordeon: */
+		.Accordeon { margin: auto; border-bottom: 1px solid #ADADAD; margin-bottom: 63px; }	
+		.Accordeon .WrapperAcc { margin: auto; }		
+
+		.Accordeon .Accordeon-mini-box { display: none; margin: auto; background-color: var(--secundariamobile); color: var(--principal); padding: 25px 0; box-sizing: border-box; background-color: #fff }	
+		.Accordeon .Accordeon-mini-box-info { display: flex; align-items: center; position: relative; height: 50px; border-bottom: 1px solid #ADADAD; color: var(--secundaria); box-sizing: border-box; margin: auto; }
+		.Accordeon .Accordeon-mini-box-info:last-of-type() { border-bottom: 0; }
+
+		.Accordeon .Accordeon-mini-box-info a { display: flex; align-items: center; height: 100%; color: var(--secundaria); font-weight: bold; width: 100%; box-sizing: border-box; position: absolute; z-index: 1; }	
+		.Accordeon .Accordeon-mini-box-info img { position: absolute; right: 0; z-index: 0; }
+
+		.Accordeon .seta { -ms-transform: rotate(90deg); /* IE 9 */ -webkit-transform: rotate(90deg); /* Safari 3-8 */ transform: rotate(90deg); }
+		.Accordeon .setacima { -ms-transform: rotate(-90deg); /* IE 9 */ -webkit-transform: rotate(-90deg); /* Safari 3-8 */ transform: rotate(-90deg); }
+		.Accordeon .setabaixo { -ms-transform: rotate(0deg); /* IE 9 */ -webkit-transform: rotate(0deg); /* Safari 3-8 */ transform: rotate(0deg); }
+
+		.Accordeon ul { list-style-type: none; }
+		.Accordeon li { width: 100%; padding-bottom: 30px; text-align: left; }
+		.Accordeon .WrapperLi { display: grid; grid-template-columns: 40px auto; }
+		.Accordeon .WrapperLi:last-child li { padding-bottom: 0; }
+		.Accordeon .Dot { background-color: var(--secundaria); display: block; width: 8px; height: 8px; border-radius: 50%; margin: 4px; margin-right: 30px; }
+	/* :Accordeon */
+
+	/* Saiba Mais: */
+		.SaibaMais .Box { max-width: 100%; }
+		.SaibaMais .Box img { max-width: 100%; }
+		.SaibaMais .Textos { line-height: 1.5rem; color: var(--secundaria); }
+	/* :Saiba Mais */
+
+	/* Info: */
+		.BtnInfo { display: inline-block; width: 20px; height: 23px; background-image: url('../images/info.svg'); background-repeat: no-repeat; margin-bottom: -4px; margin-left: 10px; }
+	/* :Info */
+
+
+/* :Componentes reutilizáveis */
+ 
+
+
 
 
 
@@ -163,7 +253,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	article { max-width: 1264px; margin: 0 auto;}
 	article.nivel2 { max-width: 1115px; margin: 0 auto;}
 	article.nivel3 { max-width: 718px; margin: 0 auto;}
-	select { display: block; border: 0; height: 42px; border-radius: var(--radius); color: var(--secundaria); }
+	/* select { display: block; border: 0; height: 42px; border-radius: var(--radius); color: var(--secundaria); }	 */
 	/* :Elementos Desktop */
 
 /* Banners Desktop: */
@@ -224,8 +314,35 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Equipamentos .Sessao3 .DicasBotoes a { width: 460px; }
 	.Equipamentos .Sessao3 .DicasBotoes a:first-child { float: right }
 	.Equipamentos .Sessao3 .DicasBotoes a:last-child { float: left }
+	
+	/* Dicas */
+	.Dicas .Banner { background-image: url(../images/eqp-banner.png); }
+	.Dicas .Banner h1 { max-width: 190px; }
+	.Dicas .Sessao1 { padding: 65px 0; text-align: center; }
+	.Dicas .Sessao1 p { line-height: 1.625rem; text-align: center; }
+	.Dicas .LinksDicas article { display: flex; align-items: center; justify-content: center; }
+	.Dicas .LinksDicas a { max-width: 488px; margin: 0 17.5px }
+
+	/* Nota Metodologica */
+	.NotaMetodologica .Banner {	background-image: url(../images/eqp-banner.png); }
+	.NotaMetodologica .Banner h1 { max-width: 190px; }
+	.NotaMetodologica .Sessao1 { padding-top: 65px; text-align: center; }
+	.NotaMetodologica .Sessao1 p { text-align: center; }
+	.NotaMetodologica .Accordeon { padding: 100px 0; margin-bottom: 0; border: 0; width: initial; }
+	.NotaMetodologica .Accordeon article { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+	
+	.NotaMetodologica .Accordeon .WrapperAcc { width: 100%; height: 140px; }
+	.NotaMetodologica .Accordeon .Accordeon-mini-box-info { display: grid; border: initial; justify-items: center; }
+	.NotaMetodologica .Accordeon .Accordeon-mini-box-info img { position: initial; }
+	.NotaMetodologica .Accordeon .Accordeon-mini-box-info a { position: initial; text-align: center; display: block; padding: 20px 0 }
+	.NotaMetodologica .Accordeon .Accordeon-mini-box-info a:last-of-type { padding: 0 }
+
+	.Calculadora2 .Sessao1 h2 { max-width: 620px; margin: auto; }
+	
+	
 
 /* :Pagina Equipamentos Desktop */
+
 
 /* Footer Desktop: */
 	footer { padding: 0 88px; }
@@ -233,6 +350,36 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	footer .Baixo { height: 72px; display: grid; grid-template-columns: 50% 50%; align-items: center; }
 	footer .Baixo div:last-child img { float: right; }
 /* :Footer Desktop */
+
+
+
+/* Componentes reutilizaveis Desktop: */
+
+	/* Breadcrumb Desktop: */
+		.Breadcrumb * { color: var(--secundaria);  }
+		.Breadcrumb a { display: block; margin-top: 40px; text-decoration: underline; }
+		.Breadcrumb a:before { display: inline-block; width: 15px; height: 15px; margin-right: 15px; margin-bottom: -2px; content: ""; background-image: url(../images/setamenu.svg); background-repeat: no-repeat; -ms-transform: rotate(180deg); /* IE 9 */ -webkit-transform: rotate(180deg); /* Safari 3-8 */ transform: rotate(180deg); }
+	/* :Breadcrumb Desktop */
+
+	/* Accordeon Desktop: */
+		.Accordeon { width: 1180px; margin: auto; border-bottom: 1px solid #ADADAD; margin-bottom: 65px; }	
+		.Accordeon .WrapperAcc { max-width: 716px; margin: auto; }
+		.Accordeon .WrapperAcc:last-of-type .Accordeon-mini-box-info { border-bottom: 0; }
+	/* :Accordeon Desktop */
+
+	/* Saiba Mais Desktop: */
+		.SaibaMais { padding: 85px 0 140px 0 }
+		.SaibaMais h2 { font-size: 1.5625rem }
+		.SaibaMais .Wrapper { display: grid; grid-template-columns: auto auto auto; align-items: center; column-gap: 38px; }
+				
+		.SaibaMais .Textos { margin-top: 20px; }
+		.SaibaMais .Textos p.Data { margin-bottom: 10px;}
+		.SaibaMais .Textos p.Titulo { font-weight: bold; font-size: 1.25rem; margin-bottom: 20px;}
+	/* :Saiba Mais Desktop */
+
+/* :Componentes reutilizaveis Desktop */
+
+
 }
 
 /* -------------------------------- Versionamento Desktop: -------------------------------- */
@@ -252,6 +399,8 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	h4 {}
 	h5 {}
 	p { color: var(--secundariamobile) }
+	p.DestaqueInterno { text-align: left; max-width: 80%; }
+	li { color: var(--secundariamobile) }
 	p.Destaque { font-weight: bold; font-family: 'Montserrat' , sans-serif; }
 	article {padding: 0 23px;}
 	select { width: 100%; }
@@ -312,6 +461,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Equipamentos h1 { max-width: 202px; }
 	.Equipamentos .Sessao1 { padding-top: 15px; padding-bottom: 60px; }
 	.Equipamentos .Sessao1 h2 { margin-top: 35px; }
+	.Equipamentos form { color: var(--secundariamobile); }
 
 	.Equipamentos .Sessao2 { padding-bottom: 40px; }
 	.Equipamentos .Sessao2 p.Destaque { padding: 30px 0; }
@@ -337,6 +487,35 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Equipamentos .Sessao3 .Boxes .Internas p { font-size: 0.75rem; line-height: 1.125rem; margin: auto; margin-top: 10px; max-width: 210px; }
 	.Equipamentos .Sessao3 .Boxes .dir { margin-top: 65px; }
 	.Equipamentos .Sessao3 .Boxes .dir img { margin-top: 40px; }
+
+	/* Dicas */
+	.Dicas .Sessao1 { padding-top: 30px; padding-bottom: 30px }
+	.Dicas .Sessao1 h2 { margin-top: initial }
+	.LinksDicas { margin-bottom: 5px; }
+	.Dicas .LinksDicas a { height: 76px; line-height: 1.125rem; border-radius: var(--radius10); text-transform: initial; display: flex; align-items: center; padding: 0 30px; box-sizing: border-box; }
+	.Dicas .LinksDicas a:first-of-type { margin-bottom: 20px; }
+
+	/* Nota Metodológica */
+	.NotaMetodologica .Breadcrumb { display: none; }
+	.NotaMetodologica .Banner { background: initial; background-color: var(--secundaria); height: 68px; }
+	.NotaMetodologica .Banner img { top: 20px }
+	.NotaMetodologica .Banner h1 { display: none; }
+	.NotaMetodologica #AbrirMenu { top: 26px }
+	.NotaMetodologica .Sessao1 p.DestaqueInterno { margin: 35px 0; } 
+	.NotaMetodologica .Sessao1 h2 { margin-top: 30px; }
+
+	.NotaMetodologica .NotaIcone { max-height: 30px; position: absolute; left: 0; }
+	.NotaMetodologica .Accordeon .WrapperAcc:last-child .Accordeon-mini-box-info { border: 0 }
+	.NotaMetodologica .Accordeon .Accordeon-mini-box-info a { padding-left: 70px; }
+
+	/* Calculadora */	
+	.Calculadora .Sessao2 h2 { max-width: 240px; margin: 30px 0; }
+	.Calculadora .Sessao2 .Box p:last-of-type, .Calculadora .Sessao2 .Box strong { color: var(--secundariamobile); }
+	.Calculadora .Sessao2 form { float: initial; }
+	.Calculadora .Sessao2 p.Destaque { font-size: initial; }
+
+	.Calculadora2 .Sessao1 { padding: 10px 0 35px 0; }
+
 /* :Pagina Equipamentos Mobile */
 
 
@@ -370,6 +549,41 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	footer .Baixo img { margin: auto; }
 /* :Footer Mobile */
 
+/* Componentes reutilizaveis: */
+
+	/* Accordeon Mobile: */
+		.Accordeon { width: initial; border-bottom: initial; margin-bottom: 40px; }
+		.Accordeon .WrapperLi { display: grid; grid-template-columns: 25px auto; }		
+	/* :Accordeon Mobile */
+
+	/* Saiba mais Mobile: */
+		.SaibaMais { margin: 35px 0 }
+	
+		.SaibaMais h2 { text-transform: initial; font-size: initial; margin: 20px 0; }
+
+		.Equipamentos .SaibaMais h2 { color: var(--destaque1); }
+		.Efeitos .SaibaMais h2 { color: var(--destaque2); }
+		.Tarifas .SaibaMais h2 { color: var(--destaque3); }
+
+		.SaibaMais .Wrapper { margin-bottom: 30px; }
+		.SaibaMais .Box { max-width: 200px; margin-right: 23px; box-sizing: border-box; }
+		.SaibaMais .Box img { margin-bottom: 25px; }
+		.SaibaMais .Textos p.Titulo { font-size: initial; text-decoration: underline; color: var(--secundaria); }
+
+		.BtnSaibaMais { background-color: #1D84D4; color: #FFF; margin: 0 23px }
+
+	/* :Saiba mais Mobile */
+
+	/* Slick: */
+		.slick-list { max-width: 200px!important; overflow: initial; }
+	/* :Slick */
+
+/* :Componentes reutilizaveis */
+
 }
 
 /* -------------------------------- :Versionamento Mobile --------------------------------- */	
+
+
+
+

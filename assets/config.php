@@ -18,9 +18,19 @@
 		
 	// Páginas
 		$Equipamentos = "equipamentos.php";
+			
 			$Eqp_NotaMetodologica = "notametodologica.php";
+				$Eqp_NotaMetodologicaLink1 = "1";
+				$Eqp_NotaMetodologicaLink2 = "2";
+				$Eqp_NotaMetodologicaLink3 = "3";
+				$Eqp_NotaMetodologicaLink4 = "4";
+				$Eqp_NotaMetodologicaLink5 = "5";
+
 			$Eqp_Dicas = "dicas.php";
-			$Eqp_Customizar = "customizar.php";
+			
+			$Eqp_Calculadora1 = "calculadora-01.php";
+			$Eqp_Calculadora2 = "calculadora-02.php";
+			$Eqp_Calculadora3 = "calculadora-03.php";
 
 		$Efeitos = "efeitos.php";
 		$Tarifa = "tarifa.php";
