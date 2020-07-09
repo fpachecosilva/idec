@@ -41,7 +41,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 /* Variaveis: */
 
 /* Efeitos de transição: */
-	a, header, nav, form a, .MenuWrapper, .seta {-webkit-transition: all var(--tempo); -moz-transition: all var(--tempo); -ms-transition: all var(--tempo); -o-transition: all var(--tempo); transition: all var(--tempo);}
+	a, header, nav, form a, .MenuWrapper, .seta, .Card {-webkit-transition: all var(--tempo); -moz-transition: all var(--tempo); -ms-transition: all var(--tempo); -o-transition: all var(--tempo); transition: all var(--tempo);}
 /* :Efeitos de transição */
 
 /* Cores: */
@@ -69,6 +69,9 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	article {position: relative; width: 100%; box-sizing: border-box; z-index: 2;}
 	article:after {content: ''; display: block; clear: both;}	
 	select { border: 0; height: 42px; border-radius: var(--radius); color: var(--secundaria); padding-left: 25px; }
+	input, select{ background-color: #fff; border: 0; outline-color: #e6e6e6; }	
+	input[type=checkbox] { -webkit-appearance: initial; border-radius: var(--radius); }
+	input[type=checkbox]:checked { -webkit-appearance: checkbox; }
 	input::placeholder { color: var(--secundaria); }
 	label.Inline { display: inline-block!important; }	
 /* :Elementos */
@@ -158,6 +161,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Calculadora .Boxes * { color: var(--secundaria); }
 
 	.Calculadora2 .Sessao1 select, .Calculadora2 .Sessao1 input { box-shadow: var(--shadow); border: 0; margin: auto; }
+	.Calculadora2 .Sessao1 select { width: 274px; }
 	.Calculadora2 .Sessao1 input[type="checkbox"] { margin-right: 10px; }
 	.Calculadora2 .Sessao1 form { max-width: 310px; margin: auto; }
 	.Calculadora2 .Sessao1 form label { display: block; margin: 20px 0 }
@@ -173,19 +177,43 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Calculadora3 .Filtros { width: 570px; float: right; }
 	.Calculadora3 .Filtros form { width: 570px; float: right; }
 	.Calculadora3 .Filtros input { padding-left: 25px; box-sizing: border-box; }
-	.Calculadora3 form { display: grid; grid-template-columns: 50% 50%; }
+
+	.Calculadora3 .Filtros form { display: grid; grid-template-columns: 50% 50%; }
+
+	.Calculadora3 .Filtros div { position: relative; }
+	.Calculadora3 #Pesquisar { font-style: italic; padding-right: 40px; }
+	.Calculadora3 .PesquisarIcon { position: absolute; right: 20px; top: 15px; }
 
 	.Calculadora3 .PainelTopo { margin-bottom: 45px; }
 	.Calculadora3 .PainelTopo .Alterar { margin: 25px 0 45px 0; }
 	.Calculadora3 .PainelTopo .Alterar div { display: inline-block; color: var(--secundaria) }
-	.Calculadora3 .PainelTopo .Alterar a { text-decoration: underline; color: var(--secundaria); }
+	.Calculadora3 .PainelTopo .Alterar a { text-decoration: underline; color: var(--secundaria); margin-left: 10px; }
 	.Calculadora3 .PainelTopo .Alterar div:first-of-type { margin-right: 70px; }
 
 	.Calculadora3 .Cards { margin-bottom: 60px }
 	.Calculadora3 .WrapperCards { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr 1fr 1fr; row-gap: 29px; column-gap: 69px; }
-	.Calculadora3 .WrapperCards .Card { width: 100%; height: 270px; border-radius: var(--radius10); box-shadow: var(--shadow); margin: auto; }
+	.Calculadora3 .WrapperCards .Card { width: 100%; height: 270px; border-radius: var(--radius10); box-shadow: var(--shadow); margin: auto; padding: 25px 35px; box-sizing: border-box; text-align: left; }
+	
+	.Calculadora3 .Card p.Destaque { color: var(--secundaria); text-align: left; font-size: 1.25rem; float: left; font-family: inherit; }
+	.Calculadora3 .Card p.Sub { font-size: 0.75rem;	padding-top: 3px; padding-left: 14px; display: inline-block; }
+	.Calculadora3 .Card p.Sub:last-of-type { padding-left: 0; }
+	.Calculadora3 .Card .Classificacao { margin: 20px 0; }
+	.Calculadora3 .Card .Classificacao p { line-height: 1.5rem; }
+	.Calculadora3 .Card .Classificacao a { font-size: 0.75rem; text-decoration: underline; color: var(--secundaria); display: inline-block; padding-left: 17px; }
 
+	.Calculadora3 .Card .Custo { margin-bottom: 15px; }
+	.Calculadora3 .Card .Custo * { display: inline-block; }
+	.Calculadora3 .Card .Custo span { color: var(--secundaria); margin-left: 10px; margin-right: 5px; }
 
+	.Calculadora3 .Comparar { color: var(--secundaria); font-weight: bold; }
+	.Calculadora3 .Comparar input { margin: 0; box-shadow: var(--shadow); margin-right: 10px; }
+
+	.Calculadora3 .Index { display: block; margin: auto; width: 100%; text-align: center; margin-bottom: 35px; }
+	.Calculadora3 .Index a { font-size: 0.875rem; font-weight: bold; color: #7FA2B3; }
+	.Calculadora3 .Index a.active { color: var(--secundaria) }
+	.Calculadora3 .Index .Item { margin-right: 25px }
+	.Calculadora3 .Prev { display: inline-block; width: 15px; height: 15px; margin-right: 25px; margin-bottom: -2px; content: ""; background-image: url(../images/setamenu.svg); background-repeat: no-repeat; -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+	.Calculadora3 .Next { display: inline-block; width: 15px; height: 15px; margin-bottom: -2px; content: ""; background-image: url(../images/setamenu.svg); background-repeat: no-repeat; -ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg); }
 /* :Pagina Equipamentos */
 
 
@@ -226,7 +254,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	/* :Saiba Mais */
 
 	/* Info: */
-		.BtnInfo { display: inline-block; width: 20px; height: 23px; background-image: url('../images/info.svg'); background-repeat: no-repeat; margin-bottom: -4px; margin-left: 10px; }
+		.BtnInfo { display: inline-block; width: 20px; height: 23px; background-image: url('../images/info.svg'); background-repeat: no-repeat; margin-bottom: -8px; margin-left: 10px; }
 	/* :Info */
 
 
@@ -338,8 +366,10 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.NotaMetodologica .Accordeon .Accordeon-mini-box-info a:last-of-type { padding: 0 }
 
 	.Calculadora2 .Sessao1 h2 { max-width: 620px; margin: auto; }
-	
-	
+
+	.Calculadora3 .WrapperCards .Card:hover { background-color: var(--secundaria); color: #fff; }
+	.Calculadora3 .WrapperCards .Card:hover * { color: #fff; }
+	.Calculadora3 .WrapperCards .Card:hover .BtnInfo { background-image: url(../images/info-invertido.svg); }	
 
 /* :Pagina Equipamentos Desktop */
 
@@ -417,14 +447,14 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 /* :Banners Mobile */
 
 /* Header Mobile: */
-	header { width: 65%; height: auto; min-height: 95%; position: absolute; right: 0; z-index: 5; }
+	header { height: auto; min-height: 95%; position: absolute; right: 0; z-index: 5; }
 	header article { display: block; padding: 0 35px }
 	header nav { position: initial; display: block; }	
 	header nav a div::after { content: ""; display: block; width: 100%; height: 1px; background-color: #707070; margin-top: 10px }
 
 	#ClicarForaMenu { display: none; cursor: default; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1;}
 
-	#AbrirMenu { position: absolute; width: 25px; height: 18px; z-index: 3; top: 23px; right: 23px }
+	#AbrirMenu { position: absolute; width: 25px; height: 18px; z-index: 3; top: 25px; right: 23px }
 	#AbrirMenu div { width: 100%; position: absolute; display: block; height: 2px; background-color: #fff; }
 
 	#FecharMenu { display: block; float: right; margin-top: 23px; margin-right: 15px; }
@@ -488,6 +518,8 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Equipamentos .Sessao3 .Boxes .dir { margin-top: 65px; }
 	.Equipamentos .Sessao3 .Boxes .dir img { margin-top: 40px; }
 
+	.Calculadora3 .WrapperCards { grid-template-columns: initial; grid-template-rows: initial; }
+
 	/* Dicas */
 	.Dicas .Sessao1 { padding-top: 30px; padding-bottom: 30px }
 	.Dicas .Sessao1 h2 { margin-top: initial }
@@ -508,13 +540,58 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.NotaMetodologica .Accordeon .WrapperAcc:last-child .Accordeon-mini-box-info { border: 0 }
 	.NotaMetodologica .Accordeon .Accordeon-mini-box-info a { padding-left: 70px; }
 
-	/* Calculadora */	
+	/* Calculadora */
+	
 	.Calculadora .Sessao2 h2 { max-width: 240px; margin: 30px 0; }
 	.Calculadora .Sessao2 .Box p:last-of-type, .Calculadora .Sessao2 .Box strong { color: var(--secundariamobile); }
 	.Calculadora .Sessao2 form { float: initial; }
 	.Calculadora .Sessao2 p.Destaque { font-size: initial; }
 
 	.Calculadora2 .Sessao1 { padding: 10px 0 35px 0; }
+
+	.Calculadora3 h2 { max-width: 150px; margin-top: 25px }
+	
+	.Calculadora3 header { height: 68px; min-height: initial; background-color: var(--secundaria); position: relative; }
+	.Calculadora3 .LogoCalc { position: absolute; top: 20px; left: 23px; z-index: 8; }	
+	
+	.Calculadora3 .WrapperCards .Card { padding: 18px 25px; }
+	.Calculadora3 .Card p.Destaque { float: initial; }
+	.Calculadora3 .PainelTopo { margin-bottom: 70px; }
+	.Calculadora3 .PainelTopo .Btn { width: 100%; clear: both; height: 76px; border-radius: var(--radius10); text-transform: initial; text-align: center; padding: 0 50px; box-sizing: border-box; line-height: initial; display: flex; align-items: center; justify-content: center; margin-bottom: 35px }	
+	
+	.Calculadora3 .PainelTopo .Alterar { font-size: 0.875rem; position: absolute; bottom: 0; margin: 0; margin-bottom: -40px;}
+	.Calculadora3 .PainelTopo .Alterar a { margin-left: 20px; }
+	
+	.Calculadora3 .PainelTopo .Filtros { margin: 35px 0; width: 100%; }
+	.Calculadora3 .PainelTopo .Filtros form { display: grid; grid-template-columns: 65% 35%; width: 100%; }
+	.Calculadora3 .PainelTopo .Filtros input, .Calculadora3 .PainelTopo .Filtros select { width: 100%; }
+	.Calculadora3 .PainelTopo .Filtros input { border-radius: 5px 0 0 5px; } 
+	.Calculadora3 .PainelTopo .Filtros select { border-radius: 0 5px 5px 0; padding-left: 10px; } 
+	.Calculadora3 .Filtros div::before { content: ""; display: block; width: 4px; height: 42px; background-color: #fff; position: absolute; right: -4px; }
+	.Calculadora3 .Filtros div::after { content: ""; display: block; width: 1px; height: 30px; background-color: #efefef; position: absolute; right: 0; top: 6px; }
+
+
+	.Calculadora3 .VerMaisLink { font-size: 0.75rem; color: #295881; text-decoration: underline; margin-bottom: 10px; margin-top: 5px; }
+	.Calculadora3 .Card p.Sub { padding-left: initial; }
+	.Calculadora3 .Card p.Sub:last-of-type { font-size: initial; margin: 20px 0; float: left; }
+	.Calculadora3 .Card p.Sub span { float: left; }
+	.Calculadora3 .Card .Classificacao { display: none; }	
+	.Calculadora3 .Card .Custo { display: grid; grid-template-columns: 1fr 1fr; width: 100%; column-gap: 17px; }
+	.Calculadora3 .Card .Custo p { font-size: 0.75rem; line-height: 1rem; }
+	.Calculadora3 .Card .Custo span { margin: 0; font-size: initial; margin-top: 10px }
+	.Calculadora3 .Card .Custo .BtnInfo { float: right; margin-top: 7px }
+	.Calculadora3 .Card p.Sub { padding-top: 0 }
+	.Calculadora3 .Card p.Sub span { float: right; margin-left: 20px; }
+	.Calculadora3 .Comparar { font-size: 0.75rem; display: flex; align-items: center; color: #295881 }
+	.Calculadora3 .Comparar input { width: 20px; height: 20px; }
+	.Calculadora3 .PainelTopo .Alterar div:first-of-type { margin-bottom: 5px; }
+	
+	.Calculadora3 .Paginador { margin: 25px 0 35px 0 }
+	
+	
+
+
+	
 
 /* :Pagina Equipamentos Mobile */
 

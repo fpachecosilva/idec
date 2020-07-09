@@ -54,7 +54,7 @@
                             <strong>Selecione</strong> sua distribuidora e média de uso do aparelho.                                
                         </p>                       
                     </div>
-                    <div class="Box">                       
+                    <div class="Box">
                         <p>03.</p>                    
                         <p>
                             <strong>Selecione</strong> até três produtos e clique em “comparar” 
@@ -74,7 +74,7 @@
                                 <option value="">Selecione</option>
                                 <option value="">Selecione</option>
                             </select>
-                            <a href="<? echo $Eqp_Customizar ?>" class="Btn Btn-Destaque1 Btn-Default">Continuar</a>
+                            <a href="<? echo $Eqp_Calculadora1 ?>" class="Btn Btn-Destaque1 Btn-Default">Continuar</a>
                         </div>
                     </article>                    
                 </form>

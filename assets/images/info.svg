@@ -1,4 +1,6 @@
-<svg id="_modal" data-name="? modal" xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23">
-  <path id="Caminho_651" data-name="Caminho 651" d="M10,0A10,10,0,1,1,0,10,10,10,0,0,1,10,0Z" transform="translate(0 2)" fill="#004568"/>
-  <text id="_" data-name="?" transform="translate(6 18)" fill="#fff" font-size="17" font-family="OpenSans-Bold, Open Sans" font-weight="700"><tspan x="0" y="0">?</tspan></text>
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+  <g id="Grupo_1209" data-name="Grupo 1209" transform="translate(-356 -163)">
+    <circle id="Elipse_277" data-name="Elipse 277" cx="7" cy="7" r="7" transform="translate(356 163)" fill="#004568"/>
+    <text id="_" data-name="?" transform="translate(361 174)" fill="#fff" font-size="10" font-family="OpenSans-Bold, Open Sans" font-weight="700"><tspan x="0" y="0">?</tspan></text>
+  </g>
 </svg>
