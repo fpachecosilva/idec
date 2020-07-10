@@ -65,8 +65,8 @@
 			</div>
 		</article>
 	</footer>
-
 	<script type="text/javascript" src="<? echo $url ?>assets/javascript/jquery.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script type="text/javascript" src="<? echo $url ?>assets/javascript/slick.js"></script>
 	<script type="text/javascript" src="<? echo $url ?>assets/javascript/estrutura.js"></script>
 	<script type="text/javascript" src="<? echo $url ?>assets/javascript/jquery.magnific-popup.js"></script>

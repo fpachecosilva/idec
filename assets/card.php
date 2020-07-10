@@ -35,6 +35,9 @@
 
     <div class="Comparar">
         <input type="checkbox" name="Comparar" id="Comparar">
-        <label for="Comparar">Comparar</label>
+        <label for="Comparar">
+            <a class="Comparar open-popup-link" href="#Popup-01">Comparar</a>
+        </label>
     </div>
 </div>
+

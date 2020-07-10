@@ -33,7 +33,8 @@
 		<link rel="apple-touch-icon" href="<? echo $images ?>favicon.svg" />
 		<link rel="apple-touch-icon" sizes="76x76" href="<? echo $images ?>favicon.svg" />
 		<link rel="apple-touch-icon" sizes="120x120" href="<? echo $images ?>favicon.svg" />
-		<link rel="apple-touch-icon" sizes="152x152" href="<? echo $images ?>favicon.svg" />		
+		<link rel="apple-touch-icon" sizes="152x152" href="<? echo $images ?>favicon.svg" />
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 		<link type="text/css" rel="stylesheet" href="<? echo $url ?>assets/css/slick.css" media="all" />
 		<link type="text/css" rel="stylesheet" href="<? echo $url ?>assets/css/slick-theme.css" media="all" />
 		<link type="text/css" rel="stylesheet" href="<? echo $url ?>assets/css/estrutura.css" media="all" />

@@ -77,6 +77,12 @@ jQuery(document).ready(function() {
 	// Funções executadas apenas na versão Desktop:
 		function DesktopVersion() {			
 			
+			$('.Filtros select').on('mousedown', function(e) {
+				e.preventDefault();		
+				$('.FiltrosOpen').slideToggle();
+				$('#filtros').toggleClass('selectcima');
+			 });
+
 		}
 	// :Funções executadas apenas na versão Desktop
 
@@ -96,6 +102,14 @@ jQuery(document).ready(function() {
 				centerMode: false,
 				adaptiveHeight: false
 			});
+
+			$('.Filtros select').on('mousedown', function(e) {
+				e.preventDefault();		
+				$('.FiltrosOpen').show();
+				$('#filtros').toggleClass('selectcima');
+				$('.Alterar, .Filtros, #BtnTopo').css('display','none');
+				$('.Calculadora3 h2').text('Filtros')
+			 });
 
 		}
 	// :Funções executadas apenas na versão Mobile
@@ -141,5 +155,58 @@ jQuery(document).ready(function() {
 	// ScrollTop
 	// $('html, body').animate({scrollTop: '0px'}, 600);
 	
+
+	if ($('body').hasClass('Calculadora3')) {
+		$('.open-popup-link').magnificPopup({			
+			type: 'inline',			
+			mainClass: 'mfp-fade'
+		});
+	}
+
+
+
+	
+	/* Slider Range */
+	 $( "#slider-range" ).slider({
+        range: true,
+        min: 0,
+        max: 1500,
+        values: [ 240, 1000],
+        slide: function( event, ui ) {
+            $( "#amount" ).val( "De " + ui.values[ 0 ] + " litros" + " Até " + ui.values[ 1 ] + " litros" );
+        }
+    });
+    $( "#amount" ).val( "De " + $( "#slider-range" ).slider( "values", 0 ) + " litros" +
+        " Até " + $( "#slider-range" ).slider( "values", 1 ) + " litros" );
+
+	
+	
+	$( "#slider-range2" ).slider({
+	range: true,
+	min: 0,
+	max: 700,
+	values: [ 80, 500],
+	slide: function( event, ui ) {
+		$( "#amount2" ).val( "R$ " + ui.values[ 0 ] + " - R$ " + ui.values[ 1 ] );
+	}
+    });
+	$( "#amount2" ).val( "De R$" + $( "#slider-range2" ).slider( "values", 0 ) +
+	" Até R$" + $( "#slider-range2" ).slider( "values", 1 ) );
+
+
+
+	$( "#slider-range3" ).slider({
+	range: true,
+	min: 0,
+	max: 7000,
+	values: [ 800, 5000],
+	slide: function( event, ui ) {
+		$( "#amount3" ).val( "R$ " + ui.values[ 0 ] + " - R$ " + ui.values[ 1 ] );
+	}
+	});
+	$( "#amount3" ).val( "De R$" + $( "#slider-range3" ).slider( "values", 0 ) +
+	" Até R$" + $( "#slider-range3" ).slider( "values", 1 ) );
+
+
 
 });
