@@ -156,6 +156,8 @@ jQuery(document).ready(function() {
 	// $('html, body').animate({scrollTop: '0px'}, 600);
 	
 
+
+	// Popup
 	if ($('body').hasClass('Calculadora3')) {
 		$('.open-popup-link').magnificPopup({			
 			type: 'inline',			
@@ -163,11 +165,9 @@ jQuery(document).ready(function() {
 		});
 	}
 
-
-
 	
 	/* Slider Range */
-	 $( "#slider-range" ).slider({
+	$( "#slider-range" ).slider({
         range: true,
         min: 0,
         max: 1500,
@@ -178,34 +178,146 @@ jQuery(document).ready(function() {
     });
     $( "#amount" ).val( "De " + $( "#slider-range" ).slider( "values", 0 ) + " litros" +
         " Até " + $( "#slider-range" ).slider( "values", 1 ) + " litros" );
-
 	
 	
 	$( "#slider-range2" ).slider({
-	range: true,
-	min: 0,
-	max: 700,
-	values: [ 80, 500],
-	slide: function( event, ui ) {
-		$( "#amount2" ).val( "R$ " + ui.values[ 0 ] + " - R$ " + ui.values[ 1 ] );
-	}
+		range: true,
+		min: 0,
+		max: 700,
+		values: [ 80, 500],
+		slide: function( event, ui ) {
+			$( "#amount2" ).val( "R$ " + ui.values[ 0 ] + " - R$ " + ui.values[ 1 ] );
+		}
     });
 	$( "#amount2" ).val( "De R$" + $( "#slider-range2" ).slider( "values", 0 ) +
 	" Até R$" + $( "#slider-range2" ).slider( "values", 1 ) );
 
 
-
 	$( "#slider-range3" ).slider({
-	range: true,
-	min: 0,
-	max: 7000,
-	values: [ 800, 5000],
-	slide: function( event, ui ) {
-		$( "#amount3" ).val( "R$ " + ui.values[ 0 ] + " - R$ " + ui.values[ 1 ] );
-	}
+		range: true,
+		min: 0,
+		max: 7000,
+		values: [ 800, 5000],
+		slide: function( event, ui ) {
+			$( "#amount3" ).val( "R$ " + ui.values[ 0 ] + " - R$ " + ui.values[ 1 ] );
+		}
 	});
 	$( "#amount3" ).val( "De R$" + $( "#slider-range3" ).slider( "values", 0 ) +
 	" Até R$" + $( "#slider-range3" ).slider( "values", 1 ) );
+
+
+
+	// Botão de interrogação
+	$('.BtnInfo').click( function() {
+		$(this).find('.PopupInfo').slideToggle('fast').toggleClass('open');		
+	
+		if ($('.PopupInfo').hasClass('open')) {
+			$('.masktransp').show();
+		} else {
+			$('.masktransp').hide();			
+		}
+
+	});
+
+	// Clique em alterar
+	$('.LinkInfo').click( function() {
+		// $(this).find('.PopupInfo').slideToggle('fast').toggleClass('open');	
+		$(this).parent().find('.PopupLinkInfo').slideToggle('fast').toggleClass('open');	
+	
+		if ($('.PopupLinkInfo').hasClass('open')) {
+			
+			$('.mask').toggle();
+		} else {
+			('.mask').hide();			
+		}
+
+	});
+
+	// Botao Insira seu proprio produto
+	$('#BtnTopo').click( function() {
+		
+		$('.NaoEncontrou').slideToggle('fast').toggleClass('open');	
+	
+		if ($('.NaoEncontrou').hasClass('open')) {
+			
+			$('.maskcinza').toggle();
+			$('span').on('click', function() { $('.NaoEncontrou').fadeOut().removeClass('open');  $('.maskcinza').hide() } )
+
+		} else {
+			('.maskcinza').hide();			
+		}
+
+	});
+
+	$('.BtnTopo').click( function() {
+		
+		$(window).scrollTop( $('.NaoEncontrou').offset().top);
+
+		$('.NaoEncontrou').slideToggle('fast').toggleClass('open');	
+	
+		if ($('.NaoEncontrou').hasClass('open')) {
+			
+			$('.maskcinza').toggle();
+			$('span').on('click', function() { $('.NaoEncontrou').fadeOut().removeClass('open');  $('.maskcinza').hide() } )
+
+		} else {
+			('.maskcinza').hide();			
+		}
+
+	});
+
+	// Máscara
+	$('.mask').click( function() {
+
+		if ( $('.PopupInfo').hasClass('open') ) {
+						
+			$('.PopupInfo').fadeOut().removeClass('open'); 
+			$('.mask').toggle()
+		
+		} 		
+
+		if ( $('.PopupLinkInfo').hasClass('open') ) {
+						
+			$('.PopupLinkInfo').fadeOut().removeClass('open'); 
+			$('.mask').toggle();
+
+			$('span').on('click', function() { $('.PopupLinkInfo').fadeOut().removeClass('open');  $('.mask').hide() } )
+		
+		} else {
+			$('.mask').hide();						
+		}
+
+	})
+
+	$('.masktransp').click( function() {
+
+		if ( $('.PopupInfo').hasClass('open') ) {
+						
+			$('.PopupInfo').fadeOut().removeClass('open'); 
+			$('.masktransp').toggle();
+		} else {
+			$('.masktransp').hide();
+		}
+	} )
+
+	$('.maskcinza').click( function() {
+
+		if ( $('.NaoEncontrou').hasClass('open') ) {
+			
+			$('.NaoEncontrou').fadeOut().removeClass('open'); 
+			$('.maskcinza').toggle()
+		}
+
+	})
+
+	
+
+
+	
+	
+
+
+
 
 
 

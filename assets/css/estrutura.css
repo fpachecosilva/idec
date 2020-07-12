@@ -184,102 +184,141 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 
 	.Equipamentos .Sessao3 .Boxes .Internas p { font-family: 'Montserrat' , sans-serif; }
 
-	/* Calculadora */
-	.Calculadora .Sessao2 { background-color: #fff; }
-	.Calculadora .Sessao2 h2 { text-align: left; max-width: 630px; }
-	.Calculadora .Sessao2 p { color: var(--secundaria); }
-	.Calculadora .Sessao2 p.Destaque { font-size: 1.25rem; text-align: left; }
-	.Calculadora .Sessao2 form { float: left; }
-	.Calculadora .Sessao2 select { box-shadow: var(--shadow); }
-	.Calculadora .Boxes * { color: var(--secundaria); }
+		/* Calculadora */
+		.Calculadora .Sessao2 { background-color: #fff; }
+		.Calculadora .Sessao2 h2 { text-align: left; max-width: 630px; }
+		.Calculadora .Sessao2 p { color: var(--secundaria); }
+		.Calculadora .Sessao2 p.Destaque { font-size: 1.25rem; text-align: left; }
+		.Calculadora .Sessao2 form { float: left; }
+		.Calculadora .Sessao2 select { box-shadow: var(--shadow); }
+		.Calculadora .Boxes * { color: var(--secundaria); }
 
-	.Calculadora2 .Sessao1 select, .Calculadora2 .Sessao1 input { box-shadow: var(--shadow); border: 0; margin: auto; }
-	.Calculadora2 .Sessao1 select { width: 274px; }
-	.Calculadora2 .Sessao1 input[type="checkbox"] { margin-right: 10px; }
-	.Calculadora2 .Sessao1 form { max-width: 310px; margin: auto; }
-	.Calculadora2 .Sessao1 form label { display: block; margin: 20px 0; }
-	.Calculadora2 .Sessao1 form label:last-child { margin-bottom: 0 }
-	.Calculadora2 .Sessao1 form label:first-child { margin-top: 0 }
-	.Calculadora2 .Sessao1 form .Grupo { margin: 40px 0; clear: both; }
-	.Calculadora2 .Sessao1 form .Grupo:nth-of-type(3) { margin-top: 0 }
-	.Calculadora2 .Sessao1 form .GrupoInline { margin-top: 25px; display: inline-block; }
-	.Calculadora2 .Sessao1 form .GrupoInline label { margin: 0; }
-	.Calculadora2 .Sessao1 form .GrupoInline > * { display: block; float: left; }	
-	.Calculadora2 .Sessao1 .Btn-Destaque1 { margin: auto; }
-	.Calculadora2 .Sessao1 #uf { max-width: 85px; padding-right: 20px; }
+		.Calculadora2 .Sessao1 select, .Calculadora2 .Sessao1 input { box-shadow: var(--shadow); border: 0; margin: auto; }
+		.Calculadora2 .Sessao1 select { width: 274px; }
+		.Calculadora2 .Sessao1 input[type="checkbox"] { margin-right: 10px; }
+		.Calculadora2 .Sessao1 form { max-width: 310px; margin: auto; }
+		.Calculadora2 .Sessao1 form label { display: block; margin: 20px 0; }
+		.Calculadora2 .Sessao1 form label:last-child { margin-bottom: 0 }
+		.Calculadora2 .Sessao1 form label:first-child { margin-top: 0 }
+		.Calculadora2 .Sessao1 form .Grupo { margin: 40px 0; clear: both; }
+		.Calculadora2 .Sessao1 form .Grupo:nth-of-type(3) { margin-top: 0 }
+		.Calculadora2 .Sessao1 form .GrupoInline { margin-top: 25px; display: inline-block; }
+		.Calculadora2 .Sessao1 form .GrupoInline label { margin: 0; }
+		.Calculadora2 .Sessao1 form .GrupoInline > * { display: block; float: left; }	
+		.Calculadora2 .Sessao1 .Btn-Destaque1 { margin: auto; }
+		.Calculadora2 .Sessao1 #uf { max-width: 85px; padding-right: 20px; }
 
-	.Calculadora3 h2 { margin-top: 50px; margin-bottom: 0; text-align: left; }
-	.Calculadora3 .Filtros select, .Calculadora3 .Filtros input { box-shadow: var(--shadow); border: 0; margin: auto; height: 42px; border-radius: var(--radius); color: var(--secundaria); box-sizing: border-box; width: 274px; }
-	.Calculadora3 .Filtros { width: 570px; float: right; }
-	.Calculadora3 .Filtros #filtros:hover { cursor: pointer; }
-	.Calculadora3 .Filtros form { width: 570px; float: right; }
-	.Calculadora3 .Filtros input { padding-left: 25px; box-sizing: border-box; }
+		.Calculadora3 h2 { margin-top: 50px; margin-bottom: 0; text-align: left; }
+		.Calculadora3 .Filtros select, .Calculadora3 .Filtros input { box-shadow: var(--shadow); border: 0; margin: auto; height: 42px; border-radius: var(--radius); color: var(--secundaria); box-sizing: border-box; width: 274px; }
+		.Calculadora3 .Filtros { width: 570px; float: right; }
+		.Calculadora3 .Filtros #filtros:hover { cursor: pointer; }
+		.Calculadora3 .Filtros form { width: 570px; float: right; }
+		.Calculadora3 .Filtros input { padding-left: 25px; box-sizing: border-box; }
+		.Calculadora3 .FiltrosOpen { display: none; background-color: #FDFDFD; box-shadow: var(--shadowbottom); }
+		.Calculadora3 .FiltrosOpen article { padding: 20px 50px 40px 50px; box-sizing: border-box; }	
+		.Calculadora3 .FiltrosOpen div.Selects { display: flex; align-items: center; justify-content: center; margin-bottom: 30px; }
+		.Calculadora3 .FiltrosOpen select { box-shadow: var(--shadow); width: 274px; margin-right: 17px; }
+		.Calculadora3 .FiltrosOpen select:last-of-type { margin-right: 0; }
+		.Calculadora3 .FiltrosOpen div.AplicarFiltros { display: flex; align-items: center; justify-content: center; }
+		.Calculadora3 .FiltrosOpen a:first-child { width: 277px; margin-right: 40px; }
+		.Calculadora3 .FiltrosOpen a:last-child { text-decoration: underline; color: var(--sub1) }
+		.Calculadora3 .FiltrosOpen .Sliders { display: grid; grid-template-columns: 33.33% 33.33% 33.33%; margin-bottom: 50px; justify-items: center; }
+		.Calculadora3 .FiltrosOpen .Sliders .content { text-align: left; max-width: 274px; }
+		.Calculadora3 .FiltrosOpen .Sliders .content p { text-align: left; color: var(--secundaria); margin-bottom: 20px; }
 
-	.Calculadora3 .FiltrosOpen { display: none; background-color: #FDFDFD; box-shadow: var(--shadowbottom); }
-	.Calculadora3 .FiltrosOpen article { padding: 20px 50px 40px 50px; box-sizing: border-box; }
-	
-	.Calculadora3 .FiltrosOpen div.Selects { display: flex; align-items: center; justify-content: center; margin-bottom: 30px; }
-	.Calculadora3 .FiltrosOpen select { box-shadow: var(--shadow); width: 274px; margin-right: 17px; }
-	.Calculadora3 .FiltrosOpen select:last-of-type { margin-right: 0; }
+		.Calculadora3 .Filtros form { display: grid; grid-template-columns: 50% 50%; }
+		.Calculadora3 .Filtros div { position: relative; }
+		.Calculadora3 #Pesquisar { font-style: italic; padding-right: 40px; }
+		.Calculadora3 .PesquisarIcon { position: absolute; right: 20px; top: 15px; }
 
-	.Calculadora3 .FiltrosOpen div.AplicarFiltros { display: flex; align-items: center; justify-content: center; }
-	.Calculadora3 .FiltrosOpen a:first-child { width: 277px; margin-right: 40px; }
-	.Calculadora3 .FiltrosOpen a:last-child { text-decoration: underline; color: var(--sub1) }
+		.Calculadora3 .PainelTopo { margin-bottom: 45px; z-index: 2; }
+		.Calculadora3 .PainelTopo .Alterar { margin: 25px 0 45px 0; }
+		.Calculadora3 .PainelTopo .Alterar > div { display: inline-block; color: var(--secundaria); position: relative; }
+		.Calculadora3 .PainelTopo .Alterar a { text-decoration: underline; color: var(--secundaria); margin-left: 10px; }
+		.Calculadora3 .PainelTopo .Alterar div:first-child:not(.PopupInfo) { margin-right: 70px; position: relative }
 
-	.Calculadora3 .FiltrosOpen .Sliders { display: grid; grid-template-columns: 33.33% 33.33% 33.33%; margin-bottom: 50px; justify-items: center; }
-	.Calculadora3 .FiltrosOpen .Sliders .content { text-align: left; max-width: 274px; }
-	.Calculadora3 .FiltrosOpen .Sliders .content p { text-align: left; color: var(--secundaria); margin-bottom: 20px; }
+		.Calculadora3 .Cards { margin-bottom: 60px; z-index: 0; }
+		.Calculadora3 .WrapperCards { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr 1fr 1fr; row-gap: 29px; column-gap: 69px; }
+		.Calculadora3 .WrapperCards .Card { width: 100%; height: 270px; border-radius: var(--radius10); box-shadow: var(--shadow); margin: auto; padding: 25px 35px; box-sizing: border-box; text-align: left; }
+		
+		.Calculadora3 .Card p.Destaque { color: var(--secundaria); text-align: left; font-size: 1.25rem; float: left; font-family: inherit; }
+		.Calculadora3 .Card p.Sub { font-size: 0.75rem;	padding-top: 3px; padding-left: 14px; display: inline-block; }
+		.Calculadora3 .Card p.Sub:last-of-type { padding-left: 0; }
+		.Calculadora3 .Card .Classificacao { margin: 20px 0; }
+		.Calculadora3 .Card .Classificacao p { line-height: 1.5rem; }
+		.Calculadora3 .Card .Classificacao a { font-size: 0.75rem; text-decoration: underline; color: var(--secundaria); display: inline-block; padding-left: 17px; }
+
+		.Calculadora3 .Card .Custo { margin-bottom: 15px; }
+		.Calculadora3 .Card .Custo *:not(.PopupInfo) { display: inline-block; }
+		.Calculadora3 .Card .Custo span { color: var(--secundaria); margin-left: 10px; margin-right: 5px; }
+
+		.Calculadora3 .Comparar { color: var(--secundaria); font-weight: bold; display: flex; align-items: center; }
+		.Calculadora3 .Comparar input { margin: 0; box-shadow: var(--shadow); margin-right: 10px; }
+
+		.Calculadora3 .Index { display: block; margin: auto; width: 100%; text-align: center; margin-bottom: 35px; }
+		.Calculadora3 .Index a { font-size: 0.875rem; font-weight: bold; color: #7FA2B3; }
+		.Calculadora3 .Index a.active { color: var(--secundaria) }
+		.Calculadora3 .Index .Item { margin-right: 25px }
+		.Calculadora3 .Prev { display: inline-block; width: 15px; height: 15px; margin-right: 25px; margin-bottom: -2px; content: ""; background-image: url(../images/setamenu.svg); background-repeat: no-repeat; -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+		.Calculadora3 .Next { display: inline-block; width: 15px; height: 15px; margin-bottom: -2px; content: ""; background-image: url(../images/setamenu.svg); background-repeat: no-repeat; -ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+
+		.Calculadora3 .mfp-bg { background: none }
+		.Calculadora3 .mfp-content { border-radius: 10px 10px 0 0; box-shadow: var(--shadow); background: #fff; height: 197px; max-width: 1264px; }
+		.Calculadora3 .Popup-01 .WrapperBoxesComp .nivel2 { display: grid; grid-template-columns: 1fr 1fr 1fr 1.5fr; color: var(--principal); width: auto; max-width: 1264px; height: 198px; }
+		.Calculadora3 .Popup-01 .WrapperBoxesComp .nivel2:after { display: none; }
+		.Calculadora3 .Popup-01 .WrapperBoxesComp .nivel2 .Box { display: grid; align-items: center; align-content: center; justify-content: center; text-align: center; position: relative; grid-template-rows: auto auto auto; }
+		.Calculadora3 .Popup-01 .WrapperBoxesComp .nivel2 .Box::after { content: ""; display: block; width: 1px; height: 172px; background-color: #F2F2F2; position: absolute; right: 0; bottom: 0; }
+		.Calculadora3 .Popup-01 .WrapperBoxesComp .nivel2 .Box:last-of-type::after { display: none; }
+		.Calculadora3 .Popup-01 .WrapperBoxesComp .nivel2 .Box p.Destaque { color: var(--secundaria); font-size: initial; font-weight: bold; }
+		.Calculadora3 .Popup-01 .WrapperBoxesComp .nivel2 .Box p.Sub { font-size: 0.875rem; }
+		.Calculadora3 .Popup-01 .WrapperBoxesComp .nivel2 .Box a { color: var(--secundaria); text-decoration: underline; margin: auto; margin-top: 20px; }
+		.Calculadora3 .Popup-01 .WrapperBoxesComp .nivel2 .Box:last-of-type p { margin-top: 20px; padding: 0 80px }
+
+		.Calculadora3 .NaoEncontrou { display: none; margin: auto; box-sizing: border-box; box-shadow: var(--shadow); border-radius: var(--radius10); width: 610px; padding: 50px 92px 70px 50px; position: absolute; top: 50%; bottom: 50%; left: 0; right: 0; background: #fff; z-index: 10; height: max-content; }	
+		.Calculadora3 .NaoEncontrou form p.Destaque { color: var(--secundaria); text-transform: uppercase; font-size: 1.25rem; margin-bottom: 25px; }
+		.Calculadora3 .NaoEncontrou form .Grupo { margin-top: 20px; display: grid; }
+		.Calculadora3 .NaoEncontrou form p.Sub { padding-bottom: 25px; text-align: center; }
+		.Calculadora3 .NaoEncontrou form .Grupo label { margin-bottom: 13px; color: var(--secundaria); font-size: 0.875rem; }
+		.Calculadora3 .NaoEncontrou form .Btn { margin: 25px 0 20px 0 }
+		.Calculadora3 .NaoEncontrou form p.Aviso { font-size: 0.875rem }
+		.Calculadora3 .NaoEncontrou form span { width: 16px; height: 16px; background-image: url(../images/popupinfox.svg); background-repeat: no-repeat; position: absolute; right: 15px; top: 15px; cursor: pointer; }
+		.Calculadora3 .NaoEncontrou form select, .Calculadora3 .NaoEncontrou form input { box-shadow: var(--shadow); height: 42px; border-radius: var(--radius); }
+		/* Calculadora */
+
+		
+		/* Tabela: */
+		.Tabela h2 { margin-top: 50px; margin-bottom: 0; text-align: left; }
+		.Tabela .PainelTopo { margin-bottom: 45px; z-index: 3; }
+		.Tabela .PainelTopo .Alterar { margin: 25px 0 45px 0; }
+		.Tabela .PainelTopo .Alterar > div { display: inline-block; color: var(--secundaria); position: relative; }
+		.Tabela .PainelTopo .Alterar a { text-decoration: underline; color: var(--secundaria); margin-left: 10px; }
+		.Tabela .PainelTopo .Alterar div:first-child:not(.PopupInfo) { margin-right: 70px; position: relative }
+
+		.TabelaComparativa { margin-bottom: 65px; }
+		.TabelaComparativa table { width: 100%; margin-bottom: 60px; }
+		.TabelaComparativa tr { border-bottom: 1px solid #9A9A9A; height: 55px }
+		.TabelaComparativa td { padding: 20px; box-sizing: border-box; position: relative; }
+		.TabelaComparativa tr td:first-child { color: var(--secundaria); font-weight: bold; background-color: #F2F2F2 ; }
+		.TabelaComparativa tr td:nth-child(2), .TabelaComparativa tr td:nth-child(3) { border-right: 1px solid #E8E8E8; }
+		.TabelaComparativa tr:last-child { border-bottom: 0 }
+		.TabelaComparativa tr:nth-child(1) { color: var(--secundaria); }
+		.TabelaComparativa a { margin: auto; }
+		
+		.TabelaComparativa input { text-align: center; box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.16); border-radius: 2px; width: 107px; height: 44px; color: #ACACAC}
+		.TabelaComparativa input::placeholder { color: #ACACAC; text-align: center; }
+
+		.TabelaRes .ProdRes { margin-bottom: 45px; }
+		.TabelaRes .ProdRes span { font-weight: bold;  }
+		.TabelaRes .Legenda { font-size: 0.875rem; color: var(--secundaria); display: flex; align-items: center; }
+		.TabelaRes .Legenda::before { content: ""; width: 19px; height: 16px; background-color: var(--destaque1); margin-right: 10px; }
+
+		.TabelaRes td.Destaque { color: var(--secundaria); font-weight: bold; background-color: var(--destaque1); }
+		.TabelaRes .BtnInfo { position: absolute; margin-top: 2px; margin-left: 10px; }
+
+		/* :Tabela */
 
 
-	.Calculadora3 .Filtros form { display: grid; grid-template-columns: 50% 50%; }
-
-	.Calculadora3 .Filtros div { position: relative; }
-	.Calculadora3 #Pesquisar { font-style: italic; padding-right: 40px; }
-	.Calculadora3 .PesquisarIcon { position: absolute; right: 20px; top: 15px; }
-
-	.Calculadora3 .PainelTopo { margin-bottom: 45px; }
-	.Calculadora3 .PainelTopo .Alterar { margin: 25px 0 45px 0; }
-	.Calculadora3 .PainelTopo .Alterar div { display: inline-block; color: var(--secundaria) }
-	.Calculadora3 .PainelTopo .Alterar a { text-decoration: underline; color: var(--secundaria); margin-left: 10px; }
-	.Calculadora3 .PainelTopo .Alterar div:first-of-type { margin-right: 70px; }
-
-	.Calculadora3 .Cards { margin-bottom: 60px }
-	.Calculadora3 .WrapperCards { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr 1fr 1fr; row-gap: 29px; column-gap: 69px; }
-	.Calculadora3 .WrapperCards .Card { width: 100%; height: 270px; border-radius: var(--radius10); box-shadow: var(--shadow); margin: auto; padding: 25px 35px; box-sizing: border-box; text-align: left; }
-	
-	.Calculadora3 .Card p.Destaque { color: var(--secundaria); text-align: left; font-size: 1.25rem; float: left; font-family: inherit; }
-	.Calculadora3 .Card p.Sub { font-size: 0.75rem;	padding-top: 3px; padding-left: 14px; display: inline-block; }
-	.Calculadora3 .Card p.Sub:last-of-type { padding-left: 0; }
-	.Calculadora3 .Card .Classificacao { margin: 20px 0; }
-	.Calculadora3 .Card .Classificacao p { line-height: 1.5rem; }
-	.Calculadora3 .Card .Classificacao a { font-size: 0.75rem; text-decoration: underline; color: var(--secundaria); display: inline-block; padding-left: 17px; }
-
-	.Calculadora3 .Card .Custo { margin-bottom: 15px; }
-	.Calculadora3 .Card .Custo * { display: inline-block; }
-	.Calculadora3 .Card .Custo span { color: var(--secundaria); margin-left: 10px; margin-right: 5px; }
-
-	.Calculadora3 .Comparar { color: var(--secundaria); font-weight: bold; display: flex; align-items: center; }
-	.Calculadora3 .Comparar input { margin: 0; box-shadow: var(--shadow); margin-right: 10px; }
-
-	.Calculadora3 .Index { display: block; margin: auto; width: 100%; text-align: center; margin-bottom: 35px; }
-	.Calculadora3 .Index a { font-size: 0.875rem; font-weight: bold; color: #7FA2B3; }
-	.Calculadora3 .Index a.active { color: var(--secundaria) }
-	.Calculadora3 .Index .Item { margin-right: 25px }
-	.Calculadora3 .Prev { display: inline-block; width: 15px; height: 15px; margin-right: 25px; margin-bottom: -2px; content: ""; background-image: url(../images/setamenu.svg); background-repeat: no-repeat; -ms-transform: rotate(180deg); -webkit-transform: rotate(180deg); transform: rotate(180deg); }
-	.Calculadora3 .Next { display: inline-block; width: 15px; height: 15px; margin-bottom: -2px; content: ""; background-image: url(../images/setamenu.svg); background-repeat: no-repeat; -ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg); }
-
-	.Calculadora3 .mfp-bg { background: none }
-	.Calculadora3 .mfp-content { border-radius: 10px 10px 0 0; box-shadow: var(--shadow); background: #fff; height: 197px; max-width: 1264px; }
-	.Calculadora3 .Popup-01 .WrapperBoxesComp .nivel2 { display: grid; grid-template-columns: 1fr 1fr 1fr 1.5fr; color: var(--principal); width: auto; max-width: 1264px; height: 198px; }
-	.Calculadora3 .Popup-01 .WrapperBoxesComp .nivel2:after { display: none; }
-	.Calculadora3 .Popup-01 .WrapperBoxesComp .nivel2 .Box { display: grid; align-items: center; align-content: center; justify-content: center; text-align: center; position: relative; grid-template-rows: auto auto auto; }
-	.Calculadora3 .Popup-01 .WrapperBoxesComp .nivel2 .Box::after { content: ""; display: block; width: 1px; height: 172px; background-color: #F2F2F2; position: absolute; right: 0; bottom: 0; }
-	.Calculadora3 .Popup-01 .WrapperBoxesComp .nivel2 .Box:last-of-type::after { display: none; }
-	.Calculadora3 .Popup-01 .WrapperBoxesComp .nivel2 .Box p.Destaque { color: var(--secundaria); font-size: initial; font-weight: bold; }
-	.Calculadora3 .Popup-01 .WrapperBoxesComp .nivel2 .Box p.Sub { font-size: 0.875rem; }
-	.Calculadora3 .Popup-01 .WrapperBoxesComp .nivel2 .Box a { color: var(--secundaria); text-decoration: underline; margin: auto; margin-top: 20px; }
-	.Calculadora3 .Popup-01 .WrapperBoxesComp .nivel2 .Box:last-of-type p { margin-top: 20px; padding: 0 80px }
-/* :Pagina Equipamentos */
+	/* :Pagina Equipamentos */
 
 
 /* Componentes reutilizáveis: */
@@ -319,7 +358,33 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	/* :Saiba Mais */
 
 	/* Info: */
-		.BtnInfo { display: inline-block; width: 20px; height: 23px; background-image: url('../images/info.svg'); background-repeat: no-repeat; margin-bottom: -8px; margin-left: 10px; }
+		.BtnInfo { position: relative; display: inline-block; width: 20px; height: 23px; background-image: url('../images/info.svg'); background-repeat: no-repeat; margin-bottom: -10px; margin-left: 10px; }
+		.BtnInfo:hover { opacity: initial; }
+		.BtnInfo .mask, .PopupLinkInfo .mask { z-index: 0; content: ""; position: fixed; top: 0; bottom: 0; left: 0; right: 0; display: none; }
+		.PopupInfo { text-align: left; display: none; background-color: var(--secundaria); padding: 30px 20px 20px 20px; overflow: hidden; overflow-wrap: break-word; box-sizing: border-box; color: #fff; position: absolute; top:0; right: 0; height: auto; border-radius: var(--radius10); }
+		.PopupInfo span { width: 16px; height: 16px; background-image: url('../images/popupx.svg'); background-repeat: no-repeat; position: absolute; right: 5px; top: 5px; }
+
+		.LinkInfo { position: relative; display: inline-block; width: 20px; height: 23px; margin-bottom: -8px; margin-left: 10px; }
+		.LinkInfo:hover { opacity: initial; }
+		.PopupLinkInfo { z-index: 10; text-align: left; display: none ; background-color: #fff; padding: 30px 20px 20px 20px; overflow: visible; overflow-wrap: break-word; box-sizing: border-box; color: var(--principal); position: absolute; top:0; right: 0; height: auto; border-radius: var(--radius10); box-shadow: var(--shadow); }
+		.PopupLinkInfo span { width: 16px; height: 16px; background-image: url('../images/popupinfox.svg'); background-repeat: no-repeat; position: absolute; right: 15px; top: 15px; cursor: pointer }
+		
+		.PopupLinkInfo.Dist { width: 274px; margin-right: -50px; }
+		.PopupLinkInfo.Media { width: 320px; padding: 30px 40px 20px 40px; margin-right: -50px; }
+		.PopupLinkInfo.Media label { margin-top: 35px }
+
+		.PopupLinkInfo #uf { width: 85px; box-shadow: var(--shadow); }
+		.PopupLinkInfo select { width: 100%; box-shadow: var(--shadow); margin-bottom: 25px; margin-top: 15px }
+		.PopupLinkInfo .Btn { width: 100%; margin: auto!important; }
+		.PopupLinkInfo .BtnInfo { position: absolute; margin-top: 3px }
+
+		.Custo .PopupInfo { display: none; }
+
+		.mask { display: none; position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 1; margin: 0!important }
+		.maskcinza { display: none; position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 2; margin: 0!important; background: #848484c4 }
+		.masktransp { display: none; position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 0; margin: 0!important }
+		
+
 	/* :Info */
 
 
@@ -354,7 +419,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 /* :Banners Desktop */
 
 /* Header Desktop: */
-	header { padding: 0 88px; }
+	header { padding: 0 88px; box-shadow: var(--shadowbottom); }
 	header article { height: 100%; }
 	.MenuWrapper { height: 100%; }
 /* Header Desktop: */
@@ -407,29 +472,33 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Equipamentos .Sessao3 .DicasBotoes a { width: 460px; }
 	.Equipamentos .Sessao3 .DicasBotoes a:first-child { float: right }
 	.Equipamentos .Sessao3 .DicasBotoes a:last-child { float: left }
+/* :Pagina Equipamentos Desktop */
 	
-	/* Dicas */
+/* Dicas Desktop: */
 	.Dicas .Banner { background-image: url(../images/eqp-banner.png); }
 	.Dicas .Banner h1 { max-width: 190px; }
 	.Dicas .Sessao1 { padding: 65px 0; text-align: center; }
 	.Dicas .Sessao1 p { line-height: 1.625rem; text-align: center; }
 	.Dicas .LinksDicas article { display: flex; align-items: center; justify-content: center; }
 	.Dicas .LinksDicas a { max-width: 488px; margin: 0 17.5px }
+/* :Dicas Desktop */
 
-	/* Nota Metodologica */
+/* Nota Metodologica Desktop: */
 	.NotaMetodologica .Banner {	background-image: url(../images/eqp-banner.png); }
 	.NotaMetodologica .Banner h1 { max-width: 190px; }
 	.NotaMetodologica .Sessao1 { padding-top: 65px; text-align: center; }
 	.NotaMetodologica .Sessao1 p { text-align: center; }
 	.NotaMetodologica .Accordeon { padding: 100px 0; margin-bottom: 0; border: 0; width: initial; }
 	.NotaMetodologica .Accordeon article { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
-	
+
 	.NotaMetodologica .Accordeon .WrapperAcc { width: 100%; height: 140px; }
 	.NotaMetodologica .Accordeon .Accordeon-mini-box-info { display: grid; border: initial; justify-items: center; }
 	.NotaMetodologica .Accordeon .Accordeon-mini-box-info img { position: initial; }
 	.NotaMetodologica .Accordeon .Accordeon-mini-box-info a { position: initial; text-align: center; display: block; padding: 20px 0 }
 	.NotaMetodologica .Accordeon .Accordeon-mini-box-info a:last-of-type { padding: 0 }
+/* :Nota Metodologica Desktop*/
 
+/* Calculadora Desktop: */
 	.Calculadora2 .Sessao1 h2 { max-width: 620px; margin: auto; }
 
 	.Calculadora3 .WrapperCards .Card:hover { background-color: var(--secundaria); color: #fff; }
@@ -437,9 +506,9 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Calculadora3 .WrapperCards .Card:hover .BtnInfo { background-image: url(../images/info-invertido.svg); }
 	.Calculadora3 .Comparar { align-items: baseline; display: inline-block; }
 	.Calculadora3 .Comparar:hover { cursor: pointer; }
-
-
-/* :Pagina Equipamentos Desktop */
+	.Calculadora3 .NaoEncontrou { width: 610px; padding: 45px 90px 65px 90px; }
+	
+/* Calculadora Desktop: */
 
 
 /* Footer Desktop: */
@@ -596,29 +665,30 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Calculadora3 .Popup-01 .WrapperBoxesComp .nivel2 .Box:last-of-type p { display: none; }
 	.Calculadora3 .Popup-01 .WrapperBoxesComp .nivel2 .Box:not(:last-of-type) a { display: none; }	
 	.Calculadora3 .Popup-01 .WrapperBoxesComp .nivel2 p { margin-left: 10px;}
+/* Pagina Equipamentos Mobile: */
 
-	/* Dicas */
+/* Dicas Mobile */
 	.Dicas .Sessao1 { padding-top: 30px; padding-bottom: 30px }
 	.Dicas .Sessao1 h2 { margin-top: initial }
 	.LinksDicas { margin-bottom: 5px; }
 	.Dicas .LinksDicas a { height: 76px; line-height: 1.125rem; border-radius: var(--radius10); text-transform: initial; display: flex; align-items: center; padding: 0 30px; box-sizing: border-box; }
 	.Dicas .LinksDicas a:first-of-type { margin-bottom: 20px; }
+/* Dicas Mobile */
 
-	/* Nota Metodológica */
+/* Nota Metodológica Mobile */
 	.NotaMetodologica .Breadcrumb { display: none; }
 	.NotaMetodologica .Banner { background: initial; background-color: var(--secundaria); height: 68px; }
 	.NotaMetodologica .Banner img { top: 20px }
 	.NotaMetodologica .Banner h1 { display: none; }
 	.NotaMetodologica #AbrirMenu { top: 26px }
 	.NotaMetodologica .Sessao1 p.DestaqueInterno { margin: 35px 0; } 
-	.NotaMetodologica .Sessao1 h2 { margin-top: 30px; }
-
+	.NotaMetodologica .Sessao1 h2 { margin-top: 30px; }	
 	.NotaMetodologica .NotaIcone { max-height: 30px; position: absolute; left: 0; }
 	.NotaMetodologica .Accordeon .WrapperAcc:last-child .Accordeon-mini-box-info { border: 0 }
 	.NotaMetodologica .Accordeon .Accordeon-mini-box-info a { padding-left: 70px; }
+/* Nota Metodológica Mobile */
 
-	/* Calculadora */
-	
+/* Calculadora Mobile */	
 	.Calculadora .Sessao2 h2 { max-width: 240px; margin: 30px 0; }
 	.Calculadora .Sessao2 .Box p:last-of-type, .Calculadora .Sessao2 .Box strong { color: var(--secundariamobile); }
 	.Calculadora .Sessao2 form { float: initial; }
@@ -656,7 +726,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Calculadora3 .Card .Custo { display: grid; grid-template-columns: 1fr 1fr; width: 100%; column-gap: 17px; }
 	.Calculadora3 .Card .Custo p { font-size: 0.75rem; line-height: 1rem; }
 	.Calculadora3 .Card .Custo span { margin: 0; font-size: initial; margin-top: 10px }
-	.Calculadora3 .Card .Custo .BtnInfo { float: right; margin-top: 7px }
+	.Calculadora3 .Card .Custo .BtnInfo { float: right; margin-top: 12px }
 	.Calculadora3 .Card p.Sub { padding-top: 0 }
 	.Calculadora3 .Card p.Sub span { float: right; margin-left: 20px; }
 	.Calculadora3 .Comparar { font-size: 0.75rem; color: #295881 }
@@ -678,8 +748,47 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Calculadora3 .FiltrosOpen a:last-child { font-size: 0.75rem; margin-bottom: 20px; }
 	.Calculadora3 .FiltrosOpen .Sliders .content input { font-size: 0.875rem; margin-bottom: 30px; }
 	
+	.Calculadora3 .NaoEncontrou { width: calc(100% - 40px); padding: 25px 20px 45px 20px; bottom: initial; top: 250px }
+	.Calculadora3 .NaoEncontrou form .Grupo { margin-top: 17px }
+	.Calculadora3 .NaoEncontrou form p.Destaque { margin-bottom: 20px; }
+	.Calculadora3 .NaoEncontrou form p.Sub { text-align: left; padding-top: 0; padding-bottom: 0 }
+/* Calculadora Mobile */
 
-/* :Pagina Equipamentos Mobile */
+/* Tabela Mobile: */
+	.Tabela header { height: 68px;	min-height: initial; background-color: var(--secundaria); position: relative; }
+	.Tabela .LogoCalc { position: absolute; top: 20px; left: 23px; z-index: 8; }
+	.Tabela .PainelTopo { margin-bottom: 0; } 
+	.Tabela .PainelTopo .Alterar { font-size: 0.875rem; position: relative; bottom: 0; margin: 0; margin: 35px 0; }
+	.Tabela .PainelTopo .Alterar div:first-child:not(.PopupInfo) { margin-bottom: 10px; }
+
+	.Tabela h2 { margin-top: 20px; }
+
+	.TabelaComparativa { margin-right: -23px; margin-left: -23px; padding-bottom: 30px; background-color: #F2F2F2; margin-bottom: 0; }
+	.TabelaComparativa table { overflow-x: auto; display: block; font-size: 1.25rem; color: #8E8E8E; margin-bottom: 20px; }
+
+	.TabelaComparativa table td { display: table-cell; vertical-align: middle; padding: 13px }
+
+	.TabelaComparativa tr { border: 0 }
+	.TabelaComparativa tr:first-child { color: #fff; background-color: var(--secundaria); font-weight: bold; }
+	.TabelaComparativa tr:first-child td { color: #fff!important; }
+	
+	.TabelaComparativa tr td:first-child { background-color: initial; font-weight: bold; color: #8E8E8E; font-size: 0.75rem }
+	
+	.TabelaComparativa tr td:nth-child(1) { border-right: 1px solid #E8E8E8; }
+
+	.TabelaComparativa tr:nth-of-type(1) { font-size: 0.75rem; }
+	.TabelaComparativa tr:nth-of-type(2) { font-size: 0.75rem; }
+
+	.TabelaComparativa tbody tr:nth-child(odd):not(:first-child) { background: #F2F2F2; }
+	.TabelaComparativa tbody tr:nth-child(even) { background: #fff; }
+
+	.TabelaComparativa a { margin: auto; box-sizing: border-box; width: calc(100% - 46px); }
+	.TabelaComparativa table span.font10 { font-size: 10px; vertical-align: text-top; }
+
+	
+
+
+/* :Tabela Mobile */
 
 
 /* Box Inscrever Mobile: */
@@ -712,7 +821,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	footer .Baixo img { margin: auto; }
 /* :Footer Mobile */
 
-/* Componentes reutilizaveis: */
+/* Componentes reutilizaveis Mobile: */
 
 	/* Accordeon Mobile: */
 		.Accordeon { width: initial; border-bottom: initial; margin-bottom: 40px; }
@@ -741,7 +850,20 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 		.slick-list { max-width: 200px!important; overflow: initial; }
 	/* :Slick */
 
-/* :Componentes reutilizaveis */
+		
+	/* Popup: */
+		.PopupInfo {  }
+		.PopupInfo span { margin-top: 0!important }
+		.PopupInfo p { color: #fff; font-size: 0.75rem; line-height: 1.25rem!important; }
+		.Custo .PopupInfo { padding-top: 20px }
+
+		.PopupLinkInfo { position: fixed; left: 50%; transform: translate(-50%, -50%); top: 50%; }
+		.PopupLinkInfo a.Btn { height: 42px!important; border-radius: var(--radius)!important }
+		.mask { background: #848484c4 }
+		.masktransp { }
+	/* :Popup */
+
+/* :Componentes reutilizaveis Mobile */
 
 }
 

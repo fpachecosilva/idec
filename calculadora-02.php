@@ -9,7 +9,8 @@
 		<?php include 'assets/head.php'; ?>
 	</head>
 	<body class="Equipamentos Calculadora2">
-		
+        
+    
         <?php include 'assets/header.php'; ?>
 
         <section class="Banner">
@@ -21,7 +22,8 @@
 			</article>			
         </section>
 
-        <section class="Sessao1">
+        <section class="Sessao1">        
+
             <article>
                 
             <h2>Para customizar seu resultado, preencha os campos a seguir:</h2>
@@ -50,7 +52,16 @@
                 </div>
                  
                 <div class="Grupo">
-                    <label class="Inline" for="dist">Selecione sua distribuidora: <a class="BtnInfo" href="javascript:void()"></a></label>
+                    <label class="Inline" for="dist">Selecione sua distribuidora: 
+                        <div class="mask"></div>
+                        <div class="masktransp"></div>
+                        <a class="BtnInfo" href="javascript:void()"> 
+                            <div class="PopupInfo" style="width:175px">
+                                <span></span>
+                                <p>Distribuidora elétrica é a empresa que fornece eletricidade para sua casa.</p>
+                            </div> 
+                        </a>
+                    </label>
                     <select name="dist" id="dist">
                         <option value="" selected disabled hidden>Selecione</option>
                         <option value="Aneel">Aneel</option>

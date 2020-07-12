@@ -35,6 +35,8 @@
 		$Efeitos = "efeitos.php";
 		$Tarifa = "tarifa.php";
 
+		$Eqp_TabelaRes = "tabelares.php";
+
 	// contato
 		$email = '';
 
