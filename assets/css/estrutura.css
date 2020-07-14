@@ -105,6 +105,8 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	input, select, input:checked{ background-color: #fff; border: 0; outline-color: #e6e6e6; }	
 	input[type=checkbox] { -webkit-appearance: initial; border-radius: var(--radius); width: 20px; height: 20px; }
 	input[type=checkbox]:checked { -webkit-appearance: checkbox; }
+	input[type=number] { width: 73px; height: 59px; border-radius: var(--radius10); color: var(--secundaria); text-align: center; font-size: initial; }
+
 	input::placeholder { color: var(--secundaria); }
 	label.Inline { display: inline-block!important; }	
 /* :Elementos */
@@ -119,6 +121,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Btn-Destaque1 { background-color: var(--destaque1)!important; color: #fff!important; }
 	.Btn-Destaque2 { background-color: var(--destaque2)!important; color: #fff!important; }
 	.Btn-Destaque3 { background-color: var(--destaque3)!important; color: #fff!important; }
+	.Btn-Destaque4 { background-color: var(--secundaria)!important; color: #fff!important; }
 /* :Botões */
 
 /* Backgrounds: */
@@ -312,16 +315,14 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 		.TabelaRes .Legenda { font-size: 0.875rem; color: var(--secundaria); display: flex; align-items: center; }
 		.TabelaRes .Legenda::before { content: ""; width: 19px; height: 16px; background-color: var(--destaque1); margin-right: 10px; }
 
-		.TabelaRes td.Destaque { color: var(--secundaria); font-weight: bold; background-color: var(--destaque1); }
+		.TabelaRes td.Destaque { color: var(--secundaria); font-weight: bold; background-color: var(--destaque1); border-bottom: 1px solid #fff; }
 		.TabelaRes .BtnInfo { position: absolute; margin-top: 2px; margin-left: 10px; }
 
 		/* :Tabela */
-
-
 	/* :Pagina Equipamentos */
 
 
-/* Componentes reutilizáveis: */
+	/* Componentes reutilizáveis: */
 
 	/* Breadcrumb: */
 		.Breadcrumb * { color: var(--secundaria);  }
@@ -378,17 +379,58 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 		.PopupLinkInfo .Btn { width: 100%; margin: auto!important; }
 		.PopupLinkInfo .BtnInfo { position: absolute; margin-top: 3px }
 
+		.TabelaRes .Inscrever .PopupRes { display: none; background-color: #fff; color: var(--secundaria); margin: auto; left: 0;	right: 0; top: 0; bottom: 0; }
+		.TabelaRes .Inscrever .PopupRes span { color: var(--secundaria); background-image: url('../images/x.svg'); }
+		.TabelaRes .Inscrever .PopupRes .WrapperResText { height: 100%; display: grid; align-items: center; justify-content: center; }
+		.TabelaRes .Inscrever .PopupRes p { color: var(--secundaria); font-size: initial; text-align: center; }
+		.TabelaRes .Inscrever .PopupRes p.sucesso { display: none; }
+		.TabelaRes .Inscrever .PopupRes p.erro { display: none; }
+		.TabelaRes .Inscrever .PopupRes p.Ok { display: none; font-weight: bold; font-size: 1.25rem; }
 		.Custo .PopupInfo { display: none; }
 
 		.mask { display: none; position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 1; margin: 0!important }
 		.maskcinza { display: none; position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 2; margin: 0!important; background: #848484c4 }
 		.masktransp { display: none; position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 0; margin: 0!important }
-		
-
 	/* :Info */
 
+	/* :Componentes reutilizáveis */
 
-/* :Componentes reutilizáveis */
+	/* Pagina Tarifa: */
+		.Tarifa p.LineSub { line-height: 1.5rem; }
+		.Tarifa p.DestaqueSub { margin-bottom: 25px; color: var(--secundaria); font-family: 'Montserrat' , sans-serif; font-weight: bold; }
+		.Tarifa .Banner { background-image: url('../images/tarifa-banner.png'); }
+		.Tarifa h1 { max-width: 350px; }
+
+		.Tarifa select { box-shadow: var(--shadow); }
+		.Tarifa input { box-shadow: var(--shadow); margin-right: 17px; }
+		.Tarifa label { font-weight: 500; color: var(--secundaria) }
+
+		.Tarifa .Sessao1 .Btn.Space { margin: 35px auto }
+		.Tarifa .Horarios { background-color: #F5F5F5; padding: 50px 0 45px 0; box-sizing: border-box; }
+		
+		.Tarifa .Accordeon { border-bottom: 0; }
+		.Tarifa .Accordeon .Accordeon-mini-box-info a { justify-content: center; }
+		.Tarifa .Accordeon .WrapperAcc:last-of-type .Accordeon-mini-box-info { border-bottom: 1px solid #ADADAD; }
+
+		.Tarifa .Sliders .ui-widget.ui-widget-content { width: 622px; height: 14px; border-radius: var(--radius10); }
+		.Tarifa .Sliders .ui-widget-header { background-color: var(--destaque3); border-radius: 10px 0 0 10px; }
+		.Tarifa .Sliders .ui-slider-handle { display: none; }
+
+		.Questionario .Sessao1 .BtnWrapper a { margin: 0 }
+		.Questionario .Sessao1 .BtnWrapper a:first-child { margin-right: 14px; }
+		.Questionario .Sessao1 .BtnWrapper { display: flex; justify-content: center; }
+
+		.Tarifa.Resultado1 .Sessao1 { padding-bottom: 45px; }
+		.Tarifa.Resultado1 .Accordeon { margin-top: 0; }
+		.Resultado1 h2 strong, .Resultado2 h2 strong { color: var(--destaque3); }
+		.Resultado1 .Sessao1 img, .Resultado2 .Sessao1 img { display: block; margin: 45px auto; }
+		.Resultado2 p.DestaqueInterno { margin-top: 60px }
+		.Resultado2 article.nivel2 p { max-width: 909px; margin: auto; }
+		.Resultado2 .Sessao1 .Btn { margin: 35px auto; margin-bottom: 0; }
+		.Tarifa.Resultado2 .Sessao1 { padding-bottom: 0; }
+
+		.Resultado2 .SaibaMais { padding-top: 55px; }
+	/* :Pagina Tarifa */
  
 
 
@@ -510,6 +552,13 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	
 /* Calculadora Desktop: */
 
+/* Tabela Desktop: */
+	.TabelaRes .Inscrever .Box { align-items: center; }
+	.TabelaRes .RefazerCalculo article { display: flex; height: 144px; align-items: center; justify-content: center; }
+	.TabelaRes .RefazerCalculo a { max-width: 274px; }
+	.TabelaRes .RefazerCalculo a:first-child { margin-right: 30px; }
+	.TabelaRes .Inscrever .PopupRes { width: 408px; height: 122px; right: 337px; left: auto; }
+/* :Tabela Desktop /*
 
 /* Footer Desktop: */
 	footer { padding: 0 88px; }
@@ -517,7 +566,6 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	footer .Baixo { height: 72px; display: grid; grid-template-columns: 50% 50%; align-items: center; }
 	footer .Baixo div:last-child img { float: right; }
 /* :Footer Desktop */
-
 
 
 /* Componentes reutilizaveis Desktop: */
@@ -545,6 +593,72 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	/* :Saiba Mais Desktop */
 
 /* :Componentes reutilizaveis Desktop */
+
+/* Pagina Tarifa Desktop: */
+	.Tarifa h1 { max-width: 264px; }
+	.Tarifa p { line-height: 1.625rem; }
+
+	.Tarifa .Sessao1 { padding: 90px 0 90px 0; text-align: center; }
+	.Tarifa .Sessao1 h2 { margin-bottom: 5px; }
+		
+	.Tarifa .Sessao2 { padding-top: 65px; padding-bottom: 80px; color: #fff; }
+	.Tarifa .Sessao2 .Boxes { display: grid; grid-template-columns: 25% 35% 40%; margin: 55px 0 75px 0  }
+	.Tarifa .Sessao2 .Box { display: grid; grid-template-columns: auto auto; margin-right: 94px; }
+	.Tarifa .Sessao2 .Box:last-child { margin-right: 0; }
+	.Tarifa .Sessao2 .Box p { display: block; }
+	.Tarifa .Sessao2 .Box p:first-of-type { line-height: initial; font-size: 3.8rem; font-weight: bold; font-family: 'Montserrat' , sans-serif; }
+	.Tarifa .Sessao2 .Box p:last-of-type { line-height: 1.56rem; font-size: initial; padding-top: 15px; padding-left: 10px; }
+	.Tarifa .Sessao2 form div { display: grid; grid-template-columns: auto auto; column-gap: 35px; justify-content: center; margin-top: 30px; }
+
+	.Tarifa .Sessao3 { padding: 95px 0 105px 0 }
+	.Tarifa .Sessao3 .Boxes { display: grid; grid-template-columns: 50% 50%; }
+	.Tarifa .Sessao3 .esq, .Tarifa .Sessao3 .dir { padding: 0 25px; position: relative; }
+	.Tarifa .Sessao3 .dir { margin-left: 90px; }
+	.Tarifa .Sessao3 .dir img { margin-top: 25px; max-width: 320px; }
+
+	.Tarifa .Sessao3 .Boxes p.Destaque { font-size: 1.25rem; line-height: 1.5rem; margin-bottom: 15px; text-align: left; }
+
+	.Tarifa .Sessao3 .Internas { display: grid; grid-template-columns: 33.33% 33.33% 33.33%; padding: 40px 0 50px 0 }
+	.Tarifa .Sessao3 .Internas div { margin-right: 40px; }
+	.Tarifa .Sessao3 .Internas div:last-child { margin-right: 0; }
+	.Tarifa .Sessao3 .Internas p { font-size: 0.875rem; line-height: 1.125rem; }
+	.Tarifa .Sessao3 .Internas img { margin-bottom: 25px; }
+
+	.Tarifa .Horarios .WrapperHorarios { display: flex; justify-content: center; margin-top: 45px; }
+	.Tarifa .Horarios .WrapperHorarios select { margin-right: 40px; }
+
+	.Tarifa .Accordeon .WrapperAcc:first-of-type { margin-top: 40px }
+	.Tarifa .Accordeon { margin: 70px auto 0 auto }
+	.Tarifa .Accordeon p.Destaque { margin-bottom: 35px; }
+
+
+	.Questionario1 .Sessao1 .Btn { margin: auto; margin-top: 50px; }
+
+	.Tarifa.Questionario h2 { margin: 0 auto 50px auto; max-width: 580px; }
+	.Tarifa.Questionario .Sessao1 p span { color: var(--destaque3); font-size: 1.25rem; font-weight: bold; }
+
+	.Tarifa.Questionario .Sessao1 form { margin-top: 30px; margin-bottom: 45px; }
+
+	.Tarifa.Questionario1 .Sessao1 form { display: flex; justify-content: center; }
+	.Tarifa.Questionario1 form > div { display: flex; align-items: center; }
+	.Tarifa.Questionario1 form > div:first-of-type { margin-right: 30px; }
+	.Tarifa.Questionario1 .Sessao1 p:last-of-type { max-width: 465px; margin: auto; display: block; font-size: 0.875rem; line-height: 1.125rem; }
+
+	.Questionario p.Desc { max-width: 395px; margin: auto; }
+	
+	.Questionario form .LinhaInput { display: flex; align-items: center; justify-content: center; margin-bottom: 30px; }
+	.Questionario form .LinhaInput div { display: flex; align-items: center; }
+	.Questionario form .LinhaInput div:first-of-type { margin-right: 25px; }
+	.Questionario form .LinhaInput label { font-weight: normal; }
+	
+	.Questionario form .Grupo { max-width: 470px; display: block; margin: auto; color: var(--secundaria); margin-bottom: 30px; }
+	.Questionario form .Grupo p { margin-bottom: 15px; font-weight: 500; }
+	.Questionario form .Grupo select { display: inline-block; margin: 0 20px; }
+	
+	.Questionario3 form .Grupo select { width: 86px; height: 59px; border-radius: var(--radius10); padding-left: 11px; }
+	.Questionario3 .EscolhaHorarios { display: flex; align-items: center; justify-content: center; }
+
+/* :Pagina Tarifa Desktop */
 
 
 }
@@ -733,6 +847,14 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Calculadora3 .Comparar input { width: 20px; height: 20px; }
 	.Calculadora3 .PainelTopo .Alterar div:first-of-type { margin-bottom: 5px; }
 	
+	.Calculadora3 .CardInside .PopupLinkInfo { overflow: hidden; display: none }
+	.Calculadora3 .CardInside .ClassificacaoInside { display: grid; grid-template-columns: 1fr 1fr; background-color: var(--secundaria); margin-bottom: -20px; margin-left: -20px; margin-right: -20px; padding: 23px; box-sizing: border-box; }
+	.Calculadora3 .CardInside .ClassificacaoInside p { color: #fff }
+	.Calculadora3 .CardInside .ClassificacaoInside > div { display: grid; grid-template-rows: 1fr auto; }
+	.Calculadora3 .CardInside .ClassificacaoInside .InsideClassText p { font-size: initial; margin-top: 15px }
+	.Calculadora3 .CardInside .ClassificacaoInside p { font-size: 0.75rem; line-height: 1rem; }	
+	.Calculadora3 .CardInside .Custo p { margin-bottom: 15px; }
+	
 	.Calculadora3 .Paginador { margin: 25px 0 35px 0 }
 	
 	.Calculadora3 .FiltrosOpen { background-color: #fff; position: ; z-index: 6; bottom: 0; left:0; right: 0; box-shadow: none; margin-top: 25px }
@@ -785,9 +907,9 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.TabelaComparativa a { margin: auto; box-sizing: border-box; width: calc(100% - 46px); }
 	.TabelaComparativa table span.font10 { font-size: 10px; vertical-align: text-top; }
 
-	
-
-
+	.TabelaRes .TabelaComparativa { background-color: #fff; }
+	.TabelaRes .TabelaComparativa .Legenda { justify-content: center; }
+	.TabelaRes .BtnInfo { top: 15px; right: -40px; margin-top: 0 }
 /* :Tabela Mobile */
 
 
@@ -799,6 +921,23 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Inscrever p { color: #fff; }
 	.Inscrever .LinksExtras { line-height: 1.5rem; clear: both; }
 	.Inscrever input { width: 100%; box-sizing: border-box; }
+
+	.TabelaRes .Inscrever .Esq p { max-width: 100%; }
+	.TabelaRes .Inscrever form { max-width: 247px; margin: auto; }
+	.TabelaRes .Inscrever input[type=checkbox] { width: 20px; height: 20px; float: none; margin-bottom: -2px; }
+	.TabelaRes .Inscrever .LinksExtras { text-align: left; max-width: 247px; margin: auto; }
+	
+	.TabelaRes .Inscrever .PopupRes { display: none; width: 294px; height: 181px; background-color: #fff; color: var(--secundaria); margin: auto; left: 0;	right: 0; top: 0; bottom: 0; }
+	.TabelaRes .Inscrever .PopupRes span { color: var(--secundaria); background-image: url('../images/x.svg'); }
+	.TabelaRes .Inscrever .PopupRes .WrapperResText { height: 100%; display: grid; align-items: center; justify-content: center; }
+	.TabelaRes .Inscrever .PopupRes p { color: var(--secundaria); font-size: initial; text-align: center; }
+	.TabelaRes .Inscrever .PopupRes p.sucesso { display: none; }
+	.TabelaRes .Inscrever .PopupRes p.erro { display: none; }
+	.TabelaRes .Inscrever .PopupRes p.Ok { display: none; font-weight: bold; font-size: 1.25rem; }
+	
+	.TabelaRes .RefazerCalculo { margin-top: 22px; margin-bottom: 30px; }
+	.TabelaRes .RefazerCalculo a { margin: auto; max-width: 247px; }
+	.TabelaRes .RefazerCalculo a:first-child { margin-bottom: 14px; }
 /* :Box Inscrever Mobile */
 
 
@@ -843,7 +982,6 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 		.SaibaMais .Textos p.Titulo { font-size: initial; text-decoration: underline; color: var(--secundaria); }
 
 		.BtnSaibaMais { background-color: #1D84D4; color: #FFF; margin: 0 23px }
-
 	/* :Saiba mais Mobile */
 
 	/* Slick: */
@@ -861,9 +999,65 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 		.PopupLinkInfo a.Btn { height: 42px!important; border-radius: var(--radius)!important }
 		.mask { background: #848484c4 }
 		.masktransp { }
-	/* :Popup */
+	/* :Popup */	
 
 /* :Componentes reutilizaveis Mobile */
+
+/* Pagina Tarifa Mobile: */
+	.Tarifa p { line-height: 1.5rem; }
+	.Tarifa .Banner { height: 295px; background-image: url(../images/tarifa-banner-mobile.png); }
+	.Tarifa h1 { max-width: 193px; }
+	.Tarifa .Sessao1 h2 { max-width: 240px; margin-bottom: 0; }
+	.Tarifa .Sessao1 p.DestaqueInterno { margin-top: 10px; margin-bottom: 35px; }
+	.Tarifa .Sessao1 .Btn.Space { height: 76px; text-transform: initial; line-height: 1.125rem; display: flex; align-items: center; padding: 0 30px; box-sizing: border-box; border-radius: var(--radius10); }
+		
+	.Tarifa .Horarios { display: none; }
+	.Tarifa .Accordeon .WrapperAcc { margin-top: 10px }	
+	.Tarifa .Accordeon .WrapperAcc:first-of-type { margin-top: 0 }	
+	.Tarifa .Accordeon p.Destaque { margin-top: 40px; margin-bottom: 15px }
+	.Tarifa .Accordeon .Accordeon-mini-box-info a { max-width: 238px; justify-content: initial; }
+
+	.Tarifa .HorariosMobile p.Destaque { text-align: left; }
+	.Tarifa .HorariosMobile .WrapperHorarios select { margin-bottom: 15px; }
+	.Tarifa .HorariosMobile .WrapperHorarios .Btn { margin-bottom: 40px; }
+
+	.Tarifa .SaibaMais h2 { color: var(--destaque3) }
+	.Tarifa .SaibaMais .BtnSaibaMais { display: none!important; }
+
+	.Tarifa .Sliders .ui-widget.ui-widget-content { width: 100%; margin-top: 23px; margin-bottom: 40px; height: 10px; }
+	.Tarifa.Questionario .Sessao1 p span { color: var(--destaque3); font-size: initial; font-weight: bold; }	
+		
+	.Questionario .Sessao1 .BtnWrapper { margin-top: 35px; margin-bottom: 55px; }
+	.Questionario form .Grupo { max-width: 470px; display: block; margin: auto; color: var(--secundaria); margin-bottom: 30px; }
+	.Questionario form .Grupo p { margin-bottom: 15px; font-weight: 500; color: var(--secundaria); }
+	.Questionario form .Grupo select { display: inline-block; margin: 0 20px; }
+	.Questionario form .Grupo select:first-of-type { margin-left: 0; }
+
+	.Questionario1 .Sessao1 form { margin: 30px 0 }
+	.Questionario1 .Sessao1 form div { display: flex; align-items: center; }
+	.Questionario1 .Sessao1 form div:first-of-type { margin-bottom: 15px; }
+	.Questionario1 .Sessao1 .Btn { margin-top: 33px; margin-bottom: 55px; }
+	
+	.Questionario2 .Sessao1 form { margin: 35px 0 }
+	
+	.Questionario3 .EscolhaHorarios { display: flex; align-items: center; margin-bottom: 25px; }
+	.Questionario3 form .Grupo select, .Questionario4 form .Grupo select { width: 86px; height: 59px; border-radius: var(--radius10); padding-left: 11px; }
+	.Questionario3 .LinhaInput { display: grid; grid-template-columns: auto 1fr; margin-bottom: 20px; }
+			
+	.Questionario4 form .Grupo p:first-of-type { color: var(--secundariamobile); font-weight: normal; margin-top: 30px; }
+	.Questionario4 .LinhaInput, .Questionario5 .LinhaInput, .Questionario6 .LinhaInput { margin-top: 35px; }
+	.Questionario4 .LinhaInput div { display: flex; align-items: center; }
+	.Questionario4 .LinhaInput div:first-of-type { margin-bottom: 15px; }
+
+	.Questionario header, .Resultado1 header, .Resultado2 header { height: 68px; min-height: initial; background-color: var(--secundaria); position: relative; }
+	.Questionario .LogoCalc, .Resultado1 .LogoCalc, .Resultado2 .LogoCalc { position: absolute; top: 20px; left: 23px; z-index: 8; }
+	
+	.Resultado1 span.circle { display: block; width: 8px; height: 8px; margin-top: 8px; margin-right: 10px; background-color: var(--secundaria); float: left; border-radius: 50%; }
+	.Resultado1 .Accordeon .WrapperAcc .Btn-Destaque3, .Resultado2 .Btn-Destaque3 { margin-top: 35px; height: 76px; text-transform: initial; line-height: 1.125rem; display: flex; align-items: center; padding: 0 30px; box-sizing: border-box; border-radius: var(--radius10); }
+	
+	.Resultado2 .SaibaMais { padding-top: 0 }
+	.Resultado2 .Sessao1 p.DestaqueInterno { margin-top: 30px; margin-bottom: 25px; }
+/* :Pagina Tarifa Mobile */
 
 }
 

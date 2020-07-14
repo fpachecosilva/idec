@@ -124,7 +124,7 @@
             
             <article class="nivel2">
                 
-                <p class="ProdRes">
+                <p class="ProdRes DesktopItem">
                     O produto mais energicamente eficiente é: <span class="Destaque1">FREEZER  PFZ200B 056451036</span>
                 </p>
 
@@ -194,7 +194,15 @@
 
         </section>        
 
-        <?php include 'assets/inscrever.php'; ?>        
+        <?php include 'assets/inscrevertabelares.php'; ?>        
+
+        <section class="RefazerCalculo">
+            <article>
+                <a class="Btn Btn-Destaque1 Btn-Default" href="javascript:void()">Refazer cálculo</a>
+                <a class="Btn Btn-Destaque1 Btn-Default" href="javascript:void()">Calcular outro pedido</a>
+            </article>
+        </section>
+
         <?php include 'assets/footer.php'; ?>
 
         <script type="text/javascript">

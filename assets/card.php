@@ -5,6 +5,64 @@
 
     <a class="MobileItem VerMaisLink" href="javascript:void()">ver mais informações</a>
 
+    
+    <div class="mask"></div>
+    <div class="CardInside MobileItem">
+
+    <div class="PopupLinkInfo Dist">
+        <span></span>
+
+
+            <p class="Destaque">
+                Husky / Home&Art
+            </p>            
+            
+            <p class="Sub">
+                FREEZER PFZ200B - 056451036
+            </p>
+            <p class="Sub">
+                Refrigeradores
+            </p>
+                
+            <div class="Custo">
+                <div>
+                    <p>Custo da conta de luz em 1 ano:</p>R$ 80,00
+                </div>
+                <div>
+                    <p>Custo da conta de luz em 10 anos:</p>R$ 800,00
+                </div>
+            </div>
+
+            <div class="ClassificacaoInside">
+                
+                <div>
+                    <div>
+                        <p>Classificação no Brasil:</p>
+                    </div>
+                    <div class="InsideClassText">
+                        <p><strong>AAA</strong></p>    
+                    </div>
+                </div>
+
+                <div>
+                    <div>
+                        <p>Classificação na União Européia:</p>
+                    </div>
+                    <div class="InsideClassText">
+                        <p><strong>A</strong></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+    </div> 
+
     <p class="Sub">
         FREEZER PFZ200B - 056451036
     </p>

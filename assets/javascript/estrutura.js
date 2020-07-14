@@ -205,6 +205,48 @@ jQuery(document).ready(function() {
 	$( "#amount3" ).val( "De R$" + $( "#slider-range3" ).slider( "values", 0 ) +
 	" Até R$" + $( "#slider-range3" ).slider( "values", 1 ) );
 
+	
+	$( "#slider-tarifa" ).slider({
+        range: true,
+        min: 0,
+        max: 100,
+        values: [ 0, 5]        
+	});
+	
+	$( "#slider-tarifa2" ).slider({
+        range: true,
+        min: 0,
+        max: 100,
+        values: [ 0, 20]        
+    });
+
+	$( "#slider-tarifa3" ).slider({
+        range: true,
+        min: 0,
+        max: 100,
+        values: [ 0, 40]        
+	});
+	
+	$( "#slider-tarifa4" ).slider({
+        range: true,
+        min: 0,
+        max: 100,
+        values: [ 0, 60]        
+	});
+	
+	$( "#slider-tarifa5" ).slider({
+        range: true,
+        min: 0,
+        max: 100,
+        values: [ 0, 70]        
+	});
+	
+	$( "#slider-tarifa6" ).slider({
+        range: true,
+        min: 0,
+        max: 100,
+        values: [ 0, 97]        
+    });
 
 
 	// Botão de interrogação
@@ -217,7 +259,7 @@ jQuery(document).ready(function() {
 			$('.masktransp').hide();			
 		}
 
-	});
+	});	
 
 	// Clique em alterar
 	$('.LinkInfo').click( function() {
@@ -228,10 +270,51 @@ jQuery(document).ready(function() {
 			
 			$('.mask').toggle();
 		} else {
-			('.mask').hide();			
+			$('.mask').hide();			
 		}
 
 	});
+
+	// Ver mais informacoes Card
+	$('.VerMaisLink').click( function() {
+		
+		$(this).parent().find('.PopupLinkInfo').slideToggle('fast').toggleClass('open');	
+	
+		if ($('.PopupLinkInfo').hasClass('open')) {
+			
+			$(this).parent().find('.mask').toggle();
+		} else {
+			$(this).parent().find('.mask').hide();			
+		}
+
+	});
+
+	
+	// TabelaResInscrever
+	$('#TabelaResInscrever').click( function() {
+		$(this).next().slideToggle('fast').toggleClass('open');
+	
+		if ($('.PopupInfo').hasClass('open')) {
+			$('.masktransp').show();			
+
+			if ( $( '.WrapperResText' ).hasClass('sucesso') ) {
+				$('.sucesso').show();				
+				$('.Ok').show();
+			} else {
+				$('.erro').show()
+				$('.Ok').show();
+			}
+
+		} else {
+			$('.masktransp').hide();			
+		}
+
+	});
+
+			
+		
+	
+	
 
 	// Botao Insira seu proprio produto
 	$('#BtnTopo').click( function() {
@@ -309,6 +392,17 @@ jQuery(document).ready(function() {
 		}
 
 	})
+
+	$('.CardInside').parent().find('.mask').click( function() {
+
+		if ( $('.PopupInfo').hasClass('open') ) {
+						
+			$('.PopupInfo').fadeOut().removeClass('open'); 			
+			$('.mask').toggle();
+		} else {
+			$('.mask').hide();
+		}
+	}) 		
 
 	
 
