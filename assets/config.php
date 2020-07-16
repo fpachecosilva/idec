@@ -8,10 +8,10 @@
 	$empresa = 'Idec';
 	
 	// Local
-	// $url = 'http://localhost/idec/';
+	$url = 'http://localhost/idec/';
 	
 	// Server
-	$url = 'http://previewbsagency.com.br/idec/';
+	// $url = 'http://previewbsagency.com.br/idec/';
 
 	$images = $url.'assets/images/';
 	$Tags = '';
@@ -44,8 +44,23 @@
 			
 			
 		$Efeitos = "efeitos.php";
+			$Efeitos_Questionario1 = "efeitos-questionario-01.php";
+			$Efeitos_Questionario2 = "efeitos-questionario-02.php";
+			$Efeitos_Questionario3 = "efeitos-questionario-03.php";
+			$Efeitos_Questionario4 = "efeitos-questionario-04.php";
+			$Efeitos_Questionario5 = "efeitos-questionario-05.php";
+			$Efeitos_Questionario6 = "efeitos-questionario-06.php";
+			$Efeitos_Questionario7 = "efeitos-questionario-07.php";
+			$Efeitos_Questionario_Resultado = "efeitos-questionario-resultado.php";
 			
-
+			$Efeitos_Segundo_Questionario1 = "efeitos-segundo-questionario-01.php";
+			$Efeitos_Segundo_Questionario2 = "efeitos-segundo-questionario-02.php";
+			$Efeitos_Segundo_Questionario3 = "efeitos-segundo-questionario-03.php";
+			$Efeitos_Segundo_Questionario4 = "efeitos-segundo-questionario-04.php";
+			$Efeitos_Segundo_Questionario5 = "efeitos-segundo-questionario-05.php";
+			$Efeitos_Segundo_Questionario_Resultado_1 = "efeitos-segundo-questionario-resultado.php";
+			$Efeitos_Segundo_Questionario_Resultado_2 = "efeitos-segundo-questionario-resultado-02.php";
+			
 
 
 	// contato

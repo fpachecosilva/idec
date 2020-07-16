@@ -323,6 +323,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 
 
 	/* Componentes reutilizáveis: */
+		.mga { margin: auto; }
 
 	/* Breadcrumb: */
 		.Breadcrumb * { color: var(--secundaria);  }
@@ -431,6 +432,20 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 
 		.Resultado2 .SaibaMais { padding-top: 55px; }
 	/* :Pagina Tarifa */
+
+	/* Pagina Efeitos: */
+		.Efeitos .Banner { background-image: url('../images/efeitos-banner.png'); }
+		.Efeitos input { box-shadow: var(--shadow);	margin-right: 17px; }
+		.Efeitos input.Redondo { width: 73px; height: 59px; border-radius: var(--radius10); text-align: center; font-size: initial; color: var(--secundaria); margin-right: 0; }
+		.Efeitos input.Redondo.ComDesc { margin-right: 15px; }
+		.Efeitos label { font-weight: 500; color: var(--secundaria); }
+		.Efeitos select { box-shadow: var(--shadow); width: 274px; }
+		.Efeitos select.Reduzido { width: 91px; }
+		.Efeitos select.Medio { width: 153px; }
+
+		.Efeitos.Resultado .WrapperFlex p:last-child { color: var(--destaque2); font-weight: bold; font-size: 1.875rem; }
+
+	/* :Pagina Efeitos */
  
 
 
@@ -657,8 +672,93 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	
 	.Questionario3 form .Grupo select { width: 86px; height: 59px; border-radius: var(--radius10); padding-left: 11px; }
 	.Questionario3 .EscolhaHorarios { display: flex; align-items: center; justify-content: center; }
-
 /* :Pagina Tarifa Desktop */
+
+
+
+/* Pagina Efeitos Desktop: */
+	.Efeitos h1 { max-width: 300px; }
+	.Efeitos .Sessao1 { margin: 90px 0 50px 0; }
+	.Efeitos .Sessao1 h2 { max-width: 460px; margin: auto; }
+	.Efeitos .Sessao1 .Btn-Destaque2 { margin: 35px auto }
+	.Efeitos .Sessao1 p, .Efeitos .Sessao2 p { text-align: center; }
+
+	.Efeitos .Sessao2 { margin-bottom: 120px; }
+	.Efeitos .Sessao2 p.DestaqueInterno { margin-bottom: 5px; }
+
+	.Efeitos .Sessao2 .WrapperBoxesMaleficios { max-width: 740px; display: grid; align-items: center; grid-template-columns: 2fr 1fr 2fr 1fr 2fr; margin: auto; margin-top: 50px;  }
+	.Efeitos .Sessao2 .WrapperBoxesMaleficios .Box img { margin: auto; margin-bottom: 20px; }
+	.Efeitos .Sessao2 .WrapperBoxesMaleficios .Box p { font-size: 0.875rem; line-height: 1.125rem; }
+	.Efeitos .Sessao2 .WrapperBoxesMaleficios .Box > div:first-of-type { margin-bottom: 50px; }
+	.Efeitos .Sessao2 .WrapperBoxesMaleficios img.ImgSeparadorMaleficios { margin: auto; }
+
+	.Efeitos .Sliders .ui-widget.ui-widget-content { width: 622px; height: 14px; border-radius: var(--radius10); }
+	.Efeitos .Sliders .ui-widget-header { background-color: var(--destaque2); border-radius: 10px 0 0 10px; }
+	.Efeitos .Sliders .ui-slider-handle { display: none; }
+	.Efeitos .Sliders p { font-weight: bold; color: var(--secundaria); }
+
+	.Efeitos.Questionario .Sessao1 h2 { margin: 0 auto 50px auto }
+	.Efeitos.Questionario .Sessao1 p span { color: var(--destaque2); font-size: 1.25rem;	font-weight: bold; }
+	.Efeitos.Questionario .Sessao1 .Sliders { margin-bottom: 75px; }
+	.Efeitos.Questionario p.Topo { max-width: 718px; margin: auto; margin-bottom: 40px; line-height: 1.625rem; }
+	.Efeitos.Questionario .BoxEmissoesTopo { background-color: #F2F2F2; width: 335px; height: 136px; display: grid; grid-template-rows: 1fr 1fr 1fr; align-items: center; margin: auto; margin-bottom: 38px; border-radius: var(--radius10); color: var(--secundaria); }
+	.Efeitos.Questionario .BoxEmissoesTopo .BlocoResultado { background-color: #fff; width: 72px; height: 35px; border-radius: 8px; margin: auto; display: flex; align-items: center; justify-content: center; color: var(--secundaria); font-weight: bold; }
+	.Efeitos.Questionario .PopupInfo { width: 216px; }
+	.Efeitos.Questionario .PopupInfo p { color: #fff!important; text-align: left; line-height: 1.56rem; }
+	.Efeitos.Questionario .WrapperButtons { display: flex; align-items: center; justify-content: center; padding: 15px 0; }
+	.Efeitos.Questionario2 .Sessao1 .Btn-Destaque4 { margin-bottom: 30px; }
+	.Efeitos.Questionario .WrapperButtons .Btn, .Efeitos.Questionario .WrapperButtons .Btn-Destaque4 { margin: 0 }
+	.Efeitos.Questionario .WrapperButtons .Btn:first-of-type { margin-right: 14px; }
+	.Efeitos.Questionario1 .Sessao1 form .Grupo { margin-top: 30px; margin-bottom: 45px; }
+
+	.Efeitos.Questionario form .Grupo { max-width: 700px; }
+	.Efeitos.Questionario form .Grupo p { color: var(--principal); font-weight: normal; font-size: initial; margin-bottom: 28px; }
+	.Efeitos.Questionario form .Grupo .WrapperBlock { display: block; margin: auto; text-align: center; margin-bottom: 30px; }
+	.Efeitos.Questionario form .Grupo .Wrapper p { margin-bottom: 0; }
+	.Efeitos.Questionario form .Grupo .Wrapper { display: flex; align-items: center; justify-content: center; margin-bottom: 30px; }
+	.Efeitos.Questionario form .Grupo .Wrapper > div:first-of-type { margin-right: 30px; }
+	.Efeitos.Questionario form .Grupo .Wrapper > div { display: flex; align-items: center; justify-content: center; }
+
+	.Efeitos.Questionario5 form .Grupo p { max-width: 360px; margin: auto; margin-bottom: 28px; }
+	.Efeitos.Questionario6 form .Grupo .Wrapper { margin-bottom: 50px; }
+	.Efeitos.Questionario6 form .Grupo .WrapperBlock:nth-child(3) { margin-bottom: 60px; }
+
+	.Efeitos.Resultado .BlocoPrincipal { display: grid; grid-template-columns: auto auto auto auto; align-items: center; justify-content: center; background-color: #F2F2F2; width: 100%; height: 137px; margin: 50px auto }
+	.Efeitos.Resultado .BlocoPrincipal p.ou { margin-top: 20px }
+	.Efeitos.Resultado .BlocoPrincipal .WrapperInterno { display: grid; align-items: center; grid-template-columns: auto auto; justify-content: center; margin: 0 40px; max-width: 275px; }
+	.Efeitos.Resultado .BlocoPrincipal .WrapperInterno div * { text-align: left; }
+	.Efeitos.Resultado .BlocoPrincipal .WrapperInterno div { margin-left: 20px; }
+	.Efeitos.Resultado .BlocoPrincipal .WrapperInterno p.DestaqueInterno { margin: 0; }
+	.Efeitos.Resultado .BlocoPrincipal .WrapperInterno p { color: var(--secundaria); line-height: 1.5rem }
+
+	.Efeitos.Resultado .Sessao1 { margin-bottom: 90px; }
+	.Efeitos.Resultado .Sessao1 .Btn-Medium { max-width: 389px; }
+	.Efeitos.Resultado .Sessao1 p { max-width: 715px; margin: auto; line-height: 1.5rem; }
+	.Efeitos.Resultado .Sessao1 .BlocoRodape img { margin: 50px auto }
+
+	.Efeitos.Resultado .WrapperFlex div { display: flex; align-items: center; justify-content: center; }
+	.Efeitos.Resultado .WrapperFlex p:first-child { margin-right: 20px; }
+	.Efeitos.Resultado .WrapperFlex p { margin: initial; }
+
+	.Efeitos.Resultado .BlocoRodape { display: flex; justify-content: center; margin: auto; max-width: 230px; }
+	.Efeitos.Resultado .BlocoRodape p { max-width: 96px; text-align: left; margin-left: 24px }
+
+	.Efeitos.SegQuestionario h2 { max-width: 565px; }
+	.Efeitos.SegQuestionario p { max-width: 363px; margin: auto; }
+	.Efeitos.SegQuestionario .WrapperEmissoesTopo { display: grid; grid-template-columns: 1fr 1fr; width: 735px; margin: auto; column-gap: 62px; }
+
+	.Efeitos.SegQuestionario4 p, .Efeitos.SegQuestionario5 p { max-width: 500px; }
+	.Efeitos.SegQuestionario4 form .Grupo .Wrapper { max-width: 520px; margin: auto; margin-bottom: 30px; }
+	.Efeitos.SegQuestionario5 form .Grupo .Wrapper { max-width: 430px; margin: auto; margin-bottom: 30px; }
+	.Efeitos.SegQuestionario4 .WrapperButtons, .Efeitos.SegQuestionario5 .WrapperButtons { margin-top: 70px; }
+
+	.Efeitos.SegResultado .WrapperFlex:first-of-type p:last-child { color: #E6394E }
+	.Efeitos.SegResultado2 .WrapperFlex:first-of-type p:last-child { color: #15AB53 }
+	.Efeitos.SegResultado p:nth-of-type(2) { max-width: 535px; }
+	.Efeitos.SegResultado .Btn-Big, .Efeitos.SegResultado2 .Btn-Big { max-width: 395px; }
+
+	.Efeitos.SegResultado h2:last-of-type, .Efeitos.SegResultado2 h2:last-of-type { padding-top: 55px }
+/* :Pagina Efeitos Desktop */
 
 
 }
@@ -1058,6 +1158,16 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Resultado2 .SaibaMais { padding-top: 0 }
 	.Resultado2 .Sessao1 p.DestaqueInterno { margin-top: 30px; margin-bottom: 25px; }
 /* :Pagina Tarifa Mobile */
+
+
+/* Pagina Efeitos Mobile: */
+
+
+
+
+/* :Pagina Efeitos Mobile */
+
+
 
 }
 
