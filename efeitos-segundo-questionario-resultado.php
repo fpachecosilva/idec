@@ -47,20 +47,21 @@
                 <a class="Btn Btn-Big Btn-Destaque2" href="<? echo $Efeitos_Segundo_Questionario_Resultado_2 ?>">Melhore sua eficiência energética</a>
     
 
-                <h2>
+                <h2 class="DesktopItem">
                     Resultado Atual
                 </h2>
 
                 <div class="WrapperFlex">
                     <div>
-                        <p>Sua redução foi de:</p>
-                        <p class="DestaqueInternoTopo">4.187 kg CO2 eq</p>
+                        <p class="DesktopItem">Sua redução foi de:</p>
+                        <p class="MobileItem">Sua emissão hoje é de:</p>
+                        <p class="DestaqueInternoTopo">4.187 kg CO2 eq</p>                        
                     </div>
                 </div>
 
                 <?php include 'assets/efeitos-bloco-principal.php'; ?>
 
-                <p>
+                <p class="DesktopItem">
                     Você emite <strong>abaixo da média</strong>  dos brasileiros, 6,5 tCO2e/ano. Mesmo assim, todos nós precisamos reduzir de 20 a 40% nossas emissões para manter o aumento de temperatura da atmosfera em até 2ºC. Para ser <strong>carbono neutro,</strong>  você deverá plantar um total de:
                 </p>
 

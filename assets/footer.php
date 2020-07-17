@@ -64,6 +64,9 @@
 				</div>
 			</div>
 		</article>
+		
+		<a href="#" class="Associe">ASSOCIE-SE</a>
+
 	</footer>
 	<script type="text/javascript" src="<? echo $url ?>assets/javascript/jquery.js"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>

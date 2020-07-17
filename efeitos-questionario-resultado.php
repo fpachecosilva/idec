@@ -42,7 +42,7 @@
                     Você emite <strong>abaixo da média</strong>  dos brasileiros, 6,5 tCO2e/ano. Mesmo assim, todos nós precisamos reduzir de 20 a 40% nossas emissões para manter o aumento de temperatura da atmosfera em até 2ºC. Para ser <strong>carbono neutro,</strong>  você deverá plantar um total de:
                 </p>
                 
-                <a class="Btn Btn-Default Btn-Destaque2" href="<? echo $Efeitos_Segundo_Questionario1 ?>">Próximo</a>
+                <a class="Btn Btn-Default Btn-Destaque2 DesktopItem" href="<? echo $Efeitos_Segundo_Questionario1 ?>">Próximo</a>
                 
                 <?php include 'assets/efeitos-bloco-rodape.php'; ?>        
 

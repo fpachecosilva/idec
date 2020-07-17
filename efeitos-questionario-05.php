@@ -26,7 +26,7 @@
                 </h2>
 
                 
-                <div class="BoxEmissoesTopo">
+                <div class="BoxEmissoesTopo DesktopItemGrid">
                     <p class="DestaqueInterno Destaque2">Resultado parcial:</p>
                     <div class="BlocoResultado">0.0</div>
                     <p>ton CO2 eq</p>
@@ -34,8 +34,8 @@
                 
                 <div class="Sliders">
                     <div class="content">                        
-                        <div id="slider-tarifa"></div>
-                        <div id="slider-tarifa-dir"></div>
+                        <div id="slider-efeitos5"></div>
+                        <div id="slider-efeitos5-dir"></div>
                         <label for="amount" class="price"></label>
                     </div>
 
@@ -70,6 +70,12 @@
                 <div class="WrapperButtons">
                     <a class="Btn Btn-Small Btn-Destaque4" href="<? echo $Efeitos_Questionario4 ?>">Voltar</a>
                     <a class="Btn Btn-Small Btn-Destaque2" href="<? echo $Efeitos_Questionario6 ?>">Próximo</a>
+                </div>
+
+                <div class="BoxEmissoesTopo MobileItemGrid">
+                    <p class="DestaqueInterno Destaque2">Resultado parcial:</p>
+                    <div class="BlocoResultado">0.0</div>
+                    <p>ton CO2 eq</p>
                 </div>
     
             </article>

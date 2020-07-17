@@ -26,13 +26,13 @@
                 </h2>
 
                 <div class="WrapperEmissoesTopo">
-                    <div class="BoxEmissoesTopo">
+                    <div class="BoxEmissoesTopo DesktopItemGrid">
                         <p class="DestaqueInterno Destaque2">Resultado anterior:</p>
                         <div class="BlocoResultado">0.0</div>
                         <p>ton CO2 eq</p>
                     </div>
 
-                    <div class="BoxEmissoesTopo">
+                    <div class="BoxEmissoesTopo DesktopItemGrid">
                         <p class="DestaqueInterno Destaque2">Redução até agora:</p>
                         <div class="BlocoResultado">0.0</div>
                         <p>ton CO2 eq</p>
@@ -63,6 +63,12 @@
                 <div class="WrapperButtons">
                     <a class="Btn Btn-Small Btn-Destaque4" href="<? echo $Efeitos_Segundo_Questionario2 ?>">Voltar</a>
                     <a class="Btn Btn-Small Btn-Destaque2" href="<? echo $Efeitos_Segundo_Questionario4 ?>">Próximo</a>
+                </div>
+                
+                <div class="BoxEmissoesTopo MobileItemGrid">
+                    <p class="DestaqueInterno Destaque2">Resultado parcial:</p>
+                    <div class="BlocoResultado">-0.0</div>
+                    <p>ton CO2 eq</p>
                 </div>
     
             </article>

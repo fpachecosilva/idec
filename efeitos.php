@@ -23,16 +23,25 @@
         
         <section class="Sessao1">
             <article class="nivel3">
-                <h2>
-                    Nosso estilo de vida tem 
-                    impacto no clima 
+
+                <h2 class="DesktopItem">
+                    Nosso estilo de vida tem impacto no clima 
+                </h2>
+                
+                <h2 class="MobileItem">
+                    Calculadora de Emissões de Gases do Efeito Estufa
                 </h2>
 
                 <a href="<? echo $Efeitos_Questionario1 ?>" class="Btn Btn-Destaque2 Btn-Big">Calcule suas emissões de gases do efeito estufa</a>
 
-                <p>
+                <p class="DesktopItem">
                     Dependendo das escolhas de consumo que fazemos contribuímos mais ou menos com a emissão de gases do efeito estufa. Com a calculadora do Idec, você estima essa quantidade (também conhecida como pegada de carbono) reflete sobre suas escolhas e recebe dicas de como reduzir suas emissões.
                 </p>
+                
+                <p class="MobileItem">
+                    Nossos estilo de vida tem impacto direto nas mudanças climáticas. Dependendo das escolhas de consumo que fazemos contribuímos <span>mais ou menos</span> com a emissão de gases do efeito estufa. Com a calculadora do Idec, você estima essa quantidade (também conhecida como pegada de carbono) reflete sobre suas escolhas e recebe dicas de como reduzir suas emissões.
+                </p>
+
             </article>
         </section>
 
@@ -57,7 +66,8 @@
                         </div>
                     </div>
     
-                    <img class="ImgSeparadorMaleficios" src="<? echo $images ?>efeitos-maleficios-box-divisor-1.svg" alt="">
+                    <img class="ImgSeparadorMaleficios DesktopItem" src="<? echo $images ?>efeitos-maleficios-box-divisor-1.svg" alt="">
+                    <img class="ImgSeparadorMaleficios MobileItem" src="<? echo $images ?>efeitos-maleficios-box-divisor-1-mobile.svg" alt="">
     
                     <div class="BoxMaleficios">
                         <div class="Box">
@@ -66,7 +76,8 @@
                         </div>
                     </div>
     
-                    <img class="ImgSeparadorMaleficios" src="<? echo $images ?>efeitos-maleficios-box-divisor-2.svg" alt="">
+                    <img class="ImgSeparadorMaleficios DesktopItem" src="<? echo $images ?>efeitos-maleficios-box-divisor-2.svg" alt="">
+                    <img class="ImgSeparadorMaleficios MobileItem" src="<? echo $images ?>efeitos-maleficios-box-divisor-2-mobile.svg" alt="">
     
                     <div class="BoxMaleficios">
                         <div class="Box">

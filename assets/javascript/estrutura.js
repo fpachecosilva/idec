@@ -164,7 +164,6 @@ jQuery(document).ready(function() {
 			mainClass: 'mfp-fade'
 		});
 	}
-
 	
 	/* Slider Range */
 	$( "#slider-range" ).slider({
@@ -204,49 +203,25 @@ jQuery(document).ready(function() {
 	});
 	$( "#amount3" ).val( "De R$" + $( "#slider-range3" ).slider( "values", 0 ) +
 	" Até R$" + $( "#slider-range3" ).slider( "values", 1 ) );
+	
 
-	
-	$( "#slider-tarifa" ).slider({
-        range: true,
-        min: 0,
-        max: 100,
-        values: [ 0, 5]        
-	});
-	
-	$( "#slider-tarifa2" ).slider({
-        range: true,
-        min: 0,
-        max: 100,
-        values: [ 0, 20]        
-    });
+	$( "#slider-tarifa" ).slider({ range: true, min: 0, max: 100, values: [ 0, 5] });	
+	$( "#slider-tarifa2" ).slider({ range: true, min: 0, max: 100, values: [ 0, 20] });
+	$( "#slider-tarifa3" ).slider({ range: true, min: 0, max: 100, values: [ 0, 40] });	
+	$( "#slider-tarifa4" ).slider({ range: true, min: 0, max: 100, values: [ 0, 60] });	
+	$( "#slider-tarifa5" ).slider({ range: true, min: 0, max: 100, values: [ 0, 70] });	
+	$( "#slider-tarifa6" ).slider({ range: true, min: 0, max: 100, values: [ 0, 97] });	
 
-	$( "#slider-tarifa3" ).slider({
-        range: true,
-        min: 0,
-        max: 100,
-        values: [ 0, 40]        
-	});
-	
-	$( "#slider-tarifa4" ).slider({
-        range: true,
-        min: 0,
-        max: 100,
-        values: [ 0, 60]        
-	});
-	
-	$( "#slider-tarifa5" ).slider({
-        range: true,
-        min: 0,
-        max: 100,
-        values: [ 0, 70]        
-	});
-	
-	$( "#slider-tarifa6" ).slider({
-        range: true,
-        min: 0,
-        max: 100,
-        values: [ 0, 97]        
-    });
+	$( "#slider-efeitos" ).slider({ range: true, min: 0, max: 100, values: [ 0, 5] });
+	$( "#slider-efeitos2" ).slider({ range: true, min: 0, max: 100, values: [ 0, 20] });
+	$( "#slider-efeitos3" ).slider({ range: true, min: 0, max: 100, values: [ 0, 20] });
+	$( "#slider-efeitos4" ).slider({ range: true, min: 0, max: 100, values: [ 0, 47] });
+	$( "#slider-efeitos5" ).slider({ range: true, min: 0, max: 100, values: [ 0, 74] });
+	$( "#slider-efeitos6" ).slider({ range: true, min: 0, max: 100, values: [ 0, 100] });
+
+	if ( $('#slider-efeitos6 .ui-slider-range').css('width') == "622px" ) {
+		$('.ui-widget-header').css('border-radius','10px 10px 10px 10px');		
+	}
 
 
 	// Botão de interrogação
@@ -310,9 +285,6 @@ jQuery(document).ready(function() {
 		}
 
 	});
-
-			
-		
 	
 	
 

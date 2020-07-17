@@ -29,7 +29,7 @@
                     A calculadora de emissões é uma ferramenta de reflexão sobre o quanto esse consumo equivale em emissão de gases de efeito estufa e, ao mesmo tempo, dá dicas de como reduzir-la. Preencha sua informações abaixo e descubra sua pegada de carbono.
                 </p>
 
-                <div class="BoxEmissoesTopo">
+                <div class="BoxEmissoesTopo DesktopItemGrid">
                     <p class="DestaqueInterno Destaque2">Resultado parcial:</p>
                     <div class="BlocoResultado">0.0</div>
                     <p>ton CO2 eq</p>
@@ -37,8 +37,8 @@
                 
                 <div class="Sliders">
                     <div class="content">                        
-                        <div id="slider-tarifa"></div>
-                        <div id="slider-tarifa-dir"></div>
+                        <div id="slider-efeitos"></div>
+                        <div id="slider-efeitos-dir"></div>
                         <label for="amount" class="price"></label>
                     </div>
 
@@ -47,9 +47,6 @@
                 </div>
 
                 <form action="">
-                    
-
-
                     <div class="Grupo">
 
                         <div class="WrapperBlock">
@@ -68,7 +65,7 @@
 
                         <div class="WrapperBlock">
                             <p>Quantas pessoas moram na sua casa?</p>
-                            <input type="number" name="" id="">
+                            <input type="number" name="" id="">                            
                         </div>
                         
                         <div class="Wrapper">                    
@@ -98,6 +95,12 @@
                 </form>
 
                 <a class="Btn Btn-Default Btn-Destaque2" href="<? echo $Efeitos_Questionario2 ?>">Próximo</a>
+
+                <div class="BoxEmissoesTopo MobileItemGrid">
+                    <p class="DestaqueInterno Destaque2">Resultado parcial:</p>
+                    <div class="BlocoResultado">0.0</div>
+                    <p>ton CO2 eq</p>
+                </div>
     
             </article>
 

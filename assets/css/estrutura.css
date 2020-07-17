@@ -106,6 +106,9 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	input[type=checkbox] { -webkit-appearance: initial; border-radius: var(--radius); width: 20px; height: 20px; }
 	input[type=checkbox]:checked { -webkit-appearance: checkbox; }
 	input[type=number] { width: 73px; height: 59px; border-radius: var(--radius10); color: var(--secundaria); text-align: center; font-size: initial; }
+		
+	/* input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; } */
+
 
 	input::placeholder { color: var(--secundaria); }
 	label.Inline { display: inline-block!important; }	
@@ -153,6 +156,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 /* :Header */
 
 /* Footer: */
+	footer { position: relative; }
 	footer, footer * { background-color: var(--sub2); color: #fff }
 	footer .Topo { padding-top: 35px; padding-bottom: 55px; display: grid; grid-template-columns: auto auto auto auto auto auto auto; align-content: center; }
 	footer .Topo a { height: 32px; display: block; border-left: 2px solid; float: left; text-transform: uppercase; line-height: 2; }
@@ -165,7 +169,10 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	footer .Topo a:nth-child(7) { background-image: url(../images/icones-footer-07.png); background-repeat: no-repeat; background-position-y: 6px; background-position-x: 7px; }
 
 	footer .Centro { display: grid; grid-template-columns: auto auto auto auto; padding-bottom: 40px; line-height: 2rem; border-bottom: 1px solid #fff }
-	footer .Centro .titulo { text-transform: uppercase; font-size: 1.5rem; margin-bottom: 25px; }
+	footer .Centro .titulo { text-transform: uppercase; font-size: 1.5rem; margin-bottom: 25px!important; }
+
+	footer .Associe { width: 174px; height: 47px; display: block; color: #fff; position: absolute; top: 64px; right: -62px; z-index: 2; background: #7b9f89; border-radius: 10px 0 0 0; display: flex; align-items: center; justify-content: center; }
+	footer .Associe:after { content: ""; border: solid #fff; border-width: 0 2px 2px 0; display: inline-block; padding: 4px; margin-top: 6px; transform: rotate(-135deg); -webkit-transform: rotate(-135deg); position: absolute; top: 16px; right: 5px; }
 /* :Footer */
 
 /* Página Home: */	
@@ -360,7 +367,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	/* :Saiba Mais */
 
 	/* Info: */
-		.BtnInfo { position: relative; display: inline-block; width: 20px; height: 23px; background-image: url('../images/info.svg'); background-repeat: no-repeat; margin-bottom: -10px; margin-left: 10px; }
+		.BtnInfo { position: relative; display: inline-block; width: 27px; height: 23px; background-image: url('../images/info.svg'); background-repeat: no-repeat; margin-bottom: -10px; margin-left: 10px; }
 		.BtnInfo:hover { opacity: initial; }
 		.BtnInfo .mask, .PopupLinkInfo .mask { z-index: 0; content: ""; position: fixed; top: 0; bottom: 0; left: 0; right: 0; display: none; }
 		.PopupInfo { text-align: left; display: none; background-color: var(--secundaria); padding: 30px 20px 20px 20px; overflow: hidden; overflow-wrap: break-word; box-sizing: border-box; color: #fff; position: absolute; top:0; right: 0; height: auto; border-radius: var(--radius10); }
@@ -438,10 +445,11 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 		.Efeitos input { box-shadow: var(--shadow);	margin-right: 17px; }
 		.Efeitos input.Redondo { width: 73px; height: 59px; border-radius: var(--radius10); text-align: center; font-size: initial; color: var(--secundaria); margin-right: 0; }
 		.Efeitos input.Redondo.ComDesc { margin-right: 15px; }
+
 		.Efeitos label { font-weight: 500; color: var(--secundaria); }
 		.Efeitos select { box-shadow: var(--shadow); width: 274px; }
 		.Efeitos select.Reduzido { width: 91px; }
-		.Efeitos select.Medio { width: 153px; }
+		.Efeitos select.Medio { width: 153px; }		
 
 		.Efeitos.Resultado .WrapperFlex p:last-child { color: var(--destaque2); font-weight: bold; font-size: 1.875rem; }
 
@@ -455,8 +463,11 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 /* -------------------------------- Versionamento Desktop: -------------------------------- */
 
 @media screen and (min-width: 1030px) { 
-	.DesktopItem {display: inline-block !important;}
+	.DesktopItem {display: block !important;}
+	.DesktopItemGrid {display: grid !important;}
+	.DesktopItemFlex {display: flex !important;}
 	.MobileItem {display: none !important;}
+	.MobileItemGrid {display: none !important;}
 
 /* Elementos Desktop: */
 	h1 {font-size: 2.5rem; line-height: 3.12rem; text-align: left;}
@@ -580,6 +591,8 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	footer .Topo a { padding-left: 30px; }
 	footer .Baixo { height: 72px; display: grid; grid-template-columns: 50% 50%; align-items: center; }
 	footer .Baixo div:last-child img { float: right; }
+
+	footer .Associe { -ms-transform: rotate(90deg); -webkit-transform: rotate(90deg); transform: rotate(-90deg); }
 /* :Footer Desktop */
 
 
@@ -646,7 +659,6 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Tarifa .Accordeon { margin: 70px auto 0 auto }
 	.Tarifa .Accordeon p.Destaque { margin-bottom: 35px; }
 
-
 	.Questionario1 .Sessao1 .Btn { margin: auto; margin-top: 50px; }
 
 	.Tarifa.Questionario h2 { margin: 0 auto 50px auto; max-width: 580px; }
@@ -701,7 +713,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Efeitos.Questionario .Sessao1 p span { color: var(--destaque2); font-size: 1.25rem;	font-weight: bold; }
 	.Efeitos.Questionario .Sessao1 .Sliders { margin-bottom: 75px; }
 	.Efeitos.Questionario p.Topo { max-width: 718px; margin: auto; margin-bottom: 40px; line-height: 1.625rem; }
-	.Efeitos.Questionario .BoxEmissoesTopo { background-color: #F2F2F2; width: 335px; height: 136px; display: grid; grid-template-rows: 1fr 1fr 1fr; align-items: center; margin: auto; margin-bottom: 38px; border-radius: var(--radius10); color: var(--secundaria); }
+	.Efeitos.Questionario .BoxEmissoesTopo { background-color: #F2F2F2; width: 335px; height: 136px; grid-template-rows: 1fr 1fr 1fr; align-items: center; margin: auto; margin-bottom: 38px; border-radius: var(--radius10); color: var(--secundaria); }
 	.Efeitos.Questionario .BoxEmissoesTopo .BlocoResultado { background-color: #fff; width: 72px; height: 35px; border-radius: 8px; margin: auto; display: flex; align-items: center; justify-content: center; color: var(--secundaria); font-weight: bold; }
 	.Efeitos.Questionario .PopupInfo { width: 216px; }
 	.Efeitos.Questionario .PopupInfo p { color: #fff!important; text-align: left; line-height: 1.56rem; }
@@ -724,7 +736,8 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Efeitos.Questionario6 form .Grupo .WrapperBlock:nth-child(3) { margin-bottom: 60px; }
 
 	.Efeitos.Resultado .BlocoPrincipal { display: grid; grid-template-columns: auto auto auto auto; align-items: center; justify-content: center; background-color: #F2F2F2; width: 100%; height: 137px; margin: 50px auto }
-	.Efeitos.Resultado .BlocoPrincipal p.ou { margin-top: 20px }
+	.Efeitos.Resultado .BlocoPrincipal p.ou { margin-top: 80px }
+	.Efeitos.Resultado .BlocoPrincipal p:first-of-type { max-width: 145px; text-align: left; }
 	.Efeitos.Resultado .BlocoPrincipal .WrapperInterno { display: grid; align-items: center; grid-template-columns: auto auto; justify-content: center; margin: 0 40px; max-width: 275px; }
 	.Efeitos.Resultado .BlocoPrincipal .WrapperInterno div * { text-align: left; }
 	.Efeitos.Resultado .BlocoPrincipal .WrapperInterno div { margin-left: 20px; }
@@ -758,6 +771,10 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Efeitos.SegResultado .Btn-Big, .Efeitos.SegResultado2 .Btn-Big { max-width: 395px; }
 
 	.Efeitos.SegResultado h2:last-of-type, .Efeitos.SegResultado2 h2:last-of-type { padding-top: 55px }
+
+	.PopupInfo { display: none; }
+	.PopupInfo p { color: #fff; }
+
 /* :Pagina Efeitos Desktop */
 
 
@@ -772,6 +789,11 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 /* -------------------------------- Versionamento Mobile: --------------------------------- */	
 
 @media screen and (max-width: 1030px) { 
+	.DesktopItem {display: none !important;}
+	.DesktopItemGrid {display: none !important;}
+	.DesktopItemFlex {display: none !important;}
+	.MobileItem {display: block !important;}
+	.MobileItemGrid {display: grid !important;}
 		
 /* Elementos Mobile: */
 	h1 { font-size: 1.562rem; line-height: 1.875rem; margin-top: 40px; }
@@ -931,7 +953,6 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Calculadora3 .Filtros div::before { content: ""; display: block; width: 4px; height: 42px; background-color: #fff; position: absolute; right: -4px; }
 	.Calculadora3 .Filtros div::after { content: ""; display: block; width: 1px; height: 30px; background-color: #efefef; position: absolute; right: 0; top: 6px; }
 
-
 	.Calculadora3 .VerMaisLink { font-size: 0.75rem; color: #295881; text-decoration: underline; margin-bottom: 10px; margin-top: 5px; }
 	.Calculadora3 .Card p.Sub { padding-left: initial; }
 	.Calculadora3 .Card p.Sub:last-of-type { font-size: initial; margin: 20px 0; float: left; }
@@ -1058,9 +1079,13 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 
 	footer .Baixo { font-size: 0.8rem; text-align: center; }
 	footer .Baixo img { margin: auto; }
+
+	footer .Associe { bottom: 0; right: 0; top: initial; width: 130px; height: 31px; }
+	footer .Associe:after { top: 9px; right: 7px; padding: 3px; }
 /* :Footer Mobile */
 
 /* Componentes reutilizaveis Mobile: */
+		
 
 	/* Accordeon Mobile: */
 		.Accordeon { width: initial; border-bottom: initial; margin-bottom: 40px; }
@@ -1068,8 +1093,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	/* :Accordeon Mobile */
 
 	/* Saiba mais Mobile: */
-		.SaibaMais { margin: 35px 0 }
-	
+		.SaibaMais { margin: 35px 0 }	
 		.SaibaMais h2 { text-transform: initial; font-size: initial; margin: 20px 0; }
 
 		.Equipamentos .SaibaMais h2 { color: var(--destaque1); }
@@ -1115,7 +1139,8 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Tarifa .Accordeon .WrapperAcc { margin-top: 10px }	
 	.Tarifa .Accordeon .WrapperAcc:first-of-type { margin-top: 0 }	
 	.Tarifa .Accordeon p.Destaque { margin-top: 40px; margin-bottom: 15px }
-	.Tarifa .Accordeon .Accordeon-mini-box-info a { max-width: 238px; justify-content: initial; }
+	.Tarifa .Accordeon .Accordeon-mini-box-info a { justify-content: initial; }
+	/* .Tarifa .Accordeon .Accordeon-mini-box-info a { max-width: 238px; justify-content: initial; } */
 
 	.Tarifa .HorariosMobile p.Destaque { text-align: left; }
 	.Tarifa .HorariosMobile .WrapperHorarios select { margin-bottom: 15px; }
@@ -1134,20 +1159,25 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Questionario form .Grupo select:first-of-type { margin-left: 0; }
 
 	.Questionario1 .Sessao1 form { margin: 30px 0 }
-	.Questionario1 .Sessao1 form div { display: flex; align-items: center; }
+	.Questionario1 .Sessao1 form div:not(.PopupInfo) { display: flex; align-items: center; }
 	.Questionario1 .Sessao1 form div:first-of-type { margin-bottom: 15px; }
 	.Questionario1 .Sessao1 .Btn { margin-top: 33px; margin-bottom: 55px; }
 	
 	.Questionario2 .Sessao1 form { margin: 35px 0 }
 	
 	.Questionario3 .EscolhaHorarios { display: flex; align-items: center; margin-bottom: 25px; }
-	.Questionario3 form .Grupo select, .Questionario4 form .Grupo select { width: 86px; height: 59px; border-radius: var(--radius10); padding-left: 11px; }
+	.Questionario3 form .Grupo select, .Questionario4 form .Grupo select:not(.Medio) { width: 86px; height: 59px; border-radius: var(--radius10); padding-left: 11px; }
 	.Questionario3 .LinhaInput { display: grid; grid-template-columns: auto 1fr; margin-bottom: 20px; }
-			
-	.Questionario4 form .Grupo p:first-of-type { color: var(--secundariamobile); font-weight: normal; margin-top: 30px; }
+
+	.Questionario4 form .Grupo input { height: 42px; margin-right: 39px }
+	.Questionario4 form .Grupo select.Medio { margin: 0; }			
+	.Questionario4 form .Grupo p:first-of-type { color: var(--secundariamobile); font-weight: normal; }
 	.Questionario4 .LinhaInput, .Questionario5 .LinhaInput, .Questionario6 .LinhaInput { margin-top: 35px; }
 	.Questionario4 .LinhaInput div { display: flex; align-items: center; }
-	.Questionario4 .LinhaInput div:first-of-type { margin-bottom: 15px; }
+	.Questionario4 .LinhaInput div:first-of-type { margin-bottom: 15px; }	
+	
+	.Efeitos.Questionario4 form .Grupo .Wrapper:nth-child(4) .BtnInfo { margin-bottom: 4px;}
+	.Efeitos.Questionario4 form .Grupo .Wrapper:nth-child(4) .PopupInfo { left:-85px;}
 
 	.Questionario header, .Resultado1 header, .Resultado2 header { height: 68px; min-height: initial; background-color: var(--secundaria); position: relative; }
 	.Questionario .LogoCalc, .Resultado1 .LogoCalc, .Resultado2 .LogoCalc { position: absolute; top: 20px; left: 23px; z-index: 8; }
@@ -1161,13 +1191,99 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 
 
 /* Pagina Efeitos Mobile: */
+	.Efeitos input[type=checkbox] { border-radius: 50%; }
+	
+	.Efeitos .Banner { height: 295px; background-image: url(../images/efeitos-banner-mobile.png) }
+	.Efeitos .Banner h1 { max-width: 165px; }
+	.Efeitos .Sessao1 .Btn-Big { height: 76px; line-height: initial; text-transform: initial; display: flex; align-items: center; justify-content: center; padding: 0 40px; box-sizing: border-box; border-radius: var(--radius10); }
+	.Efeitos .Sessao1 p.MobileItem { margin-top: 20px; margin-bottom: 30px; line-height: 1.5rem; }
+	.Efeitos .Sessao1 p span { color: var(--destaque2); font-weight: bold; }
+	.Efeitos .Sessao1 .WrapperBoxesMaleficios { display: grid; grid-template-rows: 1fr 1fr 1fr 1fr 1fr; }
+	.Efeitos .Sessao2 { margin-bottom: 60px; }
+	.Efeitos .Sessao2 .BoxMaleficios:first-of-type .Box { display: grid; grid-template-columns: 1fr 1fr; }
+	.Efeitos .Sessao2 .BoxMaleficios .Box img { margin: 20px auto; }
+	.Efeitos .Sessao2 img.ImgSeparadorMaleficios { margin: auto; margin-top: 30px; }
+	.Efeitos .Sessao2 .BoxMaleficios .Box p { font-size: 0.75; line-height: 1.125rem; text-align: center; }
 
+	.Efeitos .Sliders .ui-widget.ui-widget-content { width: 100%; height: 10px; border-radius: var(--radius10); margin-bottom: 14px; }
+	.Efeitos .Sliders .ui-widget-header { background-color: var(--destaque2); border-radius: 10px 0 0 10px; }
+	.Efeitos .Sliders .ui-slider-handle { display: none; }
+	.Efeitos .Sliders p { font-weight: bold; color: var(--secundaria); text-align: center; }
 
+	.Efeitos.Questionario .BoxEmissoesTopo { background-color: #F2F2F2;	width: 100%; height: 136px; grid-template-rows: 1fr 1fr 1fr; align-items: center; margin: auto; margin-bottom: 38px; border-radius: var(--radius10);color: var(--secundaria); }
+	.Efeitos.Questionario .BoxEmissoesTopo .BlocoResultado { background-color: #fff; width: 72px; height: 35px; border-radius: 8px; margin: auto; display: flex; align-items: center; justify-content: center; color: var(--secundaria); font-weight: bold; }
+	.Efeitos .Sessao1 p, .Efeitos .Sessao2 p { text-align: center; }
+	.Efeitos p.DestaqueInterno { margin: 15px auto; }
+	.Efeitos p.Topo { line-height: 1.5rem; margin-bottom: 50px; text-align: left; }
 
+	.Questionario1 .Sessao1 form div:not(.PopupInfo) { display: block; }
+	.Questionario form .Grupo p { color: var(--secundariamobile); font-weight: normal; text-align: left; }
+	.Efeitos.Questionario form .Grupo .WrapperBlock { margin-bottom: 35px; }
+	.Efeitos.Questionario form .Grupo .Wrapper { display: flex; align-items: center; margin-bottom: 30px; position: relative; }
+	.Efeitos.Questionario4 form .Grupo .Wrapper { margin-bottom: 0; }
+	.Efeitos.Questionario form .Grupo .Wrapper .BtnInfo { margin-bottom: 25px; }
+	.Efeitos.Questionario form .Grupo .Wrapper div:not(.PopupInfo) { display: flex; align-items: center; }
+	.Efeitos.Questionario form .Grupo .Wrapper div:first-of-type { margin-right: 25px; }
+	.Questionario1 .Sessao1 form div:first-of-type { margin-bottom: 0; }
+
+	.PopupInfo { z-index: 1; }
+	.PopupInfo p { color: #fff!important; }
+
+	.Efeitos .BoxEmissoesTopo p { color: var(--secundaria); }
+
+	.Questionario1 .Sessao1 .Btn { margin: 35px auto; }
+
+	.Efeitos.Questionario .Sessao1 .Btn-Destaque4 { margin-bottom: 50px; }
+	.Efeitos.Questionario .WrapperButtons { display: grid; grid-template-columns: 1fr 1fr; justify-items: center; column-gap: 14px; }
+	.Efeitos.Questionario .TransporteAdd { background-color: #F5F5F5; margin-bottom: 30px; margin-left: -23px; margin-right: -23px; padding: 20px; box-sizing: border-box; }
+	.Efeitos.Questionario .TransporteAdd p { text-align: left; }
+	.Efeitos.Questionario .TransporteAdd .Item:first-child { margin-bottom: 20px; }
+	.Efeitos.Questionario .TransporteAdd .Item a { float: right; text-decoration: underline; }
+	.Efeitos.Questionario .TransporteAdd .Item p { margin-bottom: 0; }
+	.Efeitos.Questionario .TransporteAdd .Item a, .Efeitos.Questionario .TransporteAdd .Item p, .Efeitos.Questionario .TransporteAdd .Item span { color: var(--secundaria); }
+	
+	.Efeitos.Questionario2 .Sliders, .Efeitos.Questionario3 .Sliders, .Efeitos.Questionario4 .Sliders, .Efeitos.Questionario5 .Sliders, .Efeitos.Questionario6 .Sliders { margin: 50px auto }
+	.Efeitos.Questionario3 .Wrapper p { max-width: 250px; }
+	.Efeitos.Questionario4 form .Grupo .Wrapper .BtnInfo:nth-of-type(2) { margin-bottom: 5px }
+	.Efeitos.Questionario6 .Sessao1 .Btn-Destaque4 { margin-bottom: 28px; }
+	.Efeitos.Questionario6 .ui-slider-range { border-radius: 10px; }
+
+	.Efeitos.Resultado .BlocoPrincipal { margin-top: 20px }
+	.Efeitos.Resultado .BlocoPrincipal p:first-of-type { margin-bottom: 30px; text-align: left; }
+	.Efeitos.Resultado .BlocoPrincipal .WrapperInterno { display: grid; grid-template-columns: 92px auto; align-items: center; margin: 25px 0; }
+	.Efeitos.Resultado .BlocoPrincipal .WrapperInterno > div { margin-left: 10px; }
+	.Efeitos.Resultado .BlocoPrincipal .WrapperInterno:first-of-type { margin-top: 0; }
+	.Efeitos.Resultado .BlocoPrincipal .WrapperInterno p { margin: 0; text-align: left; }
+	.Efeitos.Resultado .BlocoPrincipal .WrapperInterno p:first-child { font-size: 1.25rem; }
+	.Efeitos.Resultado .BlocoPrincipal .WrapperInterno p:last-child { color: var(--secundaria) }
+
+	.Efeitos.Resultado .Sessao1 article > p { color: var(--secundariamobile); line-height: 1.5rem; text-align: left; }
+	.Efeitos.Resultado .Sessao1 .WrapperFlex p { text-align: left; }
+	.Efeitos.Resultado .Sessao1 .WrapperFlex p:first-of-type { margin-bottom: 20px; }
+	.Efeitos.Resultado .Sessao1 .WrapperFlex p:nth-of-type(2) { margin-bottom: 10px; border-bottom: 1px solid #707070; padding-bottom: 18px; }
+
+	.Efeitos.Resultado .Btn-Medium { margin: 15px auto 23px auto; max-width: 100%; height: 76px; text-transform: initial; display: flex; justify-content: center; align-items: center; line-height: initial; padding: 0 30px; box-sizing: border-box; }
+	.Efeitos.Resultado .BlocoRodape { margin: 35px auto 70px auto; grid-template-columns: 130px auto; display: grid; }
+	.Efeitos.Resultado .BlocoRodape img { margin: auto; }
+	.Efeitos.Resultado .BlocoRodape p { text-align: left; font-size: 1.25rem; line-height: 1.56rem ; }
+
+	.Efeitos.SegQuestionario h2 { max-width: 210px; }
+	.Efeitos.SegQuestionario .Sessao1 p:first-of-type { max-width: 245px; line-height: 1.5rem; }
+	.Efeitos.SegQuestionario .Sessao1 .WrapperBlock input:not([type=checkbox]):not([type=number]) { width: 73px; height: 42px; }
+
+	.Efeitos.SegQuestionario4 .Grupo .WrapperBlock:first-of-type p, .Efeitos.SegQuestionario5 .Grupo .WrapperBlock:first-of-type p { color: var(--secundariamobile); }
+	.Efeitos.SegQuestionario4 .Grupo p, .Efeitos.SegQuestionario5 .Grupo p { color: var(--secundaria); max-width: 100%; line-height: 1.25rem; }
+
+	.Efeitos.SegResultado .Sessao1 .WrapperFlex:first-of-type .DestaqueInternoTopo { color: #E6394E }
+	.Efeitos.SegResultado .BlocoRodape { margin: 35px auto }
+	.Efeitos.SegResultado .Btn-Big { margin-top: 10px }
+
+	.Efeitos.SegResultado .Sessao1 .WrapperFlex p:nth-of-type(2) { border-bottom: 0; }
+	.Efeitos.SegResultado .Sessao1 .WrapperFlex p:nth-of-type(3) { margin-bottom: 10px;	border-bottom: 1px solid #707070; padding-bottom: 18px; }
+	.Efeitos.SegResultado .Sessao1 .BlocoRodape p { margin-left: 10px }
+	.Efeitos.SegResultado .Sessao1 .BlocoRodape:last-child { display: none; }
 
 /* :Pagina Efeitos Mobile */
-
-
 
 }
 

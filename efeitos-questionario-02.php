@@ -25,7 +25,7 @@
                     Cálculo de emissões
                 </h2>
                 
-                <div class="BoxEmissoesTopo">
+                <div class="BoxEmissoesTopo DesktopItemGrid">
                     <p class="DestaqueInterno Destaque2">Resultado parcial:</p>
                     <div class="BlocoResultado">0.0</div>
                     <p>ton CO2 eq</p>
@@ -33,8 +33,8 @@
                 
                 <div class="Sliders">
                     <div class="content">                        
-                        <div id="slider-tarifa"></div>
-                        <div id="slider-tarifa-dir"></div>
+                        <div id="slider-efeitos2"></div>
+                        <div id="slider-efeitos2-dir"></div>
                         <label for="amount" class="price"></label>
                     </div>
 
@@ -65,6 +65,16 @@
                         </div>
 
                         <a class="Btn Btn-Default Btn-Destaque4 mga" href="">Adicionar transporte</a>
+
+                        <div class="MobileItem TransporteAdd">
+                            <div class="Item">
+                                <p><span>1.</span> Carro | R$200,00/mês <a href="javascript:void()">Excluir</a></p>
+                            </div>
+
+                            <div class="Item">
+                                <p><span>1.</span> Moto | R$200,00/mês <a href="javascript:void()">Excluir</a></p>
+                            </div>
+                        </div>
 
                         <div class="WrapperBlock">                            
                             <p>Você utiliza ônibus?</p>                           
@@ -104,6 +114,12 @@
                 <div class="WrapperButtons">
                     <a class="Btn Btn-Small Btn-Destaque4" href="<? echo $Efeitos_Questionario1 ?>">Voltar</a>
                     <a class="Btn Btn-Small Btn-Destaque2" href="<? echo $Efeitos_Questionario3 ?>">Próximo</a>
+                </div>
+
+                <div class="BoxEmissoesTopo MobileItemGrid">
+                    <p class="DestaqueInterno Destaque2">Resultado parcial:</p>
+                    <div class="BlocoResultado">0.0</div>
+                    <p>ton CO2 eq</p>
                 </div>
     
             </article>
