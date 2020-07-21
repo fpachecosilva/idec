@@ -39,7 +39,11 @@
                 </p>
 
                 <form action="">
-                    <input type="number" name="" id="qtdepessoas">
+                <div class="quantity">
+                    <input class="quantity" type="number" name="" id="">                            
+                    <button onclick="$(this).prev()[0].stepDown();preventDefault()" class="btnminus1">-</button>
+                    <button onclick="$(this).prev().prev()[0].stepUp();preventDefault()" class="btnadd1">+</button>
+                </div>
                 </form>
                 
                 <div class="BtnWrapper">

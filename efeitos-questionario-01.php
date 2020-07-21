@@ -64,8 +64,14 @@
                         </div>
 
                         <div class="WrapperBlock">
-                            <p>Quantas pessoas moram na sua casa?</p>
-                            <input type="number" name="" id="">                            
+                            <p>Quantas pessoas moram na sua casa?</p>                            
+                            
+                            <div class="quantity">
+                                <input class="quantity" type="number" name="" id="">                            
+                                <button onclick="$(this).prev()[0].stepDown();preventDefault()" class="btnminus1">-</button>
+                                <button onclick="$(this).prev().prev()[0].stepUp();preventDefault()" class="btnadd1">+</button>
+                            </div>
+
                         </div>
                         
                         <div class="Wrapper">                    

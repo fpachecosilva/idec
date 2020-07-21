@@ -107,7 +107,13 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	input[type=checkbox]:checked { -webkit-appearance: checkbox; }
 	input[type=number] { width: 73px; height: 59px; border-radius: var(--radius10); color: var(--secundaria); text-align: center; font-size: initial; }
 		
-	/* input::-webkit-outer-spin-button, input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; } */
+	/* Input Number */
+	.quantity{ width: 80px; position: relative; }	
+	.quantity input[type=number]::-webkit-inner-spin-button, .quantity input[type=number]::-webkit-outer-spin-button{ -webkit-appearance:none; }	 
+	.quantity button{ padding:.5em; font-size:1.2rem; text-align:center; font-weight:bold; background:transparent; border: 0; z-index: 3; position: absolute; top: 0; bottom: 0; }	 
+	.quantity input{ border-left:none; border-right:none; z-index: 2; }
+	.btnminus1 { left: 0 }
+	.btnadd1 { right: 0; }
 
 
 	input::placeholder { color: var(--secundaria); }
@@ -659,6 +665,8 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Tarifa .Accordeon { margin: 70px auto 0 auto }
 	.Tarifa .Accordeon p.Destaque { margin-bottom: 35px; }
 
+	.Tarifa.Resultado1 .Accordeon .LineSub:last-of-type { margin-bottom: 25px; }
+
 	.Questionario1 .Sessao1 .Btn { margin: auto; margin-top: 50px; }
 
 	.Tarifa.Questionario h2 { margin: 0 auto 50px auto; max-width: 580px; }
@@ -722,6 +730,8 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Efeitos.Questionario .WrapperButtons .Btn, .Efeitos.Questionario .WrapperButtons .Btn-Destaque4 { margin: 0 }
 	.Efeitos.Questionario .WrapperButtons .Btn:first-of-type { margin-right: 14px; }
 	.Efeitos.Questionario1 .Sessao1 form .Grupo { margin-top: 30px; margin-bottom: 45px; }
+	
+	.Efeitos.Questionario1 .quantity, .Efeitos.Questionario6 .quantity, .Efeitos.SegQuestionario5 .quantity, .Tarifa.Questionario2 .quantity { margin: auto; }
 
 	.Efeitos.Questionario form .Grupo { max-width: 700px; }
 	.Efeitos.Questionario form .Grupo p { color: var(--principal); font-weight: normal; font-size: initial; margin-bottom: 28px; }

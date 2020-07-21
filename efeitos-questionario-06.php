@@ -73,7 +73,11 @@
                         <div class="WrapperBlock">
                             <p>Frequência de consumo por dia: </p>
                             
-                            <input type="number" name="" id="">
+                            <div class="quantity">
+                                <input class="quantity" type="number" name="" id="">                            
+                                <button onclick="$(this).prev()[0].stepDown();preventDefault()" class="btnminus1">-</button>
+                                <button onclick="$(this).prev().prev()[0].stepUp();preventDefault()" class="btnadd1">+</button>
+                            </div>
                         </div>
                         
                     </div>
