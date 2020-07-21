@@ -22,7 +22,7 @@
         </section>
         
         <section class="Sessao1">
-            <article class="nivel3">
+            <article class="nivel2">
                 <h2>
                     QUANTO MENOR O CONSUMO, MAIS EFICIENTE
                 </h2>  

@@ -1,5 +1,5 @@
 <section class="Inscrever">
-    <article>
+    <article class="nivel2">
         <div class="Box">
             <div class="Esq">
                 <p>

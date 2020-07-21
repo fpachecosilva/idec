@@ -32,8 +32,8 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 		--radius10: 10px;
 		--radius15: 15px;
 
-		--shadow: 1px 1px 3px 1px rgba(0,0,0,0.16);
-		--shadowbottom: 0 4px 3px 0px rgba(0,0,0,0.16);
+		--shadow: 0.5px 0.5px 1px 1px rgba(0,0,0,0.10);
+		--shadowbottom: 0 1px 2px 1px rgba(0,0,0,0.10);
 		--shadowcenter: 0 0 3px 0px rgba(0,0,0,0.16);
 
 		--tempo: 400ms;
@@ -82,14 +82,14 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 /* :Sliders */
 
 /* Elementos: */
-	h1, h2, h3 { display: block; font-weight: 300; clear: both; box-sizing: border-box;}
+	h1, h2, h3 { display: block; font-weight: 600; clear: both; box-sizing: border-box;}
 	h1 { font-weight: bold; }
-	h2 { font-family: 'Montserrat', sans-serif; font-weight: bold; text-transform: uppercase; color: var(--secundaria); }
+	h2 { font-family: 'Montserrat', sans-serif; text-transform: uppercase; color: var(--secundaria); }
 	h3 {}
 	h4 {}
 	i {display: inline-block;}
 	p {font-size: 1rem; line-height: 1.3rem;}
-	p.DestaqueInterno { line-height: 1.5rem; margin: 15px 0; text-align: center; font-weight: bold; font-family: 'Montserrat' , sans-serif; }
+	p.DestaqueInterno { line-height: 1.5rem; margin: 15px 0; text-align: center; font-weight: 600; font-family: 'Montserrat' , sans-serif; }
 	strong {font-weight: 700;}
 	br {clear: both; display: block;}
 	a {color: var(--principal); text-decoration: none;}
@@ -102,6 +102,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	select { border: 0; height: 42px; border-radius: var(--radius); color: var(--secundaria); padding-left: 25px; -webkit-appearance: none; -moz-appearance: none; -o-appearance: none; -ms-appearance: none; appearance: none; background-image: url(../images/setaselect.svg); background-repeat: no-repeat; background-position-x: calc(100% - 18px); background-position-y: 50%;  }
 	.selectcima { background-image: url(../images/setaselectcima.svg); }
 	
+	input, select { font-family: 'Open Sans', sans-serif; font-size: 0.875rem; }
 	input, select, input:checked{ background-color: #fff; border: 0; outline-color: #e6e6e6; }	
 	input[type=checkbox] { -webkit-appearance: initial; border-radius: var(--radius); width: 20px; height: 20px; }
 	input[type=checkbox]:checked { -webkit-appearance: checkbox; }
@@ -121,7 +122,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 /* :Elementos */
 	
 /* Botões: */
-	.Btn { display: block; height: 42px; border-radius: var(--radius); font-size: 14px; font-weight: bold; font-family: 'Montserrat', sans-serif; text-transform: uppercase; text-align: center; line-height: 3; text-decoration: none!important; }
+	.Btn { display: block; height: 42px; border-radius: var(--radius); font-size: 14px; font-weight: 600; font-family: 'Montserrat', sans-serif; text-transform: uppercase; text-align: center; line-height: 3; text-decoration: none!important; }
 	.Btn-Default { width: 285px; }
 	.Btn-Small { width: 133px; }
 	.Btn-Medium { width: 416px; }
@@ -192,8 +193,8 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 
 /* Pagina Equipamentos: */
 	.Equipamentos .Banner { background-image: url('../images/eqp-banner.png'); }
-	.Equipamentos h1 { max-width: 350px; }
-	.Equipamentos .Sessao1 p { max-width: 718px; line-height: 1.625rem; }
+	.Equipamentos h1 { max-width: 430px; padding-left: 80px; }
+	.Equipamentos .Sessao1 p { max-width: 718px; line-height: 1.625rem; margin: auto; }
 
 	.Equipamentos .Sessao2 { background-color: var(--secundaria); }
 	.Equipamentos .Sessao2 p { color: #fff; }
@@ -220,7 +221,9 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 		.Calculadora2 .Sessao1 form .Grupo:nth-of-type(3) { margin-top: 0 }
 		.Calculadora2 .Sessao1 form .GrupoInline { margin-top: 25px; display: inline-block; }
 		.Calculadora2 .Sessao1 form .GrupoInline label { margin: 0; }
+		.Calculadora2 .Sessao1 form .GrupoInline label[for="espec2"] { max-width: 200px; text-align: left; }
 		.Calculadora2 .Sessao1 form .GrupoInline > * { display: block; float: left; }	
+		.Calculadora2 .Sessao1 form .Grupo:nth-of-type(3) .GrupoInline { margin-left: 20px; }
 		.Calculadora2 .Sessao1 .Btn-Destaque1 { margin: auto; }
 		.Calculadora2 .Sessao1 #uf { max-width: 85px; padding-right: 20px; }
 
@@ -241,6 +244,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 		.Calculadora3 .FiltrosOpen .Sliders { display: grid; grid-template-columns: 33.33% 33.33% 33.33%; margin-bottom: 50px; justify-items: center; }
 		.Calculadora3 .FiltrosOpen .Sliders .content { text-align: left; max-width: 274px; }
 		.Calculadora3 .FiltrosOpen .Sliders .content p { text-align: left; color: var(--secundaria); margin-bottom: 20px; }
+		.Calculadora3 .FiltrosOpen .Sliders input { color: var(--principal); }
 
 		.Calculadora3 .Filtros form { display: grid; grid-template-columns: 50% 50%; }
 		.Calculadora3 .Filtros div { position: relative; }
@@ -248,7 +252,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 		.Calculadora3 .PesquisarIcon { position: absolute; right: 20px; top: 15px; }
 
 		.Calculadora3 .PainelTopo { margin-bottom: 45px; z-index: 2; }
-		.Calculadora3 .PainelTopo .Alterar { margin: 25px 0 45px 0; }
+		.Calculadora3 .PainelTopo .Alterar { margin: 5px 0 45px 0; }
 		.Calculadora3 .PainelTopo .Alterar > div { display: inline-block; color: var(--secundaria); position: relative; }
 		.Calculadora3 .PainelTopo .Alterar a { text-decoration: underline; color: var(--secundaria); margin-left: 10px; }
 		.Calculadora3 .PainelTopo .Alterar div:first-child:not(.PopupInfo) { margin-right: 70px; position: relative }
@@ -259,7 +263,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 		
 		.Calculadora3 .Card p.Destaque { color: var(--secundaria); text-align: left; font-size: 1.25rem; float: left; font-family: inherit; }
 		.Calculadora3 .Card p.Sub { font-size: 0.75rem;	padding-top: 3px; padding-left: 14px; display: inline-block; }
-		.Calculadora3 .Card p.Sub:last-of-type { padding-left: 0; }
+		.Calculadora3 .Card p.Sub:last-of-type { padding-left: 0; display: block; text-transform: uppercase; }
 		.Calculadora3 .Card .Classificacao { margin: 20px 0; }
 		.Calculadora3 .Card .Classificacao p { line-height: 1.5rem; }
 		.Calculadora3 .Card .Classificacao a { font-size: 0.75rem; text-decoration: underline; color: var(--secundaria); display: inline-block; padding-left: 17px; }
@@ -349,7 +353,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 		.Accordeon .WrapperAcc { margin: auto; }		
 
 		.Accordeon .Accordeon-mini-box { display: none; margin: auto; background-color: var(--secundariamobile); color: var(--principal); padding: 25px 0; box-sizing: border-box; background-color: #fff }	
-		.Accordeon .Accordeon-mini-box-info { display: flex; align-items: center; position: relative; height: 50px; border-bottom: 1px solid #ADADAD; color: var(--secundaria); box-sizing: border-box; margin: auto; }
+		.Accordeon .Accordeon-mini-box-info { display: flex; align-items: center; position: relative; height: 50px; border-bottom: 1px solid #e4e4e4; color: var(--secundaria); box-sizing: border-box; margin: auto; }
 		.Accordeon .Accordeon-mini-box-info:last-of-type() { border-bottom: 0; }
 
 		.Accordeon .Accordeon-mini-box-info a { display: flex; align-items: center; height: 100%; color: var(--secundaria); font-weight: bold; width: 100%; box-sizing: border-box; position: absolute; z-index: 1; }	
@@ -481,7 +485,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	h3 {}
 	h4 {}
 	h5 {}
-	p.Destaque { text-align: center; font-size: 1.5625rem; font-weight: bold; font-family: 'Montserrat' , sans-serif; }
+	p.Destaque { text-align: center; font-size: 1.5625rem; font-weight: 600; font-family: 'Montserrat' , sans-serif; }
 	article { max-width: 1264px; margin: 0 auto;}
 	article.nivel2 { max-width: 1115px; margin: 0 auto;}
 	article.nivel3 { max-width: 718px; margin: 0 auto;}
@@ -521,10 +525,11 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	
 	.Equipamentos .Sessao2 { padding-top: 65px; padding-bottom: 80px; color: #fff; }
 	.Equipamentos .Sessao2 .Boxes { display: grid; grid-template-columns: 25% 35% 40%; margin: 55px 0 75px 0  }
-	.Equipamentos .Sessao2 .Box { display: grid; grid-template-columns: auto auto; margin-right: 94px; }
-	.Equipamentos .Sessao2 .Box:last-child { margin-right: 0; }
+	.Equipamentos .Sessao2 .Box { display: grid; grid-template-columns: auto auto; }
+	.Equipamentos .Sessao2 .Box:nth-child(2) { margin-right: 94px; }
+	
 	.Equipamentos .Sessao2 .Box p { display: block; }
-	.Equipamentos .Sessao2 .Box p:first-of-type { line-height: initial; font-size: 3.8rem; font-weight: bold; font-family: 'Montserrat' , sans-serif; }
+	.Equipamentos .Sessao2 .Box p:first-of-type { line-height: initial; font-size: 3.8rem; font-weight: 600; font-family: 'Montserrat' , sans-serif; }
 	.Equipamentos .Sessao2 .Box p:last-of-type { line-height: 1.56rem; font-size: initial; padding-top: 15px; padding-left: 10px; }
 	.Equipamentos .Sessao2 form div { display: grid; grid-template-columns: auto auto; column-gap: 35px; justify-content: center; margin-top: 30px; }
 	
@@ -569,7 +574,8 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.NotaMetodologica .Accordeon .Accordeon-mini-box-info { display: grid; border: initial; justify-items: center; }
 	.NotaMetodologica .Accordeon .Accordeon-mini-box-info img { position: initial; }
 	.NotaMetodologica .Accordeon .Accordeon-mini-box-info a { position: initial; text-align: center; display: block; padding: 20px 0 }
-	.NotaMetodologica .Accordeon .Accordeon-mini-box-info a:last-of-type { padding: 0 }
+	.NotaMetodologica .Accordeon .Accordeon-mini-box-info a:last-of-type { padding: 0; }
+	.NotaMetodologica .Accordeon .Accordeon-mini-box-info a:last-of-type img { margin: auto; }
 /* :Nota Metodologica Desktop*/
 
 /* Calculadora Desktop: */
@@ -611,7 +617,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	/* :Breadcrumb Desktop */
 
 	/* Accordeon Desktop: */
-		.Accordeon { width: 1180px; margin: auto; border-bottom: 1px solid #ADADAD; margin-bottom: 65px; }	
+		.Accordeon { width: 1180px; margin: auto; border-bottom: 1px solid #e4e4e4; margin-bottom: 65px; }	
 		.Accordeon .WrapperAcc { max-width: 716px; margin: auto; }
 		.Accordeon .WrapperAcc:last-of-type .Accordeon-mini-box-info { border-bottom: 0; }
 	/* :Accordeon Desktop */

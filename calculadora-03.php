@@ -98,7 +98,7 @@
                         <div id="" class="Grupo PopupLinkInfo Media">
                             <span></span>                            
 
-                            <label for="tempo">Quanto tempo em média você utiliza o aparelho selecionado por dia?</label>
+                            <label for="tempo">Quanto tempo em média você utiliza o aparelho por dia?</label>
                             <select name="tempo" id="tempo">
                                 <option value="" selected disabled hidden>Usar a média do Brasil</option>
                                 <option value="20 min">20 min</option>
