@@ -35,7 +35,7 @@
                 <a href="<? echo $Efeitos_Questionario1 ?>" class="Btn Btn-Destaque2 Btn-Big">Calcule suas emissões de gases do efeito estufa</a>
 
                 <p class="DesktopItem">
-                    Dependendo das escolhas de consumo que fazemos contribuímos mais ou menos com a emissão de gases do efeito estufa. Com a calculadora do Idec, você estima essa quantidade (também conhecida como pegada de carbono) reflete sobre suas escolhas e recebe dicas de como reduzir suas emissões.
+                    Dependendo das escolhas de consumo que fazemos contribuímos <strong class="Destaque2">mais ou menos</strong> com a emissão de gases do efeito estufa. Com a calculadora do Idec, você estima essa quantidade (também conhecida como pegada de carbono) reflete sobre suas escolhas e recebe dicas de como reduzir suas emissões.
                 </p>
                 
                 <p class="MobileItem">

@@ -154,10 +154,10 @@
 
                         <div class="content">
                             <p>Número de litros/capacidade:</p>
-                            <div id="slider-range"></div>
-                            <div id="slider-range-dir"></div>
-                            <label for="amount" class="price"></label>
+                            <div id="slider-range"></div>                            
+                            <label for="amount" class="price"></label>                            
                             <input type="text" id="amount" readonly>
+                            <input type="text" id="amountdir" readonly>
                         </div>
 
                         <div class="content">
@@ -165,6 +165,7 @@
                             <div id="slider-range2"></div>
                             <label for="amount2" class="price"></label>
                             <input type="text" id="amount2" readonly>
+                            <input type="text" id="amount2dir" readonly>
                         </div>
 
                         <div class="content">
@@ -172,6 +173,7 @@
                             <div id="slider-range3"></div>
                             <label for="amount3" class="price"></label>
                             <input type="text" id="amount3" readonly>
+                            <input type="text" id="amount3dir" readonly>
                         </div>
 
                     </div>
@@ -183,7 +185,7 @@
 
                </article> 
             </div>
-        </section>        
+        </section>             
                 
         <section class="Cards">
             <article class="nivel2">

@@ -48,6 +48,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Destaque1 { color: var(--destaque1)!important; }
 	.Destaque2 { color: var(--destaque2)!important; }
 	.Destaque3 { color: var(--destaque3)!important; }
+	.Destaque4 { color: var(--secundaria)!important; }
 /* :Cores */
 
 /* Magnific Popup: */  		
@@ -58,12 +59,13 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 
 /* Sliders: */
 	.ui-widget.ui-widget-content {
-		border: 1px solid #dddddd;
+		/* border: 1px solid #dddddd; */
+		border: none;
 		width: 274px;
 		height: 4px;
 		margin: 0 auto;
 		margin-bottom: 22px;
-		background-color: #e0e8ec;	
+		background-color: #f2f2f2;
 	}
 
 	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
@@ -81,6 +83,8 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	}
 /* :Sliders */
 
+
+	
 /* Elementos: */
 	h1, h2, h3 { display: block; font-weight: 600; clear: both; box-sizing: border-box;}
 	h1 { font-weight: bold; }
@@ -101,6 +105,8 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	article:after {content: ''; display: block; clear: both;}	
 	select { border: 0; height: 42px; border-radius: var(--radius); color: var(--secundaria); padding-left: 25px; -webkit-appearance: none; -moz-appearance: none; -o-appearance: none; -ms-appearance: none; appearance: none; background-image: url(../images/setaselect.svg); background-repeat: no-repeat; background-position-x: calc(100% - 18px); background-position-y: 50%;  }
 	.selectcima { background-image: url(../images/setaselectcima.svg); }
+
+	
 	
 	input, select { font-family: 'Open Sans', sans-serif; font-size: 0.875rem; }
 	input, select, input:checked{ background-color: #fff; border: 0; outline-color: #e6e6e6; }	
@@ -153,7 +159,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 /* :Box Inscrever */
 
 /* Header: */
-	.SessaoAtual { font-weight: bold; }
+	.SessaoAtual { font-weight: 600; }
 	header { height: 90px; }	
 	header article { display: flex; align-items: center; }
 	header nav { display: flex; position: absolute; right: 0; }
@@ -243,8 +249,11 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 		.Calculadora3 .FiltrosOpen a:last-child { text-decoration: underline; color: var(--sub1) }
 		.Calculadora3 .FiltrosOpen .Sliders { display: grid; grid-template-columns: 33.33% 33.33% 33.33%; margin-bottom: 50px; justify-items: center; }
 		.Calculadora3 .FiltrosOpen .Sliders .content { text-align: left; max-width: 274px; }
-		.Calculadora3 .FiltrosOpen .Sliders .content p { text-align: left; color: var(--secundaria); margin-bottom: 20px; }
-		.Calculadora3 .FiltrosOpen .Sliders input { color: var(--principal); }
+		.Calculadora3 .FiltrosOpen .Sliders .content p { text-align: left; color: var(--secundaria); margin-bottom: 20px; display: inline-block; }
+		.Calculadora3 .FiltrosOpen .Sliders input { color: var(--principal); width: 40%; }
+
+		.Calculadora3 .FiltrosOpen .Sliders input:first-of-type { float: left; }
+		.Calculadora3 .FiltrosOpen .Sliders input:last-of-type { float: right; text-align: right; }
 
 		.Calculadora3 .Filtros form { display: grid; grid-template-columns: 50% 50%; }
 		.Calculadora3 .Filtros div { position: relative; }
@@ -587,6 +596,8 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Calculadora3 .Comparar { align-items: baseline; display: inline-block; }
 	.Calculadora3 .Comparar:hover { cursor: pointer; }
 	.Calculadora3 .NaoEncontrou { width: 610px; padding: 45px 90px 65px 90px; }
+
+	.Calculadora3 .FiltrosOpen .Sliders input { background-color: #FDFDFD; }
 	
 /* Calculadora Desktop: */
 
@@ -635,10 +646,12 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 /* :Componentes reutilizaveis Desktop */
 
 /* Pagina Tarifa Desktop: */
-	.Tarifa h1 { max-width: 264px; }
+	.Tarifa h1 { max-width: 300px; padding-left: 80px; }
 	.Tarifa p { line-height: 1.625rem; }
 
 	.Tarifa .Sessao1 { padding: 90px 0 90px 0; text-align: center; }
+	.Tarifa .Sessao1 p:first-of-type { margin-bottom: 50px; font-size: 1.25rem; }
+	.Tarifa .Sessao1 p.Destaque4 { margin-bottom: 25px; }
 	.Tarifa .Sessao1 h2 { margin-bottom: 5px; }
 		
 	.Tarifa .Sessao2 { padding-top: 65px; padding-bottom: 80px; color: #fff; }
@@ -703,10 +716,11 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 
 
 /* Pagina Efeitos Desktop: */
-	.Efeitos h1 { max-width: 300px; }
+	.Efeitos h1 { max-width: 320px; padding-left: 80px; }
 	.Efeitos .Sessao1 { margin: 90px 0 50px 0; }
 	.Efeitos .Sessao1 h2 { max-width: 460px; margin: auto; }
 	.Efeitos .Sessao1 .Btn-Destaque2 { margin: 35px auto }
+	.Efeitos .Sessao1 p:first-of-type { line-height: 1.625rem; }
 	.Efeitos .Sessao1 p, .Efeitos .Sessao2 p { text-align: center; }
 
 	.Efeitos .Sessao2 { margin-bottom: 120px; }
@@ -877,7 +891,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 
 /* Pagina Equipamentos Mobile: */
 	.Equipamentos .Banner { background-image: url('../images/eqp-banner-mobile.png'); max-height: 256px; }
-	.Equipamentos h1 { max-width: 202px; }
+	.Equipamentos h1 { max-width: 202px; padding-left: 0; }
 	.Equipamentos .Sessao1 { padding-top: 15px; padding-bottom: 60px; }
 	.Equipamentos .Sessao1 h2 { margin-top: 35px; }
 	.Equipamentos form { color: var(--secundariamobile); }
@@ -1002,7 +1016,7 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Calculadora3 .FiltrosOpen .Sliders { display: block; margin-bottom: 0; }
 	.Calculadora3 .FiltrosOpen .Sliders .content { max-width: 100%; }
 	.ui-widget.ui-widget-content { width: 100%; }
-	.Calculadora3 .FiltrosOpen div.AplicarFiltros { flex-wrap: wrap-reverse }
+	.Calculadora3 .FiltrosOpen div.AplicarFiltros { flex-direction: column-reverse; margin-top: 70px; width: 100%; }
 	.Calculadora3 .FiltrosOpen a:first-child { height: 42px; margin: auto; }
 	.Calculadora3 .FiltrosOpen a:last-child { font-size: 0.75rem; margin-bottom: 20px; }
 	.Calculadora3 .FiltrosOpen .Sliders .content input { font-size: 0.875rem; margin-bottom: 30px; }
@@ -1298,6 +1312,8 @@ body {display: none; font-family: 'Open Sans', sans-serif; box-sizing: border-bo
 	.Efeitos.SegResultado .Sessao1 .WrapperFlex p:nth-of-type(3) { margin-bottom: 10px;	border-bottom: 1px solid #707070; padding-bottom: 18px; }
 	.Efeitos.SegResultado .Sessao1 .BlocoRodape p { margin-left: 10px }
 	.Efeitos.SegResultado .Sessao1 .BlocoRodape:last-child { display: none; }
+
+	.Calculadora3 .FiltrosOpen .Sliders input { color: #8E8E8E }
 
 /* :Pagina Efeitos Mobile */
 

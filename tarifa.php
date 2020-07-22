@@ -38,17 +38,23 @@
                 <a class="Btn Btn-Big Btn-Destaque3 Space" href="<? echo $Tarifa_Questionario1 ?>">Descubra se você é um possível candidato à tarifa branca!</a>
 
                 
+                <p class="DesktopItem">
+                    A medida, criada pela Aneel (Agência Nacional de Energia Elétrica) para desafogar o sistema elétrico e tornar a rede mais eficiente, oferece luz mais barata àqueles que a consumirem fora do horário de ponta, período do dia quando o uso é mais intenso. A tarifa é opcional e cabe ao consumidor escolher se adere à mudança.<br><br>
+                </p>
+
+                <p class="DestaqueInterno Destaque4 DesktopItem">Vale a pena?</p>
+
+
                 <p class="LineSub DesktopItem">
-                    Antes de optar pela Tarifa Branca, é preciso fazer uma análise do seu perfil de consumo de energia ao longo do dia, comparando-o com os períodos de ponta e intermediário definidos pela distribuidora que o atende. É justamente para te ajudar nisso que o Idec criou essa calculadora!
+                    Antes de optar pela Tarifa Branca, é preciso fazer uma análise do seu perfil de consumo de energia ao longo do dia, comparando-o com os períodos de ponta e intermediário definidos pela distribuidora que o atende. É justamente para te ajudar nisso que o Idec criou essa calculadora!<br><br>
 
-                    Quanto maior a diferença entre a Tarifa Convencional e a Tarifa Branca fora de ponta, mais vale a pena aderir à Tarifa Branca, e vice-versa. 
+                    Quanto maior a diferença entre a Tarifa Convencional e a Tarifa Branca fora de ponta, mais vale a pena aderir à Tarifa Branca, e vice-versa. <br><br>
 
-                    Uma dica! Os aparelhos que mais contribuem com o consumo de energia no período de ponta são o chuveiro elétrico, ar-condicionado e aquecedores. A possibilidade de utilizá-los nos períodos fora de ponta será fundamental para definir se a adesão à Tarifa Branca pode ser vantajosa. 
+                    <strong>Uma dica!</strong> Os aparelhos que mais contribuem com o consumo de energia no período de ponta são o chuveiro elétrico, ar-condicionado e aquecedores. A possibilidade de utilizá-los nos períodos fora de ponta será fundamental para definir se a adesão à Tarifa Branca pode ser vantajosa. 
                 </p>
 
                 <p class="MobileItem">
                     A medida, criada pela Aneel (Agência Nacional de Energia Elétrica) para desafogar o sistema elétrico e tornar a rede mais eficiente, oferece luz mais barata àqueles que a consumirem fora do horário de ponta, período do dia quando o uso é mais intenso. A tarifa é opcional e cabe ao consumidor escolher se adere à mudança.
-
                 </p>
 
             </article>

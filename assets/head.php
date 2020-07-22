@@ -39,3 +39,4 @@
 		<link type="text/css" rel="stylesheet" href="<? echo $url ?>assets/css/slick-theme.css" media="all" />
 		<link type="text/css" rel="stylesheet" href="<? echo $url ?>assets/css/estrutura.css" media="all" />
 		<link type="text/css" rel="stylesheet" href="<? echo $url ?>assets/css/magnific-popup.css"/>
+		

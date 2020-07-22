@@ -172,11 +172,13 @@ jQuery(document).ready(function() {
         max: 1500,
         values: [ 240, 1000],
         slide: function( event, ui ) {
-            $( "#amount" ).val( "De " + ui.values[ 0 ] + " litros" + " Até " + ui.values[ 1 ] + " litros" );
+            $( "#amount" ).val( "De " + ui.values[ 0 ] + " litros" );
+            $( "#amountdir" ).val( " Até " + ui.values[ 1 ] + " litros" );
         }
     });
-    $( "#amount" ).val( "De " + $( "#slider-range" ).slider( "values", 0 ) + " litros" +
-        " Até " + $( "#slider-range" ).slider( "values", 1 ) + " litros" );
+	
+	$( "#amount" ).val( "De " + $( "#slider-range" ).slider( "values", 0 ) + " litros" );		
+	$( "#amountdir" ).val( " Até " + $( "#slider-range" ).slider( "values", 1 ) + " litros" );
 	
 	
 	$( "#slider-range2" ).slider({
@@ -185,11 +187,14 @@ jQuery(document).ready(function() {
 		max: 700,
 		values: [ 80, 500],
 		slide: function( event, ui ) {
-			$( "#amount2" ).val( "R$ " + ui.values[ 0 ] + " - R$ " + ui.values[ 1 ] );
+			$( "#amount2" ).val( "De R$ " + ui.values[ 0 ]  );
+			$( "#amount2dir" ).val( "Até R$ " + ui.values[ 1 ] );
 		}
-    });
-	$( "#amount2" ).val( "De R$" + $( "#slider-range2" ).slider( "values", 0 ) +
-	" Até R$" + $( "#slider-range2" ).slider( "values", 1 ) );
+	});
+	
+	$( "#amount2" ).val( "De R$" + $( "#slider-range2" ).slider( "values", 0 ) );
+	$( "#amount2dir" ).val( "Até R$" + $( "#slider-range2" ).slider( "values", 1 ) );
+	
 
 
 	$( "#slider-range3" ).slider({
@@ -198,11 +203,14 @@ jQuery(document).ready(function() {
 		max: 7000,
 		values: [ 800, 5000],
 		slide: function( event, ui ) {
-			$( "#amount3" ).val( "R$ " + ui.values[ 0 ] + " - R$ " + ui.values[ 1 ] );
+			$( "#amount3" ).val( "De R$ " + ui.values[ 0 ]  );
+			$( "#amount3dir" ).val( "Até R$ " + ui.values[ 1 ] );
 		}
 	});
-	$( "#amount3" ).val( "De R$" + $( "#slider-range3" ).slider( "values", 0 ) +
-	" Até R$" + $( "#slider-range3" ).slider( "values", 1 ) );
+	
+	$( "#amount3" ).val( "De R$" + $( "#slider-range3" ).slider( "values", 0 ) );
+	$( "#amount3dir" ).val( "Até R$" + $( "#slider-range3" ).slider( "values", 1 ) ); 
+	
 	
 
 	$( "#slider-tarifa" ).slider({ range: true, min: 0, max: 100, values: [ 0, 5] });	
